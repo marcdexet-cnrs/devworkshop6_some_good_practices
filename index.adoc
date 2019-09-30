@@ -1,0 +1,9 @@
+= Index
+
+include::_inc_revealjs.adoc[]
+
+[NOTE.notes]
+--
+Following https://etherpad.in2p3.fr/p/Discussion_workshop_good_practices_201910_madrid
+
+--

@@ -1,0 +1,9 @@
+= Some Development Good Practices
+
+A presentation to show some development good practices to follow, among a lot of them.
+
+== How ?
+
+We will use a web presentation based on revealjs associated with asciidoctor.
+
+
