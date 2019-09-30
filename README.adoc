@@ -7,3 +7,131 @@ A presentation to show some development good practices to follow, among a lot of
 We will use a web presentation based on revealjs associated with asciidoctor.
 
 
+== Install Asciidoctor-revealjs
+
+* Install ruby 
+* Install bundler
++
+----
+$ gem install bundler
+----
++
+* Create à repository for your presentation
++
+----
+$ mkdir my-presentation
+$ cd my-presentation
+----
+ 
++
+* Create file _Gemfile_ (Be careful on the first uppercase character) 
++
+----
+ source 'https://rubygems.org'
+ 
+ gem 'asciidoctor-revealjs'
+ gem 'asciidoctor-pdf'
+ gem 'guard'
+ gem 'guard-shell'
+ gem 'guard-minitest'
+---- 
++
+* Install _gems_ (packages Ruby) localy
++
+----
+$ bundle config --local github.https true
+$ bundle --path=.bundle/gems --binstubs=.bundle/.bin
+----
++
+* Output should look like
++
+----
+Fetching gem metadata from https://rubygems.org/...........
+Fetching gem metadata from https://rubygems.org/.
+Resolving dependencies...
+Fetching Ascii85 1.0.3
+Installing Ascii85 1.0.3
+...
+Fetching guard-shell 0.7.1
+Installing guard-shell 0.7.1
+Bundle complete! 5 Gemfile dependencies, 43 gems now installed.
+Bundled gems are installed into `./.bundle/gems`
+----
++
+* Download Revealjs 
++
+----
+git clone -b 3.7.0 --depth 1 https://github.com/hakimel/reveal.js.git
+----
++
+* Create file _index.adoc_
++
+----
+= Index
+
+----
++
+* Create file __inc_revealjs.adoc_ for all configuration parameters _revealjs_. You coull modify it afterward.
++
+----
+:backend: revealjs
+:encoding: utf-8
+:lang: fr
+:icons: font
+:revealjs_controls: true
+:revealjs_progress: true
+:revealjs_slidenumber: true
+:revealjs_history: true
+:revealjs_keyboard: true
+:revealjs_overview: true
+:revealjs_center: false
+:revealjs_touch: true
+:revealjs_loop: false
+:revealjs_rtl: false
+:revealjs_fragments: true
+:revealjs_embedded: false
+:revealjs_autoslide: 0
+:revealjs_autoslidestoppable: true
+:revealjs_mousewheel: true
+:revealjs_hideaddressbar: true
+:revealjs_previewlinks: false
+:revealjs_transition: default
+:revealjs_transitionspeed: default
+:revealjs_backgroundtransition: default
+:revealjs_viewdistance: 3
+:revealjs_parallaxbackgroundimage:
+:revealjs_parallaxbackgroundsize:
+:revealjs_width: 1280
+:revealjs_height: 800
+:revealjs_margin: 0.02
+:source-highlighter: coderay
+:coderay-linenums-mode: inline
+----
++
+* Create file _index.adoc_, main file of the presentation
+* Create file _Guardfile_  to build _html_ file each time a _adoc_ file is modified.
++
+[source,ruby]
+----
+guard :shell do
+    watch(%r{.adoc}) do |modfiles|
+        `bundle exec asciidoctor-revealjs ./index.adoc`
+    end    
+end
+----
++
+* Run the monitoring
++
+----
+$ bundle exec guard
+----
++
+* **in another terminal**, run http server
++
+----
+ruby -run -e httpd . -p 5000
+----
++
+* Go  sur http://localhost:5000
+
+
