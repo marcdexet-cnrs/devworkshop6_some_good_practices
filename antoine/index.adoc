@@ -1,0 +1,29 @@
+= Partie Antoine
+ifdef::backend-revealjs[]
+:xslide:
+endif::[]
+ifndef::xslide[]
+:toc:
+:toclevels: 5
+:numbered:
+endif::[]
+
+La partie dessus est du paramètrage. Cela permet de construire le document comme un texte en dehors de la présentation.
+Seule la partie dessous sera prise en compte
+
+//tag::include[]
+
+== Slide exemple
+
+* Titre niveau 1
+** Titre niveau 2
+*** Titre niveau 3
+
+[NOTE.notes]
+--
+Note pour le speaker qui pourront être imprimés au format PDF sous forme d'article ou de livre.
+--
+
+=== Sous slide
+
+//end::include[]

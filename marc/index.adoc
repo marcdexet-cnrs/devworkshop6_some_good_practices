@@ -1,0 +1,13 @@
+= index.adoc
+ifdef::backend-revealjs[]
+:xslide:
+endif::[]
+ifndef::xslide[]
+:toc:
+:toclevels: 5
+:numbered:
+endif::[]
+
+//tag::include[]
+
+//end::include[]
