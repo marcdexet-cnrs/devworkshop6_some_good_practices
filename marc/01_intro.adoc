@@ -1,0 +1,134 @@
+= Intro
+
+L'introduction sert à planter le décors.
+
+Pourquoi créons nous des logiciels au fond ?
+
+* Pour mettre des idées en action (pour concrétiser), idées que nous ne trouvons pas pertinent de faire nous mêmes pour de multiples raisons
+** performance
+** répétitivité
+** coût
+** priorité
+
+Ensuite pourquoi c'est difficile en soi ?
+Au niveau de la réalisation en soi, en supposant que les solutions envisagées répondent déjà au besoin, du moins sur le papier
+
+Problème de traduction, passage du code à l'idée et vice-versa (zoom)
+* Problème de traduction de l'idée au code
+* Problème de compréhension du code
+* Gestion de la complexité
+
+Ensuite il y a la notion de partage
+* Partage au sens de plusieurs personnes sur le même logiciel
+* Partage en tant que fourrnisseur de service avec d'autres logiciels
+* Partage dans le temps: l'expertise d'aujourd'hui est l'oubli de demain
+
+Ensuite il y a l'évolution
+* Evolution continue du code
+** Un code ne doit pas être fait que pour fonctionner, il doit être fait pour évoluer !!
+** Un logiciel est vivant => un logiciel figé est un logiciel mort
+** Parallèle avec le darwinisme => un logiciel qui ne sait pas s'adapter facilement est un logiciel appelé à s'éteindre très vite
+
+La gestion d'un univers qui a ses propres règles et propres défaillances
+
+* A creuser
+
+
+*Il faut néanmoins faire court, 4 à 5 slides maximum !!*
+
+//tag::include[]
+
+[.subsection.background]
+[.center]
+== Why ?
+
+[.fragment]
+Why Are We
+Building Software ?
+
+[.fragment]
+By The Way ?
+
+== Why Are We Building Software ?
+
+
+*A REFAIRE*
+
+[.fragment]
+--
+* Because it's a very powerful tool
+** To do stupid or boring or endless stuff,
+** To implement ideas,
+** To achieve objectives,
+** To satisfy needs,
+** To apply a vision of the world,
+** ...
+--
+
+
+[.fragment]
+--
+* We make software to put ideas into action.
+** We try to put our ideas into code to hope see them into action :)
+--
+
+
+[NOTE.notes]
+--
+* Software are just tool for a lot of you.
+* Tool -> to achieve objectives, goals.
+* There is a link between a idea, a need and a software.
+--
+
+== Why It Could Be Tricky To Build Software ?
+
+=== Translation
+
+* Because we translate ideas into code.
+* As Italian says "Traduttore, traditore"
+** _Translator, traitor_
+** Sometime we lost the perspective
+** We drown by detail
+* As a bad translation, we could lost the meaning of the original idea or introduce dissonances.
+
+=== Evolution
+
+* Software is not a product, it's an continous investment
+* Software is ever in evolution, it is not written in one and unique time.
+* it still evolving, like a very strange kind of animal, adapting to new needs or ideas, and like in darwin evolution, still  keeping some odd and old features, artefacts or piece of useless codes.
+* We don't just have to make it run, we have to make it updatable
+
+
+[NOTE.notes]
+--
+* Software is a kind of intellectual construction
+** Software is a piece of distributed knowledge all over files, processes and so on
+* Software is a translation "Traduttore, traditore"
+** _Translator, traitor_
+** How to do not lost ou betray the original goals ?
+* Software is an investissment
+** Software is ever in evolution, it is not written  in one and unique time, it still evolving, like a very strange kind of animal, adapting to new needs or ideas, and like in darwin evolution, still  keeping some odd and old features, artefacts or piece of useless codes.
+**  So make it running is not enough.
+--
+
+
+=== Sharing is caring
+
+Un passage sur le fait que les logiciels ne sont pas des objets isolés, mais partagés
+
+* Partagé car développé à plusieurs
+* Partagé car utilisé par d'autres acteurs
+* Partagé dans le temps
+
+
+
+== What Are The Good Practices ?
+
+[NOTE.notes]
+--
+* People have been building software for 40 years.
+* People gather a pretty big set of principles, recipes, experiences built by severals years of try and fail.
+* Unless you're a genius, it's worth it to start using them before creating your own path.
+--
+
+//end::include[]

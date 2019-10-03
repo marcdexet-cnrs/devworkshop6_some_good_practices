@@ -1,0 +1,23 @@
+= Conception
+
+
+Il faut rappeller que ces principes à tous les niveaux
+- Conception générale
+- Design
+- Codage
+
+A l'echelle d'un pipeline, d'un module, d'une classe, d'une simple fonction.
+
+Ce sont des lignes de conduites
+
+//tag::include[]
+
+
+
+== Separation Of Concern
+
+
+== Single Responsability
+
+
+//end::include[]
