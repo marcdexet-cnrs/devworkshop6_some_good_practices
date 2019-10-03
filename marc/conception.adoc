@@ -1,0 +1,13 @@
+= Conception
+
+[NOTE.notes]
+--
+Mettre ici les principes généraux de conception
+* SoC
+* Single Responsability
+--
+
+== Separation Of Concern
+
+
+== Single Responsability

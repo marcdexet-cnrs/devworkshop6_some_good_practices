@@ -1,0 +1,96 @@
+= General point of view
+
+//tag::include[]
+
+
+[NOTE.notes]
+--
+* First of all, we have to be sure that the software is doing what we expect.
+* So we have to be sure we know what we expect, for real !
+* The first processor is the humain brain
+* The most high level compiler is you, your colleges.
+* The first langage to be used is human langage.
+--
+
+== Human First
+
+[NOTE.notes]
+--
+* Don't talk about programing langage at first, talk about concepts.
+* Human brain has limitation (take the same slides from former presentation)
+--
+
+=== Code For Human
+
+--
+Any fool can write code
+that a computer can understand.
+
+Good programmers write code
+that humans can understand
+Martin Fowler
+--
+
+=== Do Not Generate Dissonance
+
+_Recopier le slide du DevWorkshop 5_
+
+
+=== Do Not Overload Mental Mapping
+
+_Recopier le slide du DevWorkshop 5_
+
+Brain is not good
+at following complex branching
+or keeping arbitrary references.
+
+=== Give Regularity And Consistency
+
+_Recopier le slide du DevWorkshop 5_
+
+Brain learns from patterns if they're visible.
+
+
+== Freeze The Brownian Motion Of Ideas
+
+* In our times, we have to work in parallele
+* A lot of moving and unfixed ideas
+
+[NOTE.notes]
+--
+* The conception is like a game.
+* We all of us have a lot of ideas.
+* We all of us have biases.
+* "ecrire c'est ranger le bordel qu'on a dans la tête"
+* "writing is putting away the mess in your head"
+* "to describe is to put away the mess in your head"
+* => Draw boxes with arrows
+* => write down what do you want to do
+* Talk to your colleges
+--
+
+
+== Part about How to Design
+
+
+== Breakdown Big Problem
+
+[NOTE.notes]
+--
+* Your brain is not well built to maintain heavy concepts and many irritating details.
+* Break problem down to little problems
+* => conception
+--
+
+== Flexibility
+
+[NOTE.notes]
+--
+* Delimit the perimeter
+* Tell What it does, don't think about how it's done.
+* Engage for interface, not (yet) about implementation
+* Keep the freedom of experimentating
+* => interface
+--
+
+//end::include[]

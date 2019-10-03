@@ -12,7 +12,16 @@ endif::[]
 
 include::intro.adoc[]
 
+include::general.adoc[]
 
+include::conception.adoc[]
+
+--
+Idée de garder un fil rouge
+
+* Quelques principes généraux (human, compréhension, décomposition)
+* Application à travers les différents aspects.
+--
 
 
 

@@ -24,7 +24,7 @@ _Couteau suisse multiforme grotesque_
 _Mettre la petite phrase sur la nécessité de changer en 1 seul composant_
 
 
-== Loosen Coupling
+== Loose coupling
 
 
 
@@ -65,7 +65,7 @@ class Rectangle:
     Rectangle(self, width=0, height=0):
         self.width = width
         self.height=height
-        
+
 ----
 
 
@@ -77,13 +77,13 @@ Le principe de substitution est une garantie que les futurs composants seront co
 
 * Principe en relation avec Loosen Coupling
 * Ne pas programmer en fonction des composants, mais des contrats, des engagements pris.
-Cela permet à chacun de pouvoir évoluer à sa guise, tant que le contrat est respecté. 
+Cela permet à chacun de pouvoir évoluer à sa guise, tant que le contrat est respecté.
 
 
 _mettre un dessin_
 
 Une interface, c'est un engagement, une description formelle.
-C'est un moyen de se donner de la liberté de faire 
+C'est un moyen de se donner de la liberté de faire
 
 * ce que l'on veut
 * de définir ce que l'on veut fournir ou accepter
