@@ -10,4 +10,10 @@ endif::[]
 
 //tag::include[]
 
+include::intro.adoc[]
+
+
+
+
+
 //end::include[]

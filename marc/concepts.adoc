@@ -1,0 +1,112 @@
+= Concepts
+ifdef::backend-revealjs[]
+:xslide:
+endif::[]
+ifndef::xslide[]
+:toc:
+:toclevels: 5
+:numbered:
+endif::[]
+
+
+ifndef::xslide[]
+== Plan
+* General principles
+* Conception and design
+* Coding
+* Validation
+
+En general
+
+* Code for human
+* Take brain capacities into account
+* Write down why are you doing what you do
+
+** Avoir des exigences en amont
+** Les expliciter un peu
+** Profiter des phases prototypes.
+
+* Code for yourself => Pour votre propre satisfaction de faire du beau boulot.
+
+Pour la phase de conception
+
+* Separation Of Concern
+* Single responsibility principle
+* Loose Coupling
+* Knows some patterns
+
+Pour la phase de codage
+
+* Readibility
+* semantic
+* convention
+* Gold rule for functions and classes
+* Short methods
+* Small is beautiful => a few lines, a few methods, Few arguments
+* No ambiguity 
+* Separation of abstraction level
+* Isolation
+* Save your work -> commit early commit often
+* Tests !!
+endif::[]
+
+
+ifndef::xslide[]
+*Brainstorming*
+
+*Effet de zoom sur le logiciel*
+
+- Parler de la différence d'approche Approche top-down vs bottom-up
+- top-down -> conception -> réalisation
+- bottom-up => refactorisation depuis le code
+- Nécessité de poser ces idées, d'arrêter qu'elles flottent.
+- Capacité à en parler aisément.
+- Capacité à reconnecter les concepts au code.
+
+=> Bonnes pratiques au niveau général
+
+endif::[]
+
+//tag::include[]
+
+== Introduction
+
+=== Why do we produce software ?
+
+** Software are just tools, a means of achieving objectives.
+** Like any tool, misused or improperly designed, a tool can be harmful, ineffective or incorrect. It becomes a source of irritation, it distracts us from our objectives. It becomes a source of time loss.
+
+=== What is the big difference between software and other tools ?
+
+* As they're immaterial, they could easily duplicated, altered, modified.
+** Software evolves. 
+* Tools have rules and good practices
+* Software is an evolutive material, they change all the time.
+
+=== Running is no enough
+
+Ici je veux écrire qu les bonnes pratiques ne cherchent pas uniquement à s'assurer qu'un logiciel fonctionne. 
+
+Il faut s'assurer 
+
+. qu'il fait bien ce que l'on attend de lui
+. qu'il peut évoluer, car, il évoluera à coups sur.
+
+Autant se préparer et faciliter sa relation avec l'outil, en général, dans sa conception, sa réalisation, sa validation.
+
+
+== General Point Of View
+
+ifndef::xslide[]
+
+endif::[]
+
+== Code For Human
+
+ifndef::xslide[]
+* First processor is your brain
+
+endif::[]
+
+
+//end::include[]
