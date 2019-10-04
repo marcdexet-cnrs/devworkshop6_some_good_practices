@@ -1,4 +1,4 @@
-= Index
+= Some Software Development Good Practices
 include::_inc_revealjs.adoc[]
 
 [NOTE.notes]

@@ -82,33 +82,133 @@ By The Way ?
 
 == Why It Could Be Tricky To Build Software ?
 
-=== Translation
+*A REFAIRE*
 
-* Because we translate ideas into code.
-* As Italian says "Traduttore, traditore"
-** _Translator, traitor_
-** Sometime we lost the perspective
-** We drown by detail
-* As a bad translation, we could lost the meaning of the original idea or introduce dissonances.
+* Translation -> scaling
+* Complexity -> breaking up
+* Evolution -> Changeability
 
-=== Evolution
+[.center]
+[%notitle]
+[background-color="#04011e"]
+== Lost In Translation
 
-* Software is not a product, it's an continous investment
-* Software is ever in evolution, it is not written in one and unique time.
-* it still evolving, like a very strange kind of animal, adapting to new needs or ideas, and like in darwin evolution, still  keeping some odd and old features, artefacts or piece of useless codes.
-* We don't just have to make it run, we have to make it updatable
+image::images/marc/matt_taylor_lost_in_translation_var-600x800.jpg[width=500]
+
+[.center]
+[%notitle]
+[background-color="#1e0115"]
+=== Lost In Translation
+
+image::images/marc/matt_taylor_lost_in_translation_reg.jpg[]
+
+
+=== Lost In Translation
+
+[.fragment]
+--
+* Translate *ideas* into *code*
+** As the Italian say "Traduttore, traditore" -> _Translator, traitor_
+--
+
+[.fragment]
+--
+* Translation Implies Distorsion
+** The further _away_ from the code, the _greater_ the distortion.
+** To _convert_ and _adapt_ into code => To _modify_ or _lost_ the meaning of our original ideas
+--
+
+[.fragment]
+[.big]
+[.center]
+We could get lost in *complexity*.
 
 
 [NOTE.notes]
 --
-* Software is a kind of intellectual construction
-** Software is a piece of distributed knowledge all over files, processes and so on
-* Software is a translation "Traduttore, traditore"
-** _Translator, traitor_
-** How to do not lost ou betray the original goals ?
+Software is a tool to put ideas into action. But we have to convert our ideas into code to make them concrete. We have to translate a intellectual building into an computing piece of code, but translation is a kind of betrayal : "Traduttore, traditore".
+We imply distorsion of our original ideas.
+--
+
+[.dark.background]
+[.center]
+=== Lost In Complexity
+
+image::images/marc/blogs-images.forbes.com_ronashkenas_files_2014_06_7670055210_ceb0c9ef9a_b.jpg[width=800]
+
+
+=== Lost In Complexity
+
+[.fragment]
+--
+* Complex vs Complicated
+** _Complex_ as opposed to _simple_ => _indirect_,
+** _Complicated_ as opposed to _easy_ => _difficult_.
+--
+
+[.fragment]
+--
+If _complexity_ is not a problem, _complication_ should be avoided.
+--
+
+[.fragment]
+--
+* Abstraction, Complixity, Complication
+** The more _abstract_ are ideas, the more _complex_ is implementation.
+** The more _complex_ is implementation, the more _complicated_ *may be* the code
+--
+
+[.fragment]
+--
+In general, _complexity_ leads to _complication_ if you are not careful.
+--
+
+[.fragment]
+--
+So be careful...
+--
+
+[NOTE.notes]
+--
+There is always some confusion between Complex and Complicated.
+Complex can be opposed to simple while complicated can be opposed to easy.
+Software can be complex, because the implementation of the underlying ideas requires several steps or depths.
+But such architecture is not complicated, it is just not direct.
+On the contrary, a simple idea could be complicated to implement as software, could be very tricky and difficult to write, to understand.
+
+In general, complexity leads to complication if you are not careful.
+
+
+Exemple with networks
+https://www.itrw.net/2016/06/27/organized-cabling-is-better-cabling-avoid-server-room-spaghetti/
+
+--
+
+=== Lost In Evolution
+
+* Software is *ever* in *evolution*
+** It is not written in one and unique time, and that's all !
+* As _experience_ and _ideas_ evolve, software has to follow,
+** So it have to be changeable.
+
+[.fragment]
+--
+* A software that can not evolve is a fragile one.
+--
+
+[.fragment]
+--
+* => Be careful to make your code changeable...
+--
+
+
+[NOTE.notes]
+--
 * Software is an investissment
 ** Software is ever in evolution, it is not written  in one and unique time, it still evolving, like a very strange kind of animal, adapting to new needs or ideas, and like in darwin evolution, still  keeping some odd and old features, artefacts or piece of useless codes.
 **  So make it running is not enough.
+
+*Mettre une photo de panda.*
 --
 
 
@@ -121,6 +221,11 @@ Un passage sur le fait que les logiciels ne sont pas des objets isolés, mais pa
 * Partagé dans le temps
 
 
+[NOTE.notes]
+--
+* Software is a kind of intellectual construction
+** Software is a piece of distributed knowledge all over files, processes and so on
+--
 
 == What Are The Good Practices ?
 

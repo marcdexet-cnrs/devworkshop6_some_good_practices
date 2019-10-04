@@ -133,6 +133,18 @@ section.subsection.background h6 {
   background: #505246;
 }
 
+
+section.dark.background, 
+section.dark.background h1, 
+section.dark.background h2,
+section.dark.background h3,
+section.dark.background h4,
+section.dark.background h5,
+section.dark.background h6 {
+  color: #fff;
+  background: #4e5454;
+}
+
 .inverse a {
     color: burlywood;
 }
@@ -294,4 +306,14 @@ td.content {
     right: 0;
     float: right;
     clear: both;
+}
+
+.reveal .big {
+  font-size: 1.2em;
+}
+
+
+/* hidden */
+.hidden {
+  visibility: hidden;
 }
