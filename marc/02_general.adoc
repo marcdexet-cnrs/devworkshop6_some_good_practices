@@ -1,16 +1,20 @@
-= General point of view
-
-//tag::include[]
+= General
 
 
 [NOTE.notes]
 --
-* First of all, we have to be sure that the software is doing what we expect.
-* So we have to be sure we know what we expect, for real !
-* The first processor is the humain brain
-* The most high level compiler is you, your colleges.
-* The first langage to be used is human langage.
+Good practices start with your attitude
+
+* We have a brain with some limitation
+* We have to take this into account
+
 --
+
+
+
+//tag::include[]
+
+
 
 == Human First
 

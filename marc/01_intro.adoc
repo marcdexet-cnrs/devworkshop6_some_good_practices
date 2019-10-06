@@ -82,6 +82,8 @@ By The Way ?
 
 == Why It Could Be Tricky To Build Software ?
 
+We could easily get lost then get frozen.
+
 *A REFAIRE*
 
 * Translation -> scaling
@@ -132,12 +134,12 @@ We imply distorsion of our original ideas.
 
 [.dark.background]
 [.center]
-=== Lost In Complexity
+=== Overwhelm By Complexity
 
 image::images/marc/blogs-images.forbes.com_ronashkenas_files_2014_06_7670055210_ceb0c9ef9a_b.jpg[width=800]
 
 
-=== Lost In Complexity
+=== Overwhelm By Complexity
 
 [.fragment]
 --
@@ -184,7 +186,12 @@ https://www.itrw.net/2016/06/27/organized-cabling-is-better-cabling-avoid-server
 
 --
 
-=== Lost In Evolution
+[.center]
+=== Be Afraid To Break Everything
+
+image::images/marc/break_everything.gif[]
+
+=== Be Afraid To Break Everything
 
 * Software is *ever* in *evolution*
 ** It is not written in one and unique time, and that's all !
