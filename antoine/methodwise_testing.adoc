@@ -31,7 +31,6 @@ class TestListVector(object):
 ----
 
 [.step]
-* This works...
-* in simplest cases.
+* This works... [.fragment]#in simplest cases.#
 * Not SOLID-friendly.
 * Dirty.

@@ -45,7 +45,6 @@ class TestListVector(object):
 ----
 
 [.step]
-* This works...
-* but we are coupling things at setup which are not coherent:
-* Why would we create an empty vector along with a random vector or two?
+* This works... [.fragment]#but we are coupling things at setup which are not coherent.#
+* Why creating an empty vector along with a random vector or two while they do not interact in the tests?
 

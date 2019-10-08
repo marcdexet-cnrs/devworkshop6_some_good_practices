@@ -1,0 +1,10 @@
+[.subsection.background]
+[.center]
+== Thank you!
+
+* Complete examples: https://gitlab.euclid-sgs.uk/basset/CT_SomeThoughtsOnUnitTests
+* Python mocking framework unittest.mock: https://docs.python.org/3/library/unittest.mock.html
+* C++ mocking framework gMock: https://github.com/google/googletest/tree/master/googlemock
+* More on doubles: https://www.martinfowler.com/articles/mocksArentStubs.html
+* More on behavior-driven development: https://dannorth.net/introducing-bdd/
+

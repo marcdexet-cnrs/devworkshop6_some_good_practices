@@ -16,6 +16,7 @@ endif::[]
 include::introduction.adoc[]
 include::standalone_testing.adoc[]
 include::integrated_testing.adoc[]
+include::conclusion.adoc[]
 
 [NOTE.notes]
 --

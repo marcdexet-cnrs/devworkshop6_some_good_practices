@@ -13,3 +13,51 @@ When a test of the primary class doesn't pass, how to know in which class the is
 [.fragment]
 We propose here an example of such dependency by implementing a Histogram class.
 
+=== Histogram description
+
+A histogram maps contiguous intervals to counts.
+
+It is made of value bins (the x-axis) and counts (the y-axis), which are implemented as Vectors.
+
+Here's an artist view of a histogram whose x-axis is stored as [1, 2, 3, 4, 5, 6, 8] and y-axis as [10, 20, 50, 60, 40, 30]:
+
+[.left-column]
+[source]
+----
+             60
+c         50 ---
+o         ---   40
+u               ---  30
+n      20          ------
+t   10 ---
+    ---
+    |--|--|--|--|--|--|--|
+    1  2  3  4  5  6  7  8
+    
+            value
+----
+
+[.right-column]
+--
+* The count associated to value 2 -- which lies in bin [2-3) -- is 20.
+* That of value 10 is 0.
+--
+
+=== Histogram requirements
+
+* The count of value v is counts[i] iff bins[i] ≤ v < bins[i].
+* The count of a value outside the provided value range is 0.
+
+=== The problem: Two implementations of a vector
+
+* How should we instantiate our histogram fixtures?
+** With a Python list?
+** With a Numpy array?
+** With both?
+* What if we give up an implementation?
+* What if a third implementation of Vector is provided?
+
+include::coupled_testing.adoc[]
+include::stub_testing.adoc[]
+include::mock_testing.adoc[]
+

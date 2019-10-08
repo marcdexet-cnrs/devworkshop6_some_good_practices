@@ -1,0 +1,39 @@
+[.subsection.background]
+[.center]
+== Mock approach
+
+Mock = Specification of the secondary class *behavior*.
+
+Its implementation is delegated to a mocking framework.
+
+=== Example mock
+
+[source, python]
+----
+class ARandomHistogram(Histogram):
+
+    def __init__(self):
+    
+        # Ground-truth
+        
+        self.input_size = random.randint(1, 10)
+        self.input_bins = [random.random() for i in range(self.input_size + 1)]
+        self.input_bins.sort()
+        self.input_counts = [random.random() for i in range(self.input_size)]
+        
+        # Mock behavior specification
+        
+        self.mock_bins = mock.NonCallableMagicMock(Vector)
+        self.mock_bins.__len__.return_value = self.input_size + 1
+        self.mock_bins.__getitem__.side_effect = self.input_bins.__getitem__
+        self.mock_counts = mock.NonCallableMagicMock(Vector)
+        self.mock_counts.__len__.return_value = self.input_size
+        self.mock_counts.__getitem__.side_effect = self.input_counts.__getitem__
+        
+        # Mock generation
+        
+        super().__init__(self.mock_bins, self.mock_counts)
+----
+
+Again, the tests are exactly the same as the ones of the coupled and stub approaches.
+
