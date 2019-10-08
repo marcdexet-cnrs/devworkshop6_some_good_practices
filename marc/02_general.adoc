@@ -1,20 +1,19 @@
 = General
 
+//tag::include[]
+
+== Remember
+
+First of all, we have to never forget that if computer make code running, human make the code, so...
+
+human firt
+
+== Slide with human
 
 [NOTE.notes]
 --
-Good practices start with your attitude
-
-* We have a brain with some limitation
-* We have to take this into account
-
+Yes you've already seen this, maybe, but it's still true, so I repeat again.
 --
-
-
-
-//tag::include[]
-
-
 
 == Human First
 
@@ -53,6 +52,9 @@ or keeping arbitrary references.
 _Recopier le slide du DevWorkshop 5_
 
 Brain learns from patterns if they're visible.
+
+
+== Now
 
 
 == Freeze The Brownian Motion Of Ideas

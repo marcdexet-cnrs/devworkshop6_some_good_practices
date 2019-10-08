@@ -21,6 +21,7 @@ Nous allons parler de bonnes pratiques, mais :
   * Cela demande des efforts, comme apprendre une langue étrangère
 * Nous sommes dépassés par la complexité
 * Nous sommes incapables de faire évoluer le logiciel sans tout casser
+* Nous sommes effrayés
 
 ## C'est là qu'interviennent les bonnes pratiques
 
@@ -625,6 +626,16 @@ OOP make a lot of use of inheritance. Good practices show that you have to be ve
 Inherutance is based on a "IS question"
 
 Composition is based on "What I do"
+
+
+
+## Coding
+
+### Namming
+
+small is beautiful for names
+
+
 
 # ANNEXES
 

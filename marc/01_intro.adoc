@@ -1,42 +1,85 @@
 = Intro
 
-L'introduction sert à planter le décors.
 
-Pourquoi créons nous des logiciels au fond ?
-
-* Pour mettre des idées en action (pour concrétiser), idées que nous ne trouvons pas pertinent de faire nous mêmes pour de multiples raisons
-** performance
-** répétitivité
-** coût
-** priorité
-
-Ensuite pourquoi c'est difficile en soi ?
-Au niveau de la réalisation en soi, en supposant que les solutions envisagées répondent déjà au besoin, du moins sur le papier
-
-Problème de traduction, passage du code à l'idée et vice-versa (zoom)
-* Problème de traduction de l'idée au code
-* Problème de compréhension du code
-* Gestion de la complexité
-
-Ensuite il y a la notion de partage
-* Partage au sens de plusieurs personnes sur le même logiciel
-* Partage en tant que fourrnisseur de service avec d'autres logiciels
-* Partage dans le temps: l'expertise d'aujourd'hui est l'oubli de demain
-
-Ensuite il y a l'évolution
-* Evolution continue du code
-** Un code ne doit pas être fait que pour fonctionner, il doit être fait pour évoluer !!
-** Un logiciel est vivant => un logiciel figé est un logiciel mort
-** Parallèle avec le darwinisme => un logiciel qui ne sait pas s'adapter facilement est un logiciel appelé à s'éteindre très vite
-
-La gestion d'un univers qui a ses propres règles et propres défaillances
-
-* A creuser
-
-
-*Il faut néanmoins faire court, 4 à 5 slides maximum !!*
 
 //tag::include[]
+
+== Why a talk about good practices ?
+
+* Developping is turning human ideas into computer code
+** for the sake of simplicity
+* There's several way of doing it
+** A lot of them have been followed by a lot of people,
+** Some of them lead to disaster
+** other to a kind consensus
+* We call them the _good practices_
+** It's preferable to follow some of them
+* Because developement could be tricky
+
+== What are the challenges of development ?
+
+* To handle complexity,
+* To successfully translate human ideas into computer code
+** and back
+* To ensure that software is doing what is expected to do,
+* To allow changement and evolution
+** To not be afraid to break everything
+
+== Why it so tricky
+
+Because of our human nature
+
+Remember...
+
+//end::include[]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 [.subsection.background]
 [.center]
@@ -52,43 +95,47 @@ By The Way ?
 == Why Are We Building Software ?
 
 
-*A REFAIRE*
-
 [.fragment]
 --
 * Because it's a very powerful tool
 ** To do stupid or boring or endless stuff,
-** To implement ideas,
+** To Perform calculations quickly,
 ** To achieve objectives,
 ** To satisfy needs,
 ** To apply a vision of the world,
 ** ...
 --
 
+[.fragment]
+--
+* We make software to turn *ideas* into *action*.
+--
+
+
+== Why It Could Be Tricky To Build Software ?
 
 [.fragment]
 --
-* We make software to put ideas into action.
-** We try to put our ideas into code to hope see them into action :)
+* Sometimes we fell
+** lost along the way between the original ideas and the code,
+** Not being really convinced of the result,
+** Afraid to break something.
+--
+
+[.fragment]
+--
+* This is largely due to problem of
+** Translation
+** Complexity
+** Evolution
 --
 
 
 [NOTE.notes]
 --
-* Software are just tool for a lot of you.
-* Tool -> to achieve objectives, goals.
-* There is a link between a idea, a need and a software.
+We all observe that it's no easy to build software.
 --
 
-== Why It Could Be Tricky To Build Software ?
-
-We could easily get lost then get frozen.
-
-*A REFAIRE*
-
-* Translation -> scaling
-* Complexity -> breaking up
-* Evolution -> Changeability
 
 [.center]
 [%notitle]
@@ -219,21 +266,6 @@ image::images/marc/break_everything.gif[]
 --
 
 
-=== Sharing is caring
-
-Un passage sur le fait que les logiciels ne sont pas des objets isolés, mais partagés
-
-* Partagé car développé à plusieurs
-* Partagé car utilisé par d'autres acteurs
-* Partagé dans le temps
-
-
-[NOTE.notes]
---
-* Software is a kind of intellectual construction
-** Software is a piece of distributed knowledge all over files, processes and so on
---
-
 == What Are The Good Practices ?
 
 [NOTE.notes]
@@ -242,5 +274,3 @@ Un passage sur le fait que les logiciels ne sont pas des objets isolés, mais pa
 * People gather a pretty big set of principles, recipes, experiences built by severals years of try and fail.
 * Unless you're a genius, it's worth it to start using them before creating your own path.
 --
-
-//end::include[]
