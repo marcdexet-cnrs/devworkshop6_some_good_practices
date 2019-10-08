@@ -145,6 +145,19 @@ section.dark.background h6 {
   background: #4e5454;
 }
 
+
+section.splash.background, 
+section.splash.background h1, 
+section.splash.background h2,
+section.splash.background h3,
+section.splash.background h4,
+section.splash.background h5,
+section.splash.background h6 {
+  background: #2d5986;
+  color: #ffffff;
+  text-shadow: 0 0 20px #333;
+}
+
 .inverse a {
     color: burlywood;
 }

@@ -5,6 +5,7 @@
 
 {counter2:design_counter}
 
+
 [.subsection.background]
 [.center]
 [%notitle]
@@ -65,47 +66,289 @@ https://www.itrw.net/2016/06/27/organized-cabling-is-better-cabling-avoid-server
 
 --
 
+[.dark.background]
+[%notitle]
+[.center]
+== What's this ?
+
+[big]
+Guess what is this ?
+
+[.dark.background]
 [%notitle]
 == What's this ?
 
-* Reheat the oven to 200ºC.
-* Peel 1 onion.
-* Place peeled onion with the mushrooms, rye bread and 1 teaspoon of ground coriander.
-* Put it in a food processor and whiz until fine.
-* Drain.
-* Pulse in the black beans, season lightly with sea salt and black pepper.
-* Divide mixture into 4 parts.
-* Shape parts into patties.
-* Rub each part all over with oil.
-* Dust each part with ground coriander.
-* Place on an oiled baking tray and roast for 25 minutes.
-* ....
+
+Reheat the oven to 200ºC. +
+Peel 1 onion. +
+Place peeled onion with the mushrooms, rye bread and 1 teaspoon of ground coriander. +
+Put it in a food processor and whiz until fine. +
+Drain. +
+Pulse in the black beans, season lightly with sea salt and black pepper. +
+Divide mixture into 4 parts. +
+Shape parts into patties. +
+Rub each part all over with oil. +
+Dust each part with ground coriander. +
+Place on an oiled baking tray and roast for 25 minutes. +
+Put Cheddar topping. +
+Warm the rolls for the last few minutes. +
+Peel and very finely chop the remaining onion with the tomatoes and place in a bowl. +
+Squeeze over the lime juice. +
+Add a few shakes of Tabasco and season to taste. +
+...
 
 == What's this ?
 
-[.left-column]
+[.fragment]
 --
-* You get the HOW ?
-** All the steps to get something
-* But do you get WHAT is it ?
-** No
+* All the _steps_ to get something?
+** => this is *HOW* to get something
+* But do you get *WHAT* is for ?
 --
 
-[.right-column]
+[.fragment]
+No, you have all the steps but you have lost sight of the original idea.
+
 [.fragment]
 [.center]
---
+[.huge]
+You got lost in the translation.
+
+
+== What's this ?
+
+This is a recipe to cook roasted black bean burgers.
+
+[.center]
 image::https://img.jamieoliver.com/jamieoliver/recipe-database/xtra_med/92507794.jpg[width=400]
 
 [.smaller]
 https://www.jamieoliver.com/recipes/vegetable-recipes/roasted-black-bean-burgers/
+
+
+[.splash.background]
+[.center]
+[%notitle]
+== Separate WHAT from HOW you want
+
+[.huge]
+--
+Separate +
+*WHAT* you want +
+from +
+*HOW* you get it.
 --
 
-== Think WHAT before HOW
 
-* Don't be lost in translation from the idea to the code.
-** Think about WHAT you want before HOW to get it.
-** And write or draw it !!
+== Separate WHAT you want from HOW you get
+
+
+[.fragment]
+--
+* Often you get a idea to _how_ to make thing
+* but quicly, you could
+** => get *trapped* by the details of implementation,
+** => lost sight of the original idea.
+--
+
+[.fragment]
+--
+====
+To calm the incessant movement of ideas:
+
+
+Think about WHAT you want to achieve +
+_before_ +
+you consider HOW to get it.
+====
+--
+
+[.fragment]
+And write or draw it !!
+
+
+
+[transition=none]
+== Think about WHAT before HOW
+
+[.center]
+image::images/marc/good_practices-whatbeforehow_0.svg[]
+
+[.notes]
+--
+A WHAT defines our GOAL, what do we want.
+--
+
+[transition=none]
+== Think about WHAT before HOW
+
+[.center]
+image::images/marc/good_practices-whatbeforehow_1.svg[]
+
+[.notes]
+--
+It identifies a block of instruction, the HOW.
+--
+
+[transition=none]
+== Think about WHAT before HOW
+
+[.center]
+image::images/marc/good_practices-whatbeforehow_2.svg[]
+
+[.notes]
+--
+This HOW block is composed of identifed goal.
+--
+
+
+
+[transition=none]
+== Think about WHAT before HOW
+
+[.center]
+image::images/marc/good_practices-whatbeforehow_burger_0.svg[]
+
+[.notes]
+--
+A WHAT defines our GOAL, what do we want.
+--
+
+[transition=none]
+== Think about WHAT before HOW
+
+[.center]
+image::images/marc/good_practices-whatbeforehow_burger_1.svg[]
+
+[.notes]
+--
+It identifies a block of instruction, the HOW.
+--
+
+[transition=none]
+== Think about WHAT before HOW
+
+[.center]
+image::images/marc/good_practices-whatbeforehow_burger_2.svg[]
+
+
+== From The Idea To The Solution
+
+
+[transition=none]
+[%notitle]
+[.center]
+== From The Idea To The Solution
+
+You get the idea of *WHAT* you want, in a very abstract way
+
+image::images/marc/good_practices-what_how_call_hierarchie_0.svg[]
+
+[transition=none]
+[%notitle]
+[.center]
+== From The Idea To The Solution
+
+You think about *HOW* to get, in a little less abstract way
+
+image::images/marc/good_practices-what_how_call_hierarchie_1.svg[]
+
+but no far away
+
+[%notitle]
+[.center]
+== From The Idea To The Solution
+
+The *HOW* is flow of control of _instructions_
+
+image::images/marc/good_practices-what_how_call_hierarchie_2.svg[]
+
+[transition=none]
+[%notitle]
+[.center]
+== From The Idea To The Solution
+
+Each _instruction_ is, itself, something you want to get
+
+image::images/marc/good_practices-what_how_call_hierarchie_3.svg[]
+
+\... they're a *WHAT* in a _less_ abstract way.
+
+[transition=none]
+[%notitle]
+[.center]
+== From The Idea To The Solution
+
+If they don't exist, you have to think about *HOW* getting them working
+
+image::images/marc/good_practices-what_how_call_hierarchie_4.svg[]
+
+[transition=none]
+[%notitle]
+[.center]
+== From The Idea To The Solution
+
+And so on...
+
+image::images/marc/good_practices-what_how_call_hierarchie_5.svg[]
+
+[transition=none]
+[%notitle]
+[.center]
+== From The Idea To The Solution
+
+And so on...
+
+image::images/marc/good_practices-what_how_call_hierarchie_6.svg[]
+
+[transition=none]
+[%notitle]
+[.center]
+== From The Idea To The Solution
+
+\...To the provided development ecosystem
+
+image::images/marc/good_practices-what_how_call_hierarchie_7.svg[]
+
+Langage, Librairies, other projects...
+
+[transition=none]
+== Think about WHAT before HOW
+
+[.center]
+image::images/marc/good_practices-scale_0.svg[]
+
+[transition=none]
+== Think about WHAT before HOW
+
+[.center]
+image::images/marc/good_practices-scale_1.svg[]
+
+[transition=none]
+== Think about WHAT before HOW
+
+[.center]
+image::images/marc/good_practices-danger_0.svg[]
+
+
+[transition=none]
+== Think about WHAT before HOW
+
+[.center]
+image::images/marc/good_practices-danger_1.svg[]
+
+[.dark.background]
+[%notitle]
+[.center]
+== Learn to delegate to a futur you
+
+
+
+[.splash.background]
+[.center]
+[%notitle]
+== Learn to delegate to a futur you
+
 
 == You want to shoot a video
 
@@ -142,3 +385,4 @@ prendre une série de cas où je peux mélanger complexité et niveau d'abstract
 --
 
 //end::include[]
+
