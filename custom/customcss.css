@@ -312,6 +312,10 @@ td.content {
   font-size: 1.2em;
 }
 
+.reveal .huge {
+  font-size: 2em;
+}
+
 
 /* hidden */
 .hidden {

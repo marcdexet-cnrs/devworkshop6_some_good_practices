@@ -19,7 +19,7 @@
 
 == Why it so tricky ?
 
-=== Mainly because of our human nature
+== Mainly because of our human nature
 
 * First processor is human brain
 
@@ -41,7 +41,7 @@ And we get a lot of them...
 
 [.center]
 [%notitle]
-=== Biases
+== Biases
 
 image::images/marc/biases_index.png[width=1000]
 
@@ -72,28 +72,65 @@ So if we ignore our capacities, we empty the ocean with a small spoon.
 ** Coding
 ** Testing
 
+
+[.subsection.background]
+[.center]
 == Be kind to our brain
 
-In général you have to Be kinf o Our Brain
+[NOTE.notes]
+--
+We have to be kind our brain.
+We have to help our brain to cope with all that stuff.
+--
 
-=== Do Not Overload Mental Mapping
+== Do Not Overload Mental Mapping
 
 * reprendre slide 
 
-=== Give Regularity And Consistency
+== Give Regularity And Consistency
 
 * reprendre slide
 
-=== Don't lost in translation
+== Don't get lost in translation
 
-reprendre partie sur la translation
 
-=== Help it to do not fear to act
+[.fragment]
+--
+* Translate *ideas* into *code*
+** As the Italian say "Traduttore, traditore" -> _Translator, traitor_
+--
+
+[.fragment]
+--
+* Translation Implies Distorsion
+** The further _away_ from the code, the _greater_ the distortion.
+** To _convert_ and _adapt_ into code => To _modify_ or _lost_ the meaning of our original ideas
+--
+
+
+== Help it to do not fear to act
 
 * Fear limit our creativity
 
-reprendre le slide
+Reprendre le slide
 
+== Freeze The Brownian Motion Of Ideas
+
+* In our times, we have to work in parallel
+* A lot of moving and unfixed ideas
+
+[NOTE.notes]
+--
+* The conception is like a game.
+* We all of us have a lot of ideas.
+* We all of us have biases.
+* "ecrire c'est ranger le bordel qu'on a dans la tête"
+* "writing is putting away the mess in your head"
+* "to describe is to put away the mess in your head"
+* => Draw boxes with arrows
+* => write down what do you want to do
+* Talk to your colleges
+--
 
 //end::include[]
 

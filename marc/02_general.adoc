@@ -1,82 +1,124 @@
-= General
+== Part about How to Design
+
 
 //tag::include[]
 
-== Remember
+{counter2:design_counter}
 
-First of all, we have to never forget that if computer make code running, human make the code, so...
+[.subsection.background]
+[.center]
+[%notitle]
+== Dealing With Complexity
 
-human firt
+[.big]#Part {design_counter}# +
+[.huge]#Dealing With Complexity#
 
-== Slide with human
+
+== Dealing With Complexity
+
+
+[.fragment]
+--
+* Complex vs Complicated ?
+** _Complex_ as opposed to _simple_ => _indirect_,
+** _Complicated_ as opposed to _easy_ => _difficult_.
+--
+
+[.fragment]
+--
+If _complexity_ is not a problem, _complication_ should be avoided.
+--
+
+[.fragment]
+--
+* Abstraction, Complixity, Complication
+** The more _abstract_ are ideas, the more _complex_ is implementation.
+** The more _complex_ is implementation, the more _complicated_ *may be* the code
+--
+
+[.fragment]
+--
+[big]#Complexity#  [.big]#Complicated#
+In general, _complexity_ leads to _complication_ if you are not careful.
+--
+
+[.fragment]
+--
+So be careful...
+--
 
 [NOTE.notes]
 --
-Yes you've already seen this, maybe, but it's still true, so I repeat again.
+There is always some confusion between Complex and Complicated.
+Complex can be opposed to simple while complicated can be opposed to easy.
+Software can be complex, because the implementation of the underlying ideas requires several steps or depths.
+
+But such architecture is not complicated, it is just not direct.
+
+On the contrary, a simple idea could be complicated to implement as software, could be very tricky and difficult to write, to understand.
+
+In general, complexity leads to complication if you are not careful.
+
+
+Exemple with networks
+https://www.itrw.net/2016/06/27/organized-cabling-is-better-cabling-avoid-server-room-spaghetti/
+
 --
 
-== Human First
+[%notitle]
+== What's this ?
+
+* Reheat the oven to 200ºC.
+* Peel 1 onion.
+* Place peeled onion with the mushrooms, rye bread and 1 teaspoon of ground coriander.
+* Put it in a food processor and whiz until fine.
+* Drain.
+* Pulse in the black beans, season lightly with sea salt and black pepper.
+* Divide mixture into 4 parts.
+* Shape parts into patties.
+* Rub each part all over with oil.
+* Dust each part with ground coriander.
+* Place on an oiled baking tray and roast for 25 minutes.
+* ....
+
+== What's this ?
+
+[.left-column]
+--
+* You get the HOW ?
+** All the steps to get something
+* But do you get WHAT is it ?
+** No
+--
+
+[.right-column]
+[.fragment]
+[.center]
+--
+image::https://img.jamieoliver.com/jamieoliver/recipe-database/xtra_med/92507794.jpg[width=400]
+
+[.smaller]
+https://www.jamieoliver.com/recipes/vegetable-recipes/roasted-black-bean-burgers/
+--
+
+== Think WHAT before HOW
+
+* Don't be lost in translation from the idea to the code.
+** Think about WHAT you want before HOW to get it.
+** And write or draw it !!
+
+== You want to shoot a video
+
+* You are on holiday, you take a video
+
+
+* You want to shoot a feature film with actors, sets and a story
 
 [NOTE.notes]
 --
-* Don't talk about programing langage at first, talk about concepts.
-* Human brain has limitation (take the same slides from former presentation)
+prendre une série de cas où je peux mélanger complexité et niveau d'abstraction
 --
 
-=== Code For Human
-
---
-Any fool can write code
-that a computer can understand.
-
-Good programmers write code
-that humans can understand
-Martin Fowler
---
-
-=== Do Not Generate Dissonance
-
-_Recopier le slide du DevWorkshop 5_
-
-
-=== Do Not Overload Mental Mapping
-
-_Recopier le slide du DevWorkshop 5_
-
-Brain is not good
-at following complex branching
-or keeping arbitrary references.
-
-=== Give Regularity And Consistency
-
-_Recopier le slide du DevWorkshop 5_
-
-Brain learns from patterns if they're visible.
-
-
-== Now
-
-
-== Freeze The Brownian Motion Of Ideas
-
-* In our times, we have to work in parallele
-* A lot of moving and unfixed ideas
-
-[NOTE.notes]
---
-* The conception is like a game.
-* We all of us have a lot of ideas.
-* We all of us have biases.
-* "ecrire c'est ranger le bordel qu'on a dans la tête"
-* "writing is putting away the mess in your head"
-* "to describe is to put away the mess in your head"
-* => Draw boxes with arrows
-* => write down what do you want to do
-* Talk to your colleges
---
-
-
-== Part about How to Design
 
 
 == Breakdown Big Problem
