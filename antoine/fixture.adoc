@@ -1,0 +1,51 @@
+[.subsection.background]
+[.center]
+== Fixtures
+
+When setup is more complex, it is better to outsource it from the unit test itself.
+
+This is what we call a *fixture* by analogy to hardware testing.
+
+[.fragment]
+In general, fixtures are classes which are instanciated at test setup.
+
+=== Test vector addition with random values
+
+More flexibility without duplication:
+Test vector addition with varying random values.
+
+[source, python]
+----
+class RandomListVector(ListVector):
+    
+    def __init__(self, size=None):
+        self.input_size = size
+        if size is None:
+            self.input_size = random.randrange(1, 10)
+        self.input_data = [random.random() for i in range(self.input_size)]
+        super().__init__(self.input_data)
+----
+
+[.fragment]
+[source, python]
+----
+class TestListVector(object):
+    
+    @classmethod
+    def setup_class(cls):
+        # Let's instantiate an empty vector and two random vectors of same size
+        cls.empty = RandomListVector(0)
+        cls.random_a = RandomListVector()
+        cls.random_b = RandomListVector(len(cls.random_a))
+
+    def test_addition(self):
+        s = self.random_a + self.random_b
+        for s_i, a_i, b_i in zip(s, self.random_a, self.random_b):
+            assert s_i == a_i + b_i
+----
+
+[.step]
+* This works...
+* but we are coupling things at setup which are not coherent:
+* Why would we create an empty vector along with a random vector or two?
+

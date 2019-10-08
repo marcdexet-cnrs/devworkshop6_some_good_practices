@@ -1,0 +1,89 @@
+[.subsection.background]
+[.center]
+== Standalone unit testing
+
+First unit tests are the ones using only *one, standalone class*.
+
+There is *no dependency* to any other class to be tested.
+
+[.fragment]
+In this module, we propose to implement and test a simple vector.
+
+=== Vector requirements
+
+* The length of a vector is the number of elements it contains.
+* A vector can be converted to a Boolean value: The empty vector is false, others are true.
+* Elements of the vector are naturally indexed; The first index is 0.
+* The vector raises an exception if an elements with negative or too large index is requested.
+* Two vectors of same length add element-wise.
+* Two vectors of different lengths don't add.
+
+=== Vector implementations
+
+[.left-column]
+[source, python]
+----
+class Vector(ABC):
+
+    @abstractmethod
+    def __init__(self, data):
+        pass
+
+    @abstractmethod
+    def __len__(self):
+        pass
+
+    def __bool__(self):
+        return len(self) > 0
+
+    @abstractmethod
+    def __getitem__(self, index):
+        pass
+
+    @abstractmethod
+    def __add__(self, other):
+        pass
+----
+
+[.fragment]
+[.right-column]
+[source, python]
+----
+class ListVector(Vector):
+
+    def __init__(self, data):
+        self._data = list(data)
+
+    def __len__(self):
+        return len(self._data)
+
+    def __getitem__(self, index):
+        if index < 0:
+            raise IndexError
+        return self._data[index]
+
+    def __add__(self, other):
+        if len(self) != len(other):
+            raise NotImplementedError
+        res = (a + b for a, b in zip(self._data, other._data))
+        return ListVector(res)
+----
+
+[.fragment]
+[.right-column]
+[source, python]
+----
+class NumpyVector(Vector):
+
+    def __init__(self, data):
+        self._data = array(data)
+
+    ...
+----
+
+include::methodwise_testing.adoc[]
+
+include::fixture.adoc[]
+
+include::fluent_testing.adoc[]
+

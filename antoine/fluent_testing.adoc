@@ -1,0 +1,120 @@
+[.subsection.background]
+[.center]
+== Fixtures for plain English tests
+
+We could go one step furter by simply *grouping* tests by setup.
+
+That's exactly what you would do for hardware.
+
+=== Grouped requirements
+
+[.left-column]
+* An empty vector
+** 's length is zero
+** is false
+** plus another empty vector is an empty vector
+
+[.right-column]
+* A random vector
+** 's length is the number of elements
+** is true
+** is naturally indexed starting from 0
+** raises an error if index is negative
+** raises an error if index is too large
+
+[.left-column]
+* Two random vectors of same size
+** add element-wise
+* Two random vectors of different sizes
+** don't add
+
+=== Fluent implementation
+
+[.left-column]
+[source, python]
+----
+class TestAnEmptyVector(object):
+
+    @classmethod
+    def setup_class(cls):
+        cls.vector = ListVector([])
+
+    def test_length_is_zero(self):
+        assert len(self.vector) == 0
+
+    def test_is_false(self):
+        assert not self.vector
+
+    def test_plus_another_empty_vector_is_an_empty_vector(self):
+        assert not self.vector + self.vector
+
+----
+
+[.right-column]
+[source, python]
+----
+class TestARandomVector(object):
+
+    @classmethod
+    def setup_class(cls):
+        cls.vector = RandomListVector()
+
+    def test_length_is_the_number_of_elements(self):
+        assert len(self.vector) == self.vector.input_size
+
+    def test_is_true(self):
+        assert self.vector
+
+    def test_is_naturally_indexed_starting_from_0(self):
+        for i in range(len(self.vector)):
+            assert self.vector[i] == self.vector.input_data[i]
+
+    def test_raises_an_error_if_index_is_negative(self):
+        with py.test.raises(Exception):
+            self.vector[-1]
+
+    def test_raises_an_error_if_index_is_too_large(self):
+        with py.test.raises(Exception):
+            self.vector[len(self.vector)]
+----
+
+[.left-column]
+[source, python]
+----
+class TestTwoRandomVectorsOfSameSize(object):
+
+    @classmethod
+    def setup_class(cls):
+        cls.random_a = RandomListVector()
+        cls.random_b = RandomListVector(len(cls.random_a))
+
+    def test_add_element_wise(self):
+        s = self.random_a + self.random_b
+        for s_i, a_i, b_i in zip(s, self.random_a, self.random_b):
+            assert s_i == a_i + b_i
+
+class TestTwoRandomVectorsOfDifferentSizes(object):
+
+    @classmethod
+    def setup_class(cls):
+        cls.random_a = RandomListVector()
+        cls.random_b = RandomListVector(len(cls.random_a) + 1)
+
+    def test_dont_add(self):
+        with py.test.raises(Exception):
+            self.random_a + self.random_b
+
+----
+
+=== "Unit" responsibility principle
+
+It is now obvious that we are testing:
+
+* *one property*: being correctly indexed
+* of *one entity*: the vector
+* in *one situation*: an empty vector, a random vector, two random vectors
+
+That's unit testing!
+
+Go back to the first two approaches and you'll see how mingled it used to be...
+

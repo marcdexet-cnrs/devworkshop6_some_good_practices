@@ -1,0 +1,15 @@
+[.subsection.background]
+[.center]
+== Integrated unit testing
+
+At integrated unit testing level, several classes interface.
+Yet, as opposed to higher-level integration tests,
+the class under testing (primary) in a given test suite is still *unique*.
+
+
+[.fragment]
+When a test of the primary class doesn't pass, how to know in which class the issue lies?
+
+[.fragment]
+We propose here an example of such dependency by implementing a Histogram class.
+
