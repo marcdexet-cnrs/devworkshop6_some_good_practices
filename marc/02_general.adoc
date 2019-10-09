@@ -207,7 +207,7 @@ This HOW block is composed of identifed goal.
 == Think about WHAT before HOW
 
 [.center]
-image::images/marc/good_practices-whatbeforehow_burger_0.svg[]
+image::images/marc/good_practices-whatbeforehowrecipe_0.svg[]
 
 [.notes]
 --
@@ -218,7 +218,7 @@ A WHAT defines our GOAL, what do we want.
 == Think about WHAT before HOW
 
 [.center]
-image::images/marc/good_practices-whatbeforehow_burger_1.svg[]
+image::images/marc/good_practices-whatbeforehowrecipe_1.svg[]
 
 [.notes]
 --
@@ -229,7 +229,7 @@ It identifies a block of instruction, the HOW.
 == Think about WHAT before HOW
 
 [.center]
-image::images/marc/good_practices-whatbeforehow_burger_2.svg[]
+image::images/marc/good_practices-whatbeforehowrecipe_2.svg[]
 
 
 == From The Idea To The Solution
