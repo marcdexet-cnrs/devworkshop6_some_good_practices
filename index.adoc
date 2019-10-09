@@ -1,5 +1,11 @@
+[.inverse.background]
+[%notitle]
+[.center]
 = Some Software Development Good Practices
 include::_inc_revealjs.adoc[]
+
+Some Software Development Good Practices
+
 
 [NOTE.notes]
 --

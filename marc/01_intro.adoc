@@ -17,7 +17,10 @@
 * Because developement could be tricky
 
 
-== Why it so tricky ?
+[.center]
+== Why it's so tricky ?
+
+image::images/marc/tricky.gif[]
 
 == Mainly because of our human nature
 
@@ -57,9 +60,10 @@ So if we ignore our capacities, we empty the ocean with a small spoon.
 * To handle **complexity**,
 * To successfully translate human ideas into computer code
 ** and vice versa
-* To ensure that software is doing what is expected to do,
 * To allow changement and evolution
 ** To not be afraid to break everything
+* To ensure that software is doing what is expected to do,
+
 
 
 == How to handle this ?
@@ -73,64 +77,6 @@ So if we ignore our capacities, we empty the ocean with a small spoon.
 ** Testing
 
 
-[.subsection.background]
-[.center]
-== Be kind to our brain
-
-[NOTE.notes]
---
-We have to be kind our brain.
-We have to help our brain to cope with all that stuff.
---
-
-== Do Not Overload Mental Mapping
-
-* reprendre slide 
-
-== Give Regularity And Consistency
-
-* reprendre slide
-
-== Don't get lost in translation
-
-
-[.fragment]
---
-* Translate *ideas* into *code*
-** As the Italian say "Traduttore, traditore" -> _Translator, traitor_
---
-
-[.fragment]
---
-* Translation Implies Distorsion
-** The further _away_ from the code, the _greater_ the distortion.
-** To _convert_ and _adapt_ into code => To _modify_ or _lost_ the meaning of our original ideas
---
-
-
-== Help it to do not fear to act
-
-* Fear limit our creativity
-
-Reprendre le slide
-
-== Freeze The Brownian Motion Of Ideas
-
-* In our times, we have to work in parallel
-* A lot of moving and unfixed ideas
-
-[NOTE.notes]
---
-* The conception is like a game.
-* We all of us have a lot of ideas.
-* We all of us have biases.
-* "ecrire c'est ranger le bordel qu'on a dans la tête"
-* "writing is putting away the mess in your head"
-* "to describe is to put away the mess in your head"
-* => Draw boxes with arrows
-* => write down what do you want to do
-* Talk to your colleges
---
 
 //end::include[]
 

@@ -321,6 +321,13 @@ td.content {
     clear: both;
 }
 
+
+/* Behind */ 
+
+.behind {
+  z-index: -1;
+}
+
 .reveal .big {
   font-size: 1.2em;
 }

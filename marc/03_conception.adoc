@@ -13,6 +13,112 @@ Ce sont des lignes de conduites
 //tag::include[]
 
 
+{counter2:design_counter}
+
+
+[.subsection.background]
+[.center]
+[%notitle]
+== Dealing With Complexity
+
+[.big]#Part {design_counter}# +
+[.huge]#Dealing With Complexity#
+
+
+== Dealing With Complexity
+
+
+[.fragment]
+--
+* Complex vs Complicated ?
+** _Complex_ as opposed to _simple_ => _indirect_,
+** _Complicated_ as opposed to _easy_ => _difficult_.
+--
+
+[.fragment]
+--
+If _complexity_ is not a problem, _complication_ should be avoided.
+--
+
+[.fragment]
+--
+* Abstraction, Complixity, Complication
+** The more _abstract_ are ideas, the more _complex_ is implementation.
+** The more _complex_ is implementation, the more _complicated_ *may be* the code
+--
+
+[.fragment]
+[.center]
+--
+[big]#Complexity#  => [.big]#Complicated#
+
+
+In general, _complexity_ leads to _complication_ if you are not careful.
+--
+
+[.fragment]
+--
+So be careful...
+--
+
+[NOTE.notes]
+--
+There is always some confusion between Complex and Complicated.
+Complex can be opposed to simple while complicated can be opposed to easy.
+Software can be complex, because the implementation of the underlying ideas requires several steps or depths.
+
+But such architecture is not complicated, it is just not direct.
+
+On the contrary, a simple idea could be complicated to implement as software, could be very tricky and difficult to write, to understand.
+
+In general, complexity leads to complication if you are not careful.
+
+
+Exemple with networks
+https://www.itrw.net/2016/06/27/organized-cabling-is-better-cabling-avoid-server-room-spaghetti/
+
+--
+
+include::03_part_what_and_how.adoc[tag=include]
+
+
+== Breakdown Big Problem
+
+[NOTE.notes]
+--
+* Your brain is not well built to maintain heavy concepts and many irritating details.
+* Break problem down to little problems
+* => conception
+--
+
+
+
+== You want to shoot a video
+
+* You are on holiday, you take a video
+
+
+* You want to shoot a feature film with actors, sets and a story
+
+[NOTE.notes]
+--
+prendre une série de cas où je peux mélanger complexité et niveau d'abstraction
+--
+
+
+== Flexibility
+
+[NOTE.notes]
+--
+* Delimit the perimeter
+* Tell What it does, don't think about how it's done.
+* Engage for interface, not (yet) about implementation
+* Keep the freedom of experimentating
+* => interface
+--
+
+
+
 
 == Separation Of Concern
 

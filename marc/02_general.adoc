@@ -1,388 +1,173 @@
-== Part about How to Design
+== Part about general
 
 
 //tag::include[]
 
-{counter2:design_counter}
 
 
 [.subsection.background]
 [.center]
-[%notitle]
-== Dealing With Complexity
-
-[.big]#Part {design_counter}# +
-[.huge]#Dealing With Complexity#
-
-
-== Dealing With Complexity
-
-
-[.fragment]
---
-* Complex vs Complicated ?
-** _Complex_ as opposed to _simple_ => _indirect_,
-** _Complicated_ as opposed to _easy_ => _difficult_.
---
-
-[.fragment]
---
-If _complexity_ is not a problem, _complication_ should be avoided.
---
-
-[.fragment]
---
-* Abstraction, Complixity, Complication
-** The more _abstract_ are ideas, the more _complex_ is implementation.
-** The more _complex_ is implementation, the more _complicated_ *may be* the code
---
-
-[.fragment]
---
-[big]#Complexity#  [.big]#Complicated#
-In general, _complexity_ leads to _complication_ if you are not careful.
---
-
-[.fragment]
---
-So be careful...
---
+== Be kind to our brain
 
 [NOTE.notes]
 --
-There is always some confusion between Complex and Complicated.
-Complex can be opposed to simple while complicated can be opposed to easy.
-Software can be complex, because the implementation of the underlying ideas requires several steps or depths.
-
-But such architecture is not complicated, it is just not direct.
-
-On the contrary, a simple idea could be complicated to implement as software, could be very tricky and difficult to write, to understand.
-
-In general, complexity leads to complication if you are not careful.
-
-
-Exemple with networks
-https://www.itrw.net/2016/06/27/organized-cabling-is-better-cabling-avoid-server-room-spaghetti/
-
+We have to be kind our brain.
+We have to help our brain to cope with all that stuff.
 --
 
-[.dark.background]
+== Do Not Overload Mental Mapping
+
+* reprendre slide
+
+== Give Regularity And Consistency
+
+* reprendre slide
+
+== Don't get lost in translation
+
+
+[.fragment]
+--
+* Translate *ideas* into *code*
+** As the Italian say "Traduttore, traditore" -> _Translator, traitor_
+--
+
+[.fragment]
+--
+* Translation Implies Distorsion
+** The further _away_ from the code, the _greater_ the distortion.
+** To _convert_ and _adapt_ into code => To _modify_ or _lost_ the meaning of our original ideas
+--
+
+
+== Help it to do not fear to act
+
+* Fear limit our creativity
+
+Reprendre le slide
+
+== Freeze The Brownian Motion Of Ideas
+
+
+* When turning ideas into code, we get
+** Uncertainties about where to start.
+** A lot of moving and unfixed ideas,
+* The more _complex_ our ideas are, the more things we have to think about.
+
+[.big]
+[.fragment]
+--
+We Need To Freeze +
+The Brownian Motion Of Ideas !
+--
+
+[.at-top-right]
+[.behind]
+image::images/marc/brownian_ideas.gif[]
+
+[.splash.background]
 [%notitle]
 [.center]
-== What's this ?
+== Explain
 
-[big]
-Guess what is this ?
+[.big]
+--
+It sounds simple, +
+but in [.huge]#explaining# the problem to [.huge]#another# person +
+--
+[.fragment]
+[.big]
+--
+you must [.huge]#explicitly# state things +
+that you may take for [.huge]#granted# +
+when going through the code yourself.
+--
 
-[.dark.background]
+[.splash.background]
 [%notitle]
-== What's this ?
-
-
-Reheat the oven to 200ºC. +
-Peel 1 onion. +
-Place peeled onion with the mushrooms, rye bread and 1 teaspoon of ground coriander. +
-Put it in a food processor and whiz until fine. +
-Drain. +
-Pulse in the black beans, season lightly with sea salt and black pepper. +
-Divide mixture into 4 parts. +
-Shape parts into patties. +
-Rub each part all over with oil. +
-Dust each part with ground coriander. +
-Place on an oiled baking tray and roast for 25 minutes. +
-Put Cheddar topping. +
-Warm the rolls for the last few minutes. +
-Peel and very finely chop the remaining onion with the tomatoes and place in a bowl. +
-Squeeze over the lime juice. +
-Add a few shakes of Tabasco and season to taste. +
-...
-
-== What's this ?
-
-[.fragment]
---
-* All the _steps_ to get something?
-** => this is *HOW* to get something
-* But do you get *WHAT* is for ?
---
-
-[.fragment]
-No, you have all the steps but you have lost sight of the original idea.
-
-[.fragment]
 [.center]
-[.huge]
-You got lost in the translation.
-
-
-== What's this ?
-
-This is a recipe to cook roasted black bean burgers.
-
-[.center]
-image::https://img.jamieoliver.com/jamieoliver/recipe-database/xtra_med/92507794.jpg[width=400]
+== Explain
 
 [.smaller]
-https://www.jamieoliver.com/recipes/vegetable-recipes/roasted-black-bean-burgers/
+It sounds simple, +
+but in explaining the problem to another person +
+you must explicitly state things +
+that you may take for granted +
+when going through the code yourself.
+
+By having to [.huge]#verbalize# some of these assumptions, +
+you may suddenly gain [.huge]#new insight# into the problem.
 
 
-[.splash.background]
-[.center]
-[%notitle]
-== Separate WHAT from HOW you want
-
-[.huge]
---
-Separate +
-*WHAT* you want +
-from +
-*HOW* you get it.
---
+_"The Pragmatic Programmer"_
 
 
-== Separate WHAT you want from HOW you get
 
+== Explain The Mess In Your Head
 
-[.fragment]
---
-* Often you get a idea to _how_ to make thing
-* but quicly, you could
-** => get *trapped* by the details of implementation,
-** => lost sight of the original idea.
---
+* Verbalize and tell
+** to a good fellow worker
+** to an object, computer, pencil
+** or a Rubber Duck
+*** aka _Rubber duck debugging_ -> [.smaller]#https://en.wikipedia.org/wiki/Rubber_duck_debugging#
 
 [.fragment]
---
-====
-To calm the incessant movement of ideas:
-
-
-Think about WHAT you want to achieve +
-_before_ +
-you consider HOW to get it.
-====
---
-
-[.fragment]
-And write or draw it !!
-
-
-
-[transition=none]
-== Think about WHAT before HOW
-
 [.center]
-image::images/marc/good_practices-whatbeforehow_0.svg[]
-
-[.notes]
---
-A WHAT defines our GOAL, what do we want.
---
-
-[transition=none]
-== Think about WHAT before HOW
-
-[.center]
-image::images/marc/good_practices-whatbeforehow_1.svg[]
-
-[.notes]
---
-It identifies a block of instruction, the HOW.
---
-
-[transition=none]
-== Think about WHAT before HOW
-
-[.center]
-image::images/marc/good_practices-whatbeforehow_2.svg[]
-
-[.notes]
---
-This HOW block is composed of identifed goal.
---
-
-
-
-[transition=none]
-== Think about WHAT before HOW
-
-[.center]
-image::images/marc/good_practices-whatbeforehowrecipe_0.svg[]
-
-[.notes]
---
-A WHAT defines our GOAL, what do we want.
---
-
-[transition=none]
-== Think about WHAT before HOW
-
-[.center]
-image::images/marc/good_practices-whatbeforehowrecipe_1.svg[]
-
-[.notes]
---
-It identifies a block of instruction, the HOW.
---
-
-[transition=none]
-== Think about WHAT before HOW
-
-[.center]
-image::images/marc/good_practices-whatbeforehowrecipe_2.svg[]
-
-
-== From The Idea To The Solution
-
-
-[transition=none]
-[%notitle]
-[.center]
-== From The Idea To The Solution
-
-You get the idea of *WHAT* you want, in a very abstract way
-
-image::images/marc/good_practices-what_how_call_hierarchie_0.svg[]
-
-[transition=none]
-[%notitle]
-[.center]
-== From The Idea To The Solution
-
-You think about *HOW* to get, in a little less abstract way
-
-image::images/marc/good_practices-what_how_call_hierarchie_1.svg[]
-
-but no far away
-
-[%notitle]
-[.center]
-== From The Idea To The Solution
-
-The *HOW* is flow of control of _instructions_
-
-image::images/marc/good_practices-what_how_call_hierarchie_2.svg[]
-
-[transition=none]
-[%notitle]
-[.center]
-== From The Idea To The Solution
-
-Each _instruction_ is, itself, something you want to get
-
-image::images/marc/good_practices-what_how_call_hierarchie_3.svg[]
-
-\... they're a *WHAT* in a _less_ abstract way.
-
-[transition=none]
-[%notitle]
-[.center]
-== From The Idea To The Solution
-
-If they don't exist, you have to think about *HOW* getting them working
-
-image::images/marc/good_practices-what_how_call_hierarchie_4.svg[]
-
-[transition=none]
-[%notitle]
-[.center]
-== From The Idea To The Solution
-
-And so on...
-
-image::images/marc/good_practices-what_how_call_hierarchie_5.svg[]
-
-[transition=none]
-[%notitle]
-[.center]
-== From The Idea To The Solution
-
-And so on...
-
-image::images/marc/good_practices-what_how_call_hierarchie_6.svg[]
-
-[transition=none]
-[%notitle]
-[.center]
-== From The Idea To The Solution
-
-\...To the provided development ecosystem
-
-image::images/marc/good_practices-what_how_call_hierarchie_7.svg[]
-
-Langage, Librairies, other projects...
-
-[transition=none]
-== Think about WHAT before HOW
-
-[.center]
-image::images/marc/good_practices-scale_0.svg[]
-
-[transition=none]
-== Think about WHAT before HOW
-
-[.center]
-image::images/marc/good_practices-scale_1.svg[]
-
-[transition=none]
-== Think about WHAT before HOW
-
-[.center]
-image::images/marc/good_practices-danger_0.svg[]
-
-
-[transition=none]
-== Think about WHAT before HOW
-
-[.center]
-image::images/marc/good_practices-danger_1.svg[]
+image::images/marc/Rubber_duck_assisting_with_debugging.jpg[width=300]
 
 [.dark.background]
 [%notitle]
 [.center]
-== Learn to delegate to a futur you
+== Mine
 
+image::images/marc/mascotte.jpg[]
 
+== Dessinez, c'est gagné
 
-[.splash.background]
+image::images/marc/sketchy.jpg[background,cover]
+
+_Draw it, and it's fine_
+
+[.left-column]
+--
+* Draw shapes and arrow
+** Connect things,
+** Make flow visual,
+** Assign place to components
+--
+
+[.right-column]
+--
+* Support does not matter
+** Use paper,
+** blackboard,
+** Unified Langage Method (UML)
+--
+
+[.reset-column]
+[.fragment]
+[.huge]
 [.center]
-[%notitle]
-== Learn to delegate to a futur you
+--
+*Share and discuss !*
+--
 
 
-== You want to shoot a video
-
-* You are on holiday, you take a video
-
-
-* You want to shoot a feature film with actors, sets and a story
 
 [NOTE.notes]
 --
-prendre une série de cas où je peux mélanger complexité et niveau d'abstraction
+* The conception is like a game.
+* We all of us have a lot of ideas.
+* We all of us have biases.
+* "ecrire c'est ranger le bordel qu'on a dans la tête"
+* "writing is putting away the mess in your head"
+* "to describe is to put away the mess in your head"
+* => Draw boxes with arrows
+* => write down what do you want to do
+* Talk to your colleges
 --
 
 
-
-== Breakdown Big Problem
-
-[NOTE.notes]
---
-* Your brain is not well built to maintain heavy concepts and many irritating details.
-* Break problem down to little problems
-* => conception
---
-
-== Flexibility
-
-[NOTE.notes]
---
-* Delimit the perimeter
-* Tell What it does, don't think about how it's done.
-* Engage for interface, not (yet) about implementation
-* Keep the freedom of experimentating
-* => interface
---
 
 //end::include[]
 
