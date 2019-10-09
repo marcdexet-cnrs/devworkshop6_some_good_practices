@@ -20,4 +20,77 @@ Ce sont des lignes de conduites
 == Single Responsability
 
 
+== Segregation of interface
+
+
+[source,python]
+----
+class FilmDirector :
+...
+	def say_action(self, john: John):
+		if john.say_set_is_ready():
+			do_something()
+		if john.say_lighting_is_ok():
+			do_something_else()
+
+----
+
+But John is tired and is remplaced by Barabara who give lightnig direction to Tuong
+
+
+
+[source,python]
+----
+class FilmDirector :
+...
+	def say_action(self, barabara: Barabara):
+		if barabara.say_set_is_ready():
+			do_something()
+		if barabara.say_lighting_is_ok(): # Oooops
+			do_something_else()
+
+----
+
+
+
+[source,python]
+----
+class FilmDirector :
+...
+	def say_action(self, barabara: Barabara, tuong: Tuong):
+		if barabara.say_set_is_ready():
+			do_something()
+		if tuong.say_lighting_is_ok():
+			do_something_else()
+
+----
+
+
+FilmDirector is coupled to implementation.
+
+it's bad
+
+What itreally need is specific responsability centric abstraction
+
+[source,python]
+----
+class FilmDirector :
+...
+	def say_action(self, set_director: SetDirector, lighting_director: LightingDirector):
+		if set_director.say_set_is_ready():
+			do_something()
+		if lighting_director.say_lighting_is_ok():
+			do_something_else()
+
+----
+
+
+
+[NOTE.notes]
+--
+Imagine that John is the Set Director and the Lighting Director.
+The Film Director is thigly coupled to knwoledge of what John does.
+--
+
+
 //end::include[]
