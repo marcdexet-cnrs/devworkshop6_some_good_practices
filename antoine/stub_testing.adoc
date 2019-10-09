@@ -1,0 +1,45 @@
+[.subsection.background]
+[.center]
+== Stub approach
+
+Stub = *Minimal* implementation specifically developped for the test.
+
+It might not fulfill all of the requirements of the secondary class it doubles,
+but it is adequate for testing the primary class.
+
+=== Example stubbing
+
+A minimal vector implementation for the histograms.
+
+[source, python]
+----
+class StubVector(Vector):
+    
+    def __init__(self, data):
+        self._data = data
+    
+    def __len__(self):
+        return len(self._data)
+
+    def __getitem__(self, index):
+        # No need to fulfill all requirements
+        return self._data[index]
+
+    def __add__(self, other):
+        # No need to implement that
+        pass
+----
+
+Aside from the fixtures, the tests are exactly the same as the ones of the coupled approach.
+
+[source, python]
+----
+class ARandomHistogram(Histogram):
+
+    def __init__(self):
+        self.input_size = random.randint(1, 10)
+        self.input_bins = [random.random() for i in range(self.input_size + 1)]
+        self.input_bins.sort()
+        self.input_counts = [random.random() for i in range(self.input_size)]
+        super().__init__(StubVector(self.input_bins), StubVector(self.input_counts))
+----

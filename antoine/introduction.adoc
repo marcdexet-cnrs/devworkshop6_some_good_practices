@@ -1,0 +1,43 @@
+[.subsection.background]
+[.center]
+== Some thoughts on unit tests
+
+=== Objectives
+
+[.left-column]
+--
+.In this presentation
+* Some unit testing methods
+* Examples in Python
+* Pros
+* Cons
+--
+[.fragment]
+[.right-column]
+--
+.*Not* in this presentation
+* Examples in C++
+* Theory behind the scene
+** object-oriented programming
+** coupling
+** behavior-driven development...
+* Higher level testing
+** system-level intergation
+** validation
+** profiling...
+--
+
+=== Overview
+
+[%step]
+. Standalone unit tests
+* Methodwise tests -- the naive, rigid approach
+* Fixtures -- the basic tool
+* Fluent tests -- the tip that changes everything
+. Integrated unit tests
+* Coupled tests -- the naive, rigid approach
+* Doubles: Stub tests -- the most straightforward way
+* Doubles: Mock tests -- for complex cases and BDD
+
+[.fragment]
+More details: https://gitlab.euclid-sgs.uk/basset/CT_SomeThoughtsOnUnitTests

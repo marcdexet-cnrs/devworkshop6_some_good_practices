@@ -1,0 +1,36 @@
+[.subsection.background]
+[.center]
+== Methodwise testing
+
+Natural way of unit testing = One test per operation to be tested.
+
+=== Example: Testing vector addition
+
+[.left-column]
+--
+. Set up a vector with desired properties.
+. Perform the operation.
+. Check the output state of the vector.
+--
+
+[.right-column]
+[source, python]
+----
+class TestListVector(object):
+
+    def test_addition(self):
+        # Setup
+        a = ListVector([1, 2, 3])
+        b = ListVector([4, 5, 6])
+        # Operation
+        s = a + b
+        # Output check
+        assert s[0] == 5
+        assert s[1] == 7
+        assert s[2] == 9
+----
+
+[.step]
+* This works... [.fragment]#in simplest cases.#
+* Not SOLID-friendly.
+* Dirty.

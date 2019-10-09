@@ -1,4 +1,7 @@
-= Partie Antoine
+= Unit testing methods
+
+:source-highlighter: highlightjs
+
 ifdef::backend-revealjs[]
 :xslide:
 endif::[]
@@ -8,22 +11,16 @@ ifndef::xslide[]
 :numbered:
 endif::[]
 
-La partie dessus est du paramètrage. Cela permet de construire le document comme un texte en dehors de la présentation.
-Seule la partie dessous sera prise en compte
-
 //tag::include[]
 
-== Slide exemple
-
-* Titre niveau 1
-** Titre niveau 2
-*** Titre niveau 3
+include::introduction.adoc[]
+include::standalone_testing.adoc[]
+include::integrated_testing.adoc[]
+include::conclusion.adoc[]
 
 [NOTE.notes]
 --
-Note pour le speaker qui pourront être imprimés au format PDF sous forme d'article ou de livre.
+https://gitlab.euclid-sgs.uk/basset/CT_SomeThoughtsOnUnitTests
 --
-
-=== Sous slide
 
 //end::include[]
