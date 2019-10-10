@@ -128,7 +128,7 @@ A concern is a subject of interest, a goal
 --
 * For a restaurant
 ** Kitchen
-** Cooking 
+** Cooking
 ** Orders
 ** Payments
 ** Stock
@@ -186,7 +186,7 @@ This is, roughly speaking, the principle of good practice *Separation of Concern
 You didn't magically remove _all_ the complexity.
 
 [.fragment]
-But, you have reduced _cognitively_ the number of elements ... 
+But, you have reduced _cognitively_ the number of elements ...
 
 [.fragment]
 \... per *level of abstraction*
@@ -197,9 +197,9 @@ But, you have reduced _cognitively_ the number of elements ...
 Grouping element by concern could be a question of point of view.
 
 
-* Choose concepts such as 
+* Choose concepts such as
 ** they have the more limited intersection,
-** they are the more consistent, 
+** they are the more consistent,
 *** _Cooking and Astronomy_ is not very consistent !
 ** they are atomic and focused
 
@@ -211,71 +211,99 @@ Grouping element by concern could be a question of point of view.
 ** classe
 
 
-== Separate level of abstaction
+== Separate levels of abstraction
 
+[.left-column]
 [.center]
-image::images/marc/good_practices-level_complexity_2_0.svg[]
+image::images/marc/good_practices-level_complexity_2_0.svg[width=600]
 
 
 [transition=none]
-== Separate level of abstaction
+== Separate levels of abstraction
 
+[.left-column]
 [.center]
-image::images/marc/good_practices-level_complexity_2_1.svg[]
+image::images/marc/good_practices-level_complexity_2_1.svg[width=600]
+
+[.right-column]
+--
+* Several layers of abstraction,
+** From the general concepts to the specialized components.
+--
+
+[transition=none]
+== Separate levels of abstraction
+
+[.left-column]
+[.center]
+image::images/marc/good_practices-level_complexity_2_1_bis.svg[width=600]
+
+
+--
+* On each layer we found the elements
+** by level  of abstraction.
+--
+
+[transition=none]
+== Separate levels of abstraction
+
+[.left-column]
+[.center]
+image::images/marc/good_practices-level_complexity_2_2.svg[width=600]
+
+
+[.right-column]
+--
+* Each level could be separated by sub-concern
+--
+
+[transition=none]
+== Separate levels of abstraction
+
+[.left-column]
+[.center]
+image::images/marc/good_practices-level_complexity_2_3.svg[width=600]
+
+
+[.right-column]
+--
+* Element could interact
+** Inside a concern
+*** At the same level
+*** From level to another one
+** Between concerns
+--
+
+[transition=none]
+== Separate levels of abstraction
+
+[.left-column]
+[.center]
+image::images/marc/good_practices-level_complexity_2_4.svg[width=600]
+
+[.right-column]
+--
+* But one a the best way
+** is to interact through the top levels
+--
 
 
 [transition=none]
-== Separate level of abstaction
+== Separate levels of abstraction
 
+[.left-column]
 [.center]
-image::images/marc/good_practices-level_complexity_2_2.svg[]
+image::images/marc/good_practices-level_complexity_blackboxes.svg[width=600]
 
-[transition=none]
-== Separate level of abstaction
-
-[.center]
-image::images/marc/good_practices-level_complexity_2_3.svg[]
-
-
-== Breakdown Big Problem
-
-[NOTE.notes]
+[.right-column]
 --
-* Your brain is not well built to maintain heavy concepts and many irritating details.
-* Break problem down to little problems
-* => conception
+* Such as black boxes
+** whom components inside could be changed freely
+* It provides more *isolation*
 --
 
 
-
-== You want to shoot a video
-
-* You are on holiday,
-** You see a nice landscape, you take a video with your smartphone
-** _shoot_the_movie()_
-
-* You are on holiday with some friend
-** You want to send a happy birthday song video to another friend
-** _manage_friends()_
-** _prepare_song()_
-** _shoot_movie()_
-** _send_movie()_
-
-* Vous préparer une vidéo de vulgarisation sur la matière noire pour Youtube
-** preparer le script
-** choisir le décor
-** choisir les interlocuteurs
-** choisir les props
-** choisir..
-** ...
-** monter sur youtube
-
-* You want to shoot a feature film with actors, sets and a story
-
-[NOTE.notes]
---
-prendre une série de cas où je peux mélanger complexité et niveau d'abstraction
---
+include::03_illustration_with_movie_industry.adoc[tag=include]
 
 
 == Flexibility
@@ -288,6 +316,53 @@ prendre une série de cas où je peux mélanger complexité et niveau d'abstract
 * Keep the freedom of experimentating
 * => interface
 --
+
+
+== Coupling
+
+[.center]
+image::images/marc/coupling.gif[]
+
+[.center]
+When any change to one component implies to modify the other one.
+
+
+== Coupling
+
+[.at-top-right]
+image::images/marc/coupling.gif[width=200]
+
+* When components are tightly coupled
+** Evolving one can quickly become a nightmare.
+** Side effects will be numerous and discouraging.
+
+[.fragment]
+--
+For a few components, it doesn't really matter.
+--
+
+== Coupling
+
+But for a lot of components, it would turn into a nightmare !
+
+[.center]
+image::images/marc/OpenBCoupling.gif[]
+
+
+
+== How to decouple
+
+* Put a abstraction layer bet
+
+== Breakdown Big Problem
+
+[NOTE.notes]
+--
+* Your brain is not well built to maintain heavy concepts and many irritating details.
+* Break problem down to little problems
+* => conception
+--
+
 
 
 

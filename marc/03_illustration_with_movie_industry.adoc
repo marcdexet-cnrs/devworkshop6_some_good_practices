@@ -1,0 +1,128 @@
+= Movie industry
+
+//tag::include[]
+
+[%notitle]
+[.center]
+== Movie
+
+[.huge]
+--
+Let's make a movie
+--
+
+image::https://media.giphy.com/media/7J1llSYGJhKQJpVS9V/giphy.gif[]
+
+[.fragment]
+[.big]
+--
+A illustration of _Conception principles_ with +
+the movie industry.
+--
+
+== You want to shoot a video
+
+[.left-column-2-3]
+--
+You are on holiday, you see a pleasant seaside scene.
+You want to take a video with your smartphone.
+
+* What do you do ?
+[.fragment]
+** Take smartphone
+** Shoot video
+
+[.fragment]
+* Complexity
+** At this level, I don't bother !
+--
+
+[.righ-column-1-3]
+--
+[.right]
+image::https://media.giphy.com/media/t67IVjnTAVI64/giphy.gif[width=300]
+--
+
+
+== You want to shoot a video
+
+[.left-column-2-3]
+--
+You want to send a happy birthday song video with some friends to another friend.
+
+* What do you do ?
+[.fragment]
+** Prepare song with friends
+** Repeat the song
+** Call everyone back
+** Select the room
+** Shoot video
+** send the movie by email
+
+[.fragment]
+* Complexity
+** A few elements, but I'm handling, it's not a big deal !
+--
+
+[.righ-column-1-3]
+--
+[.right]
+image::https://media.giphy.com/media/yoJC2GnSClbPOkV0eA/giphy.gif[]
+--
+
+== You want to shoot a video
+
+[.left-column-2-3]
+--
+You want to make a scientific popularization video about Euclid in your lab.
+
+* What do you do ?
+[.fragment]
+** Ask for the agreement of the Euclid consortium
+** Prepare the script
+** Get a support for expenses
+** Validate script by expert
+** Rent a professional camera
+** Select actors
+** Choose a date to shoot the movie
+** Build an euclid S/C model
+** Repeat
+** ...
+--
+
+
+== You want to shoot a video
+
+* Complexity
+** You still haven't started filming.
+** And already a lot of concern...
+
+* Concerns ?
+[.fragment]
+** Scientific background
+** Camera
+** Actor
+** Set
+** ..
+
+[.fragment]
+--
+May be it's time to organize a litle bit +
+and separate concerns to do not be overwheelmed by complexity.
+--
+
+== You want to shoot a movie
+
+You want to shoot a movie with actors, costume and so on...
+
+[.fragment]
+[.center]
+image::images/marc/star_wars.jpg[width=500]
+
+
+== Movie industrie
+
+image::https://nofilmschool.com/sites/default/files/styles/article_wide/public/film-crew-positions3.png[]
+//end::include[]
+
+

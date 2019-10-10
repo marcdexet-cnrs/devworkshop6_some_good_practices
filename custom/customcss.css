@@ -346,3 +346,7 @@ td.content {
 .white-text {
     color: #fff;
 }
+
+.right {
+  text-align: right;
+}
