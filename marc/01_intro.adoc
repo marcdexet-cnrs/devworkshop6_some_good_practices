@@ -4,7 +4,7 @@
 
 //tag::include[]
 
-== Why a talk about good practices ?
+== Why A Talk About Good Practices ?
 
 * Developing is turning human ideas into computer code
 ** for the sake of simplicity
@@ -18,11 +18,11 @@
 
 
 [.center]
-== Why it's so tricky ?
+== Why It's So Tricky ?
 
 image::images/marc/tricky.gif[]
 
-== Mainly because of our human nature
+== Mainly Because Of Our Human Nature
 
 * First processor is human brain
 
@@ -55,7 +55,7 @@ So if we ignore our capacities, we empty the ocean with a small spoon.
 --
 
 
-== What are the challenges of development ?
+== What Are The Challenges Of Development ?
 
 * To handle **complexity**,
 * To successfully translate human ideas into computer code
@@ -66,7 +66,7 @@ So if we ignore our capacities, we empty the ocean with a small spoon.
 
 
 
-== How to handle this ?
+== How To Handle This ?
 
 * By following some good practices among a lot of them.
 * By applying them into these fields

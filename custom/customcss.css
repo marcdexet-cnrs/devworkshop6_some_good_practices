@@ -341,3 +341,8 @@ td.content {
 .hidden {
   visibility: hidden;
 }
+
+
+.white-text {
+    color: #fff;
+}
