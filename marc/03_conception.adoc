@@ -82,6 +82,161 @@ https://www.itrw.net/2016/06/27/organized-cabling-is-better-cabling-avoid-server
 include::03_part_what_and_how.adoc[tag=include]
 
 
+== Dealing With Complexity
+
+* Reduce the number of elements to take into account
+* Distinguish different levels of abstraction
+* Isolate and decouple elements
+
+
+== Reduce the number of elements to take into account
+
+If there's a few elements, it doesn't really matter.
+
+[.center]
+image::images/marc/good_practices-reduce_complexity_0.svg[]
+
+
+[NOTE.notes]
+--
+In the turning idea to code, there's could be a lot of steps to follow to achieve the goals.
+If there's a few elements, it doesn't really matter.
+
+--
+
+[transition=none]
+== Reduce the number of elements to take into account
+
+But with some more...
+
+[.center]
+image::images/marc/good_practices-reduce_complexity_1.svg[]
+
+[transition=none]
+== Reduce the number of elements to take into account
+
+Imagine each element could be linked to a concern...
+
+[.center]
+image::images/marc/good_practices-reduce_complexity_2.svg[]
+
+== Concern ?
+
+A concern is a subject of interest, a goal
+
+[.left-column]
+--
+* For a restaurant
+** Kitchen
+** Cooking 
+** Orders
+** Payments
+** Stock
+** Service
+** ...
+--
+
+[.right-column]
+--
+* For a car
+** Engine
+** Fuel
+** GearBox
+** Frame
+** ..
+--
+
+[.reset-column]
+--
+Try to connect each element to a concern !
+--
+
+== Group by concern
+
+[.center]
+image::images/marc/good_practices-reduce_complexity_2.svg[]
+
+[transition=none]
+== Group by concern
+
+[.center]
+image::images/marc/good_practices-reduce_complexity_3.svg[]
+
+[transition=none]
+== Group by concern
+
+[.center]
+image::images/marc/good_practices-reduce_complexity_4.svg[]
+
+[transition=none]
+== Group by concern
+
+[.center]
+image::images/marc/good_practices-reduce_complexity_6.svg[]
+
+
+== Separation of concern
+
+[.center]
+image::images/marc/good_practices-reduce_complexity_6.svg[width=400]
+
+This is, roughly speaking, the principle of good practice *Separation of Concern*.
+
+
+You didn't magically remove _all_ the complexity.
+
+[.fragment]
+But, you have reduced _cognitively_ the number of elements ... 
+
+[.fragment]
+\... per *level of abstraction*
+
+
+== Separation of concern
+
+Grouping element by concern could be a question of point of view.
+
+
+* Choose concepts such as 
+** they have the more limited intersection,
+** they are the more consistent, 
+*** _Cooking and Astronomy_ is not very consistent !
+** they are atomic and focused
+
+[.fragment]
+* In programming world :
+** module
+** package
+** namespace
+** classe
+
+
+== Separate level of abstaction
+
+[.center]
+image::images/marc/good_practices-level_complexity_2_0.svg[]
+
+
+[transition=none]
+== Separate level of abstaction
+
+[.center]
+image::images/marc/good_practices-level_complexity_2_1.svg[]
+
+
+[transition=none]
+== Separate level of abstaction
+
+[.center]
+image::images/marc/good_practices-level_complexity_2_2.svg[]
+
+[transition=none]
+== Separate level of abstaction
+
+[.center]
+image::images/marc/good_practices-level_complexity_2_3.svg[]
+
+
 == Breakdown Big Problem
 
 [NOTE.notes]
