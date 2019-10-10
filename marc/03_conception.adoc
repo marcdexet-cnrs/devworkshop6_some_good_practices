@@ -79,8 +79,6 @@ https://www.itrw.net/2016/06/27/organized-cabling-is-better-cabling-avoid-server
 
 --
 
-include::03_part_what_and_how.adoc[tag=include]
-
 
 == Dealing With Complexity
 
@@ -197,11 +195,11 @@ But, you have reduced _cognitively_ the number of elements ...
 Grouping element by concern could be a question of point of view.
 
 
-* Choose concepts such as
-** they have the more limited intersection,
-** they are the more consistent,
+* Choose contents such as
+** they have limited _intersection_,
+*** _but intersection will occur._
+** they are consistent and focused,
 *** _Cooking and Astronomy_ is not very consistent !
-** they are atomic and focused
 
 [.fragment]
 * In programming world :
@@ -213,7 +211,6 @@ Grouping element by concern could be a question of point of view.
 
 == Separate levels of abstraction
 
-[.left-column]
 [.center]
 image::images/marc/good_practices-level_complexity_2_0.svg[width=600]
 
@@ -283,7 +280,7 @@ image::images/marc/good_practices-level_complexity_2_4.svg[width=600]
 
 [.right-column]
 --
-* But one a the best way
+* But one of the best way of doing
 ** is to interact through the top levels
 --
 
@@ -298,12 +295,14 @@ image::images/marc/good_practices-level_complexity_blackboxes.svg[width=600]
 [.right-column]
 --
 * Such as black boxes
-** whom components inside could be changed freely
+** whose contents can be more freely modified.
 * It provides more *isolation*
 --
 
 
 include::03_illustration_with_movie_industry.adoc[tag=include]
+
+include::03_part_what_and_how.adoc[tag=include]
 
 
 == Flexibility

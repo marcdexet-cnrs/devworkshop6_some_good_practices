@@ -29,8 +29,8 @@ You want to take a video with your smartphone.
 
 * What do you do ?
 [.fragment]
-** Take smartphone
-** Shoot video
+** _Take smartphone_
+** _Shoot video_
 
 [.fragment]
 * Complexity
@@ -52,12 +52,12 @@ You want to send a happy birthday song video with some friends to another friend
 
 * What do you do ?
 [.fragment]
-** Prepare song with friends
-** Repeat the song
-** Call everyone back
-** Select the room
-** Shoot video
-** send the movie by email
+** _Prepare song with friends_
+** _Repeat the song_
+** _Call everyone back_
+** _Select the room_
+** _Shoot video_
+** _Send the movie by email_
 
 [.fragment]
 * Complexity
@@ -78,15 +78,15 @@ You want to make a scientific popularization video about Euclid in your lab.
 
 * What do you do ?
 [.fragment]
-** Ask for the agreement of the Euclid consortium
-** Prepare the script
-** Get a support for expenses
-** Validate script by expert
-** Rent a professional camera
-** Select actors
-** Choose a date to shoot the movie
-** Build an euclid S/C model
-** Repeat
+** _Ask for the agreement of the Euclid consortium_
+** _Prepare the script_
+** _Get a support for expenses_
+** _Validate script by expert_
+** _Rent a professional camera_
+** _Select actors_
+** _Choose a date to shoot the movie_
+** _Build an euclid S/C model_
+** _Repeat_
 ** ...
 --
 
@@ -107,8 +107,7 @@ You want to make a scientific popularization video about Euclid in your lab.
 
 [.fragment]
 --
-May be it's time to organize a litle bit +
-and separate concerns to do not be overwheelmed by complexity.
+May be it's time to organize a litle bit and *separate concerns* to do not be overwheelmed by complexity.
 --
 
 == You want to shoot a movie
@@ -120,9 +119,83 @@ You want to shoot a movie with actors, costume and so on...
 image::images/marc/star_wars.jpg[width=500]
 
 
-== Movie industrie
+== You want to shoot a movie
 
-image::https://nofilmschool.com/sites/default/files/styles/article_wide/public/film-crew-positions3.png[]
+* What do you do ?
+
+
+
+[%notitle]
+== Film Crew Positions
+
+image::https://nofilmschool.com/sites/default/files/styles/article_wide/public/film-crew-positions3.png[background,size=contain]
+
+
+== Film SoC
+
+A Separation of Concerns of "shooting a movie" could be
+
+[.center]
+image::images/marc/good_practices-MovieByConcern.svg[]
+
+== Film SoC
+
+[.left-column]
+[.center]
+image::images/marc/good_practices-ArtConcern_1.svg[]
+
+[.right-column]
+--
+If we look at _"Art"_ concern, next level is compound of sub-concerns +
+- Sets +
+- Costumes +
+- Make-Up +
+- Hair
+--
+
+
+== Film SoC
+
+Each of theses sub-concerns could be broken down into.
+
+[.center]
+image::images/marc/good_practices-ArtConcern_1.5.svg[]
+
+== Film SoC
+
+Each of theses sub-concerns could be broken down into.
+
+[.center]
+image::images/marc/good_practices-ArtConcern_2.svg[]
+
+== Film SoC
+
+And so on...
+
+[.center]
+image::images/marc/good_practices-ArtConcern_3.svg[]
+
+
+[.inverse.background]
+[.center]
+== Conclusion
+
+A very _complex_ situation, (_Shooting a movie_) is possible +
+because of it's _broken down_ into +
+several layers +
+going more and more specialized.
+
+It use _Separation of concern_ and _Distinction of level of abstraction_
+
+
+[.center]
+image::images/marc/credits.gif[]
+
+So each of them can work in a relative isolation from others.
+
 //end::include[]
+
+
+
 
 

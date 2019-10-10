@@ -260,18 +260,6 @@ image::images/marc/good_practices-scale_0.svg[]
 [.center]
 image::images/marc/good_practices-scale_1.svg[]
 
-[transition=none]
-== Think about WHAT before HOW
-
-[.center]
-image::images/marc/good_practices-danger_0.svg[]
-
-
-[transition=none]
-== Think about WHAT before HOW
-
-[.center]
-image::images/marc/good_practices-danger_1.svg[]
 
 [.dark.background]
 [%notitle]
