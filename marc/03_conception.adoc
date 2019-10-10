@@ -95,8 +95,25 @@ include::03_part_what_and_how.adoc[tag=include]
 
 == You want to shoot a video
 
-* You are on holiday, you take a video
+* You are on holiday,
+** You see a nice landscape, you take a video with your smartphone
+** _shoot_the_movie()_
 
+* You are on holiday with some friend
+** You want to send a happy birthday song video to another friend
+** _manage_friends()_
+** _prepare_song()_
+** _shoot_movie()_
+** _send_movie()_
+
+* Vous préparer une vidéo de vulgarisation sur la matière noire pour Youtube
+** preparer le script
+** choisir le décor
+** choisir les interlocuteurs
+** choisir les props
+** choisir..
+** ...
+** monter sur youtube
 
 * You want to shoot a feature film with actors, sets and a story
 

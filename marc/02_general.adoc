@@ -15,6 +15,18 @@ We have to be kind our brain.
 We have to help our brain to cope with all that stuff.
 --
 
+[background-color="black"]
+[.center]
+[%notitle]
+== Be Human
+
+image::images/marc/arrival-movie-2016-i-am-human-scene.jpg[width=800]
+
+[.big]
+[.fragment]
+[.white-text]
+Be Kind To Our Human Brain
+
 == Do Not Overload Mental Mapping
 
 * reprendre slide
@@ -73,12 +85,16 @@ image::images/marc/brownian_ideas.gif[]
 [.big]
 --
 It sounds simple, +
+--
+[.fragment]
+[.big]
+--
 but in [.huge]#explaining# the problem to [.huge]#another# person +
 --
 [.fragment]
 [.big]
 --
-you must [.huge]#explicitly# state things +
+you must [.huge]#explicitly# *state things* +
 that you may take for [.huge]#granted# +
 when going through the code yourself.
 --
@@ -103,11 +119,12 @@ _"The Pragmatic Programmer"_
 
 
 
-== Explain The Mess In Your Head
+== Verbalize What Is Spinning In Your Head
 
-* Verbalize and tell
+* Verbalize, describe your insights
 ** to a good fellow worker
-** to an object, computer, pencil
+*** _the poor_
+** to an object, your computer, your pencil
 ** or a Rubber Duck
 *** aka _Rubber duck debugging_ -> [.smaller]#https://en.wikipedia.org/wiki/Rubber_duck_debugging#
 
@@ -120,6 +137,8 @@ image::images/marc/Rubber_duck_assisting_with_debugging.jpg[width=300]
 [.center]
 == Mine
 
+My listener
+
 image::images/marc/mascotte.jpg[]
 
 == Dessinez, c'est gagné
@@ -130,19 +149,29 @@ _Draw it, and it's fine_
 
 [.left-column]
 --
+* Formalisme doesn't matter
+** Sketch by hand
+** Unified Langage Method (UML)
+--
+
+[.right-column]
+--
+* Support does not matter
+** Paper or blackboard, or Any click-and-connect online tool ( _draw.io_)
+--
+
+
+[.reset-column]
+[.fragment]
+[.big]
+[.center]
+--
 * Draw shapes and arrow
 ** Connect things,
 ** Make flow visual,
 ** Assign place to components
 --
 
-[.right-column]
---
-* Support does not matter
-** Use paper,
-** blackboard,
-** Unified Langage Method (UML)
---
 
 [.reset-column]
 [.fragment]
