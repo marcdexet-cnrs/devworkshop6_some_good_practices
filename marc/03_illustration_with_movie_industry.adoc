@@ -24,13 +24,14 @@ the movie industry.
 
 [.left-column-2-3]
 --
-You are on holiday, you see a pleasant seaside scene.
-You want to take a video with your smartphone.
+You are on holiday, +
+you see a pleasant _seaside scene_. +
+You want to _shoot a video_ with your smartphone.
 
 * What do you do ?
 [.fragment]
-** _Take smartphone_
-** _Shoot video_
+** _Take smartphone_,
+** _Shoot video_.
 
 [.fragment]
 * Complexity
@@ -48,16 +49,17 @@ image::https://media.giphy.com/media/t67IVjnTAVI64/giphy.gif[width=300]
 
 [.left-column-2-3]
 --
-You want to send a happy birthday song video with some friends to another friend.
+You want to send a _happy birthday song_ video +
+with _some friends_ to somebody.
 
 * What do you do ?
 [.fragment]
-** _Prepare song with friends_
-** _Repeat the song_
-** _Call everyone back_
-** _Select the room_
-** _Shoot video_
-** _Send the movie by email_
+** _Prepare song with friends_,
+** _Repeat the song_,
+** _Call everyone back_,
+** _Select the room_,
+** _Shoot video_,
+** _Send the movie by email_.
 
 [.fragment]
 * Complexity
@@ -78,18 +80,20 @@ You want to make a scientific popularization video about Euclid in your lab.
 
 * What do you do ?
 [.fragment]
-** _Ask for the agreement of the Euclid consortium_
-** _Prepare the script_
-** _Get a support for expenses_
-** _Validate script by expert_
-** _Rent a professional camera_
-** _Select actors_
-** _Choose a date to shoot the movie_
-** _Build an euclid S/C model_
-** _Repeat_
+** _Ask for the agreement of the Euclid consortium_,
+** _Prepare the script_,
+** _Get a support for expenses_,
+** _Validate script by expert_,
+** _Rent a professional camera_,
+** _Select actors_,
+** _Choose a date to shoot the movie_,
+** _Build an euclid S/C model_,
+** _Repeat_,
 ** ...
 --
 
+[.right-column-1-3]
+image::https://media.giphy.com/media/fjxe2wl3trzjs1i9NE/giphy.gif[]
 
 == You want to shoot a video
 
@@ -107,12 +111,13 @@ You want to make a scientific popularization video about Euclid in your lab.
 
 [.fragment]
 --
-May be it's time to organize a litle bit and *separate concerns* to do not be overwheelmed by complexity.
+May be it's time to get [.big]#a little organized# and to [.huge]#*separate concerns*# +
+before being _overwhelmed_.
 --
 
 == You want to shoot a movie
 
-You want to shoot a movie with actors, costume and so on...
+You want to shoot a real movie with actors, costume and so on...
 
 [.fragment]
 [.center]
@@ -122,7 +127,15 @@ image::images/marc/star_wars.jpg[width=500]
 == You want to shoot a movie
 
 * What do you do ?
+[.fragment]
+** TL;DR
+** Let's see what the film industry is doing
 
+
+[NOTE.notes]
+--
+Too long, Didn't Read
+--
 
 
 [%notitle]
@@ -131,6 +144,7 @@ image::images/marc/star_wars.jpg[width=500]
 image::https://nofilmschool.com/sites/default/files/styles/article_wide/public/film-crew-positions3.png[background,size=contain]
 
 
+[transition=none]
 == Film SoC
 
 A Separation of Concerns of "shooting a movie" could be
@@ -138,6 +152,7 @@ A Separation of Concerns of "shooting a movie" could be
 [.center]
 image::images/marc/good_practices-MovieByConcern.svg[]
 
+[transition=none]
 == Film SoC
 
 [.left-column]
@@ -154,6 +169,7 @@ If we look at _"Art"_ concern, next level is compound of sub-concerns +
 --
 
 
+[transition=none]
 == Film SoC
 
 Each of theses sub-concerns could be broken down into.
@@ -161,6 +177,7 @@ Each of theses sub-concerns could be broken down into.
 [.center]
 image::images/marc/good_practices-ArtConcern_1.5.svg[]
 
+[transition=none]
 == Film SoC
 
 Each of theses sub-concerns could be broken down into.
@@ -168,6 +185,7 @@ Each of theses sub-concerns could be broken down into.
 [.center]
 image::images/marc/good_practices-ArtConcern_2.svg[]
 
+[transition=none]
 == Film SoC
 
 And so on...
