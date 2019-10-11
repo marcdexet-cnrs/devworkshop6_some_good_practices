@@ -68,6 +68,9 @@ In software, coupling means you're bound by too much knowledge.
 The WHAT if the promise, the HOW is the implementation.
 
 
+
+
+
 == Limit required knowledge
 
 Two main ways of doing
@@ -78,9 +81,250 @@ Two main ways of doing
 
 * Send something to a
 
-== Be bound by the contract
+== Be bound by the contract 0
 
-*  not by the means of fulfilling it
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-bound2interface_0.svg[width=200]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+== Be bound by the contract 1
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-bound2interface_1.svg[]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+== Be bound by the contract 2
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-bound2interface_2.svg[]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+== Be bound by the contract 3
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-bound2interface_3.svg[]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+== Be bound by the contract 4
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-bound2interface_4.svg[]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+== Be bound by the contract 5
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-bound2interface_5.svg[]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+== Be bound by the contract 6
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-bound2interface_6.svg[]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+== Be bound by the contract 7
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-bound2interface_7.svg[]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+== Be bound by the contract 8
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-bound2interface_8.svg[]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+== Be bound by the contract 9
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-bound2interface_9.svg[]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+
+
+== Be bound by the contract 10
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-bound2interface_10.svg[]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+
+
+
+== SOInterface 0
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_0.svg[]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+== SOInterface 1
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_1.svg[]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+== SOInterface 2
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_2.svg[]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+== SOInterface 3
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_3.svg[]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+== SOInterface 4
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_4.svg[]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+
+
+== SOInterface 5
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_5.svg[]
+--
+
+[.right-column]
+--
+Imagine
+--
 
 == Put a abstraction layer between component
 

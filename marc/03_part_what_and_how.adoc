@@ -371,3 +371,6 @@ class ApplePieRecipe(Recipe):
 == Learn to delegate to a futur you
 
 This way you could quickly define what you really need.
+
+
+//end::include[]
