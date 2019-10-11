@@ -60,8 +60,6 @@ image::images/marc/OpenBCoupling.gif[]
 
 In software, coupling means you're bound by too much knowledge.
 
-
-
 * Limit required knowledge
 ** To be linked to the *WHAT* and not to the *HOW*.
 ** Use indirection
