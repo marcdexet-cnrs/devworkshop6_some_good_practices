@@ -1,0 +1,91 @@
+= Flexibility
+
+//tag::include[]
+
+== Flexibility
+
+* Why do you need flexibility ?
+** flexibility for change
+** flexibility for evolution without breaking anything
+** Don't break everything
+
+[NOTE.notes]
+--
+* Delimit the perimeter
+* Tell What it does, don't think about how it's done.
+* Engage for interface, not (yet) about implementation
+* Keep the freedom of experimentating
+* => interface
+--
+
+
+== Coupling
+
+[.center]
+image::images/marc/coupling.gif[]
+
+[.center]
+When any change to one component implies to modify the other one.
+
+
+== Coupling
+
+[.at-top-right]
+image::images/marc/coupling.gif[width=200]
+
+* When components are tightly coupled
+** Evolving one can quickly become a nightmare.
+** Side effects will be numerous and discouraging.
+
+[.fragment]
+--
+For a few components, it doesn't really matter.
+--
+
+== Coupling
+
+But with a lot of components, it would turn into a nightmare !
+
+[.center]
+image::images/marc/OpenBCoupling.gif[]
+
+
+== How to decouple ?
+
+[background-color="black", background-video="images/marc/isolated_base.mp4",background-video-loop=true,background-video-muted=true,background-size="contain"]
+[%notitle]
+== Foo
+
+== How to decouple ?
+
+In software, coupling means you're bound by too much knowledge.
+
+
+
+* Limit required knowledge
+** To be linked to the *WHAT* and not to the *HOW*.
+** Use indirection
+** Fire and Forget
+
+The WHAT if the promise, the HOW is the implementation.
+
+
+== Limit required knowledge
+
+Two main ways of doing
+* Fire and forget
+* Indirection
+
+== Fire and Forget
+
+* Send something to a
+
+== Be bound by the contract
+
+*  not by the means of fulfilling it
+
+== Put a abstraction layer between component
+
+== Segeragtion of interface
+
+//end::include[]

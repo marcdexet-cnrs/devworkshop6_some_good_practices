@@ -304,67 +304,7 @@ include::03_illustration_with_movie_industry.adoc[tag=include]
 
 include::03_part_what_and_how.adoc[tag=include]
 
-
-== Flexibility
-
-[NOTE.notes]
---
-* Delimit the perimeter
-* Tell What it does, don't think about how it's done.
-* Engage for interface, not (yet) about implementation
-* Keep the freedom of experimentating
-* => interface
---
-
-
-== Coupling
-
-[.center]
-image::images/marc/coupling.gif[]
-
-[.center]
-When any change to one component implies to modify the other one.
-
-
-== Coupling
-
-[.at-top-right]
-image::images/marc/coupling.gif[width=200]
-
-* When components are tightly coupled
-** Evolving one can quickly become a nightmare.
-** Side effects will be numerous and discouraging.
-
-[.fragment]
---
-For a few components, it doesn't really matter.
---
-
-== Coupling
-
-But for a lot of components, it would turn into a nightmare !
-
-[.center]
-image::images/marc/OpenBCoupling.gif[]
-
-
-
-== How to decouple
-
-* Put a abstraction layer bet
-
-== Breakdown Big Problem
-
-[NOTE.notes]
---
-* Your brain is not well built to maintain heavy concepts and many irritating details.
-* Break problem down to little problems
-* => conception
---
-
-
-
-
+include::03_flexibility.adoc[tag=include]
 
 == Separation Of Concern
 
