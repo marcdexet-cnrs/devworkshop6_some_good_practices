@@ -144,7 +144,7 @@ Too long, Didn't Read
 image::https://nofilmschool.com/sites/default/files/styles/article_wide/public/film-crew-positions3.png[background,size=contain]
 
 
-[transition=none]
+ [transition=none]
 == Film SoC
 
 A Separation of Concerns of "shooting a movie" could be
@@ -152,7 +152,7 @@ A Separation of Concerns of "shooting a movie" could be
 [.center]
 image::images/marc/good_practices-MovieByConcern.svg[]
 
-[transition=none]
+ [transition=none]
 == Film SoC
 
 [.left-column]
@@ -169,7 +169,7 @@ If we look at _"Art"_ concern, next level is compound of sub-concerns +
 --
 
 
-[transition=none]
+ [transition=none]
 == Film SoC
 
 Each of theses sub-concerns could be broken down into.
@@ -177,7 +177,7 @@ Each of theses sub-concerns could be broken down into.
 [.center]
 image::images/marc/good_practices-ArtConcern_1.5.svg[]
 
-[transition=none]
+ [transition=none]
 == Film SoC
 
 Each of theses sub-concerns could be broken down into.
@@ -185,7 +185,7 @@ Each of theses sub-concerns could be broken down into.
 [.center]
 image::images/marc/good_practices-ArtConcern_2.svg[]
 
-[transition=none]
+ [transition=none]
 == Film SoC
 
 And so on...
