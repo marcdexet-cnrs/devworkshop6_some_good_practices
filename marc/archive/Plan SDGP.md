@@ -173,6 +173,7 @@ A movie lifecycle is cut into three main stage
 
 The main departements for a movie only for phase production (shooting)
 
+* Film Direction
 * Production 
 * Art
 * Camera

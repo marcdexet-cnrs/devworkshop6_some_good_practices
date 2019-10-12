@@ -1,0 +1,303 @@
+= Stability
+
+//tag::include[]
+
+== Open Closed 0
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-openclosed_0.svg[]
+--
+
+[.right-column]
+--
+Imagine a professional Camera +
+based on _camera frame_, +
+_optical_, +
+_visor_, +
+_battery_, +
+and so on.
+--
+
+== Open Closed 1
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-openclosed_1.svg[]
+--
+
+[.right-column]
+--
+This camera is built upon +
+a _Base camera_ +
+with differents connectors +
+for _optical_, _battery_, ...
+--
+
+== Open Closed 2
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-openclosed_2.svg[]
+--
+
+[.right-column]
+--
+So you can create several configurations.
+--
+
+== Open Closed 3
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-openclosed_3.svg[]
+--
+
+[.right-column]
+--
+One with a more powerful _battery_...
+--
+
+== Open Closed 4
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-openclosed_4.svg[]
+--
+
+[.right-column]
+--
+One with a different _optical system_...
+--
+
+== Open Closed 5
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-openclosed_5.svg[]
+--
+
+[.right-column]
+--
+One with a deported _monitoring device_...
+--
+
+== Open Closed 6
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-openclosed_6.svg[]
+--
+
+[.right-column]
+--
+Or a waterproof model with deported _commands_.
+--
+
+
+== Open Closed 6.1
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-openclosed_6.1.svg[]
+--
+
+[.right-column]
+--
+But you can not modify the _command sytem_...
+--
+
+== Open Closed 6.2
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-openclosed_6.2.svg[]
+--
+
+[.right-column]
+--
+Nor modify the _optical connector_ location...
+
+[.fragment]
+Without modifiying _Base Camera_.
+
+[.fragment]
+And of course it's forbidden, only Manufacturer could do this.
+--
+
+
+
+== Open closed.
+
+[.center]
+--
+[.fragment]
+The camera is +
+[.fragment]
+[.huge]#Open# for *extension* +
+[.fragment]
+and
+[.fragment]
+[.huge]#Closed# for *modification*.
+
+[.fragment]
+This is a illustration of the +
+*Open/Closed* principle.
+--
+
+
+== Open closed.
+
+The *Open/Closed* principle ensure that usage of your component could be extended safely without being modified.
+
+
+It's very useful when the components is *_shared_* +
+over several project.
+
+== Open Closed 7
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-openclosed_7.svg[]
+--
+
+[.right-column]
+--
+Imagine a camera for the general public, +
+with all included inside the frame.
+--
+
+== Open Closed 8
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-openclosed_8.svg[]
+--
+
+[.right-column]
+--
+There's no way to extend it...
+--
+
+== Open Closed 9
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-openclosed_9.svg[]
+--
+
+[.right-column]
+--
+Impossible to change the _battery_ ...
+--
+
+== Open Closed 10
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-openclosed_10.svg[]
+--
+
+[.right-column]
+--
+Nor the _optical system_...
+--
+
+== Open Closed 11
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-openclosed_11.svg[]
+--
+
+[.right-column]
+--
+Nor the _visor_.
+--
+
+== Open Closed 12
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-openclosed_12.svg[]
+--
+
+[.right-column]
+--
+It could also not be extended as _waterproof camera_ with _deported commands_.
+
+[.fragment]
+This camera doesn't respect the *open/closed* principle.
+--
+
+
+== Open closed behavior
+
+A _FilmDirector_ has to check everything is ready before starting to shoot.
+
+[.big]
+[.large]
+[source,python,linums]
+----
+class FilmDirector:
+    #...
+    def before_shooting_check_set_is_ready(camera: CameraDirector,
+                                           lighting: LightDirector):
+
+        return camera.is_ok() and lighting.is_ok()
+----
+
+
+[.fragment]
+But on a movie with special effects, it have to get the Ok from FX director...
+
+[.fragment]
+[.big]
+[.large]
+[source,python,linums]
+----
+class FilmDirector:
+    #...
+    def before_shooting_check_set_is_ready(camera: CameraDirector,
+                                           lighting: LightDirector,
+                                           fx: SpecialEffectDirector):
+        return camera.is_ok()
+               and lighting.is_ok()
+               and fx.is_ok()
+----
+
+[.fragment]
+This class is not open to extends its _behavior_.
+
+
+== Open closed behavior
+
+Using a list of directors opens the component for an extension of its behavior.
+
+[.big]
+[.large]
+[source,python,linums]
+----
+class FilmDirector:
+    #...
+    def before_shooting_check_set_is_ready(directors: List):
+        return all(d.is_ok() for d in directors)
+----
+
+
+//end::include[]

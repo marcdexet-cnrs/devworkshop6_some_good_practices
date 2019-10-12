@@ -306,8 +306,7 @@ include::03_part_what_and_how.adoc[tag=include]
 
 include::03_flexibility.adoc[tag=include]
 
-== Separation Of Concern
-
+include::03_stability.adoc[tag=include]
 
 == Single Responsability
 

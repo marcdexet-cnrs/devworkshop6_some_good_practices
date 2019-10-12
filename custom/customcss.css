@@ -350,3 +350,7 @@ td.content {
 .right {
   text-align: right;
 }
+
+pre.CodeRay.listingblock.large {
+  width: 100%;
+} 
