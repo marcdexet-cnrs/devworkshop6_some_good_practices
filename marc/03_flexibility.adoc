@@ -81,7 +81,7 @@ Two main ways of doing
 
 * Send something to a
 
-== Be bound by the contract 0
+== CHANGE ME Be bound by the contract 0
 
 
 [.left-column]
@@ -92,152 +92,264 @@ image::images/marc/flexibility-bound2interface_0.svg[width=200]
 
 [.right-column]
 --
-Imagine
+Imagine a context where +
+a component of type *A* +
+_uses_ a component of type *B*.
+
+This is a dependency between *A* and *B*.
 --
 
-== Be bound by the contract 1
+== CHANGE ME Be bound by the contract 1
 
 
 [.left-column]
 [.center]
 --
-image::images/marc/flexibility-bound2interface_1.svg[]
+image::images/marc/flexibility-bound2interface_1.svg[width=200]
 --
 
 [.right-column]
 --
-Imagine
+If *B* changes, *A* is certainly forced to _adapt_.
 --
 
-== Be bound by the contract 2
+
+== CHANGE ME Be bound by the contract 1b
 
 
 [.left-column]
 [.center]
 --
-image::images/marc/flexibility-bound2interface_2.svg[]
+image::images/marc/flexibility-bound2interface_propagation_0.svg[]
 --
 
+[.fragment]
 [.right-column]
+[.center]
 --
-Imagine
+image::images/marc/flexibility-bound2interface_propagation_1.svg[]
 --
 
-== Be bound by the contract 3
+== CHANGE ME Be bound by the contract 2
 
 
 [.left-column]
 [.center]
 --
-image::images/marc/flexibility-bound2interface_3.svg[]
+image::images/marc/flexibility-bound2interface_2.svg[width=200]
 --
 
 [.right-column]
 --
-Imagine
+
+The best solution is
+that *A* is not related +
+*to* what dependency [.huge]#is#, +
+but *to* what it [.huge]#offers#.
+
+[.fragment]
+To use a kind of [.huge]#contract#.
+
+[.fragment]
+It describes [.huge]#WHAT# dependency does +
+and doesn't care *HOW*.
 --
 
-== Be bound by the contract 4
+
+== CHANGE ME Be bound by the contract 2
+
+
+
+[.left-column]
+--
+* "Browser" contract
+** _Fetch a content on internet given a valid URL_
+** _Display content using HTML_
+** _Submit valid HTTP form to a given URL_
+** _Bookmark favorites_
+** ...
+--
+
+
+
+[.fragment]
+[.right-column]
+[.center]
+--
+image::images/marc/browser_contract.gif[]
+--
+
+== CHANGE ME Be bound by the contract 3
 
 
 [.left-column]
 [.center]
 --
-image::images/marc/flexibility-bound2interface_4.svg[]
+image::images/marc/flexibility-bound2interface_3.svg[width=200]
 --
 
 [.right-column]
 --
-Imagine
+So as long as component _respect_ the contract, +
+it could be anything.
+
+We say dependency *implements* the contract.
 --
 
-== Be bound by the contract 5
+== CHANGE ME Be bound by the contract 4
 
 
 [.left-column]
 [.center]
 --
-image::images/marc/flexibility-bound2interface_5.svg[]
+image::images/marc/flexibility-bound2interface_4.svg[width=200]
 --
 
 [.right-column]
 --
-Imagine
+A dependency can be modified, +
+as long as it respects the contract, +
+we don't care...
 --
 
-== Be bound by the contract 6
+== CHANGE ME Be bound by the contract 5
 
 
 [.left-column]
 [.center]
 --
-image::images/marc/flexibility-bound2interface_6.svg[]
+image::images/marc/flexibility-bound2interface_5.svg[width=200]
 --
 
 [.right-column]
 --
-Imagine
+But if contract changes, +
+both of them have to change.
 --
 
-== Be bound by the contract 7
+
+== CHANGE ME Be bound by the contract 5
 
 
 [.left-column]
 [.center]
 --
-image::images/marc/flexibility-bound2interface_7.svg[]
+image::images/marc/flexibility-bound2interface_5bis.svg[width=200]
 --
 
 [.right-column]
 --
-Imagine
+From the *A* point of view, +
+*only* _B contract_ exists.
 --
 
-== Be bound by the contract 8
+
+== CHANGE ME Be bound by the contract 6
 
 
 [.left-column]
 [.center]
 --
-image::images/marc/flexibility-bound2interface_8.svg[]
+image::images/marc/flexibility-bound2interface_6.svg[width=400]
 --
 
 [.right-column]
 --
-Imagine
+Illustration with a Camera Operator _using_ a camera of Fony Inc.
 --
 
-== Be bound by the contract 9
+== CHANGE ME Be bound by the contract 7
 
 
 [.left-column]
 [.center]
 --
-image::images/marc/flexibility-bound2interface_9.svg[]
+image::images/marc/flexibility-bound2interface_7.svg[width=400]
 --
 
 [.right-column]
 --
-Imagine
+If the camera is changed to a _very_ different modele, +
+Camera Operator has certainly to _be adapted_.
+
+[.fragment]
+And we know there's a lot of camera model on the market...
 --
 
-
-
-== Be bound by the contract 10
+== CHANGE ME Be bound by the contract 8
 
 
 [.left-column]
 [.center]
 --
-image::images/marc/flexibility-bound2interface_10.svg[]
+image::images/marc/flexibility-bound2interface_8.svg[width=400]
 --
 
 [.right-column]
 --
-Imagine
+The better is to relate to a _camera contract_,
+instead of a _camera model_.
+
+Contrat => [.huge]#interface#.
+
+
+--
+
+== CHANGE ME Be bound by the contract 9
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-bound2interface_9.svg[width=400]
+--
+
+[.right-column]
+--
+So camera model could be changed, +
+as long as it _implements_ the required *interface* +
+we don't care.
 --
 
 
+
+== CHANGE ME Be bound by the contract 10
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-bound2interface_10.svg[width=400]
+--
+
+[.right-column]
+--
+And we could make easy our tests +
+of Camera Operator +
+without *hacking* a real camera.
+
+[.fragment]
+We just have to use a Mock Camera implementing _Camera Interface_.
+--
+
+
+
+== Conclusion of abstraction
+
+* To gain flexibility
+** Be linked to the contract, the interface, not the implementation.
+
+
+
+[NOTE.notes]
+--
+* In real life
+** If you have a very simple dependency, don't bother with interface.
+** Use *interfaces*
+*** when there's several implementations,
+*** _or_ delicat, complexe, heavy dependencies,
+*** _or_ depenceny is hard to mock in tests.
+--
 
 
 == SOInterface 0
@@ -246,26 +358,49 @@ Imagine
 [.left-column]
 [.center]
 --
-image::images/marc/flexibility-segregation_0.svg[]
+image::images/marc/flexibility-segregation_0.svg[width=600]
 --
 
+[.center]
 [.right-column]
 --
-Imagine
+
+
+Image you have now +
+a TV _Reporting Camera Operator_ +
+using a +
+_Reporting Camera_ +
+described by a +
+_Reporting Camera Interface_.
+
+[.fragment]
+A _reporting camera_ is used +
+for _reporting_ in the streets +
+
+
+[.fragment]
+It records +
+_video_ +
+and +
+_sound_.
 --
 
-== SOInterface 1
+
+== SOInterface 0.1
 
 
 [.left-column]
 [.center]
 --
-image::images/marc/flexibility-segregation_1.svg[]
+image::images/marc/flexibility-segregation_0.1.svg[width=600]
 --
 
 [.right-column]
 --
-Imagine
+Someone decided to split +
+_Reporting Camera Operator_ +
+responsabilities +
+in two parts.
 --
 
 == SOInterface 2
@@ -274,12 +409,12 @@ Imagine
 [.left-column]
 [.center]
 --
-image::images/marc/flexibility-segregation_2.svg[]
+image::images/marc/flexibility-segregation_2.svg[width=600]
 --
 
 [.right-column]
 --
-Imagine
+They use the same interface.
 --
 
 == SOInterface 3
@@ -288,12 +423,16 @@ Imagine
 [.left-column]
 [.center]
 --
-image::images/marc/flexibility-segregation_3.svg[]
+image::images/marc/flexibility-segregation_3.svg[width=600]
 --
 
 [.right-column]
 --
-Imagine
+But if the camera itself is separated into two components...
+
+We get a nonsense.
+
+A microphone that has to handle the video aspects is *stupid*.
 --
 
 == SOInterface 4
@@ -302,12 +441,17 @@ Imagine
 [.left-column]
 [.center]
 --
-image::images/marc/flexibility-segregation_4.svg[]
+image::images/marc/flexibility-segregation_4.svg[width=600]
 --
 
 [.right-column]
+[.center]
 --
-Imagine
+We have to limit each of them +
+to *WHAT* they do +
+and *only* what they do.
+
+*No more and no less.*
 --
 
 
@@ -318,7 +462,208 @@ Imagine
 [.left-column]
 [.center]
 --
-image::images/marc/flexibility-segregation_5.svg[]
+image::images/marc/flexibility-segregation_5.svg[width=600]
+--
+
+[.right-column]
+[.center]
+--
+This way, any depency +
+satisfying the interface +
+could be used.
+--
+
+== SOInterface 6
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_6.svg[width=600]
+--
+
+[.right-column]
+[.center]
+--
+This way, any depency +
+satisfying the interface +
+could be used.
+--
+
+
+== SOInterface 6.1
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_6.1.svg[width=600]
+--
+
+[.right-column]
+--
+What about our _Reporting Camera Operator_ ? +
+
+It could use the both interfaces.
+
+Whether it's implemented by _two_ components...
+--
+
+
+== SOInterface 6.2
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_6.2.svg[width=600]
+--
+
+[.right-column]
+--
+\... or implemented by _only one_ component !
+
+We don't care.
+--
+
+
+
+
+
+== SOInterface 7
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_7.svg[width=600]
+--
+
+[.right-column]
+[.center]
+--
+But if you're in a field +
+limited to TV Reporting only, +
+you would prefer talking about _Reporting camera_.
+
+How to reconcile the two universes ?
+
+By making _Reporting camera_ +
+be a _Camera interface_ +
+*and* +
+a _Microphone interface_ too.
+--
+
+== SOInterface 8
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_8.svg[width=600]
+--
+
+[.right-column]
+--
+So you have a very flexible architecture like this...
+--
+
+== SOInterface 9
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_9.svg[width=600]
+--
+
+[.right-column]
+--
+\... or this.
+--
+
+
+== SOInterface 6.before.2
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_6.before.2.svg[width=600]
+--
+
+[.right-column]
+[.center]
+--
+We split a too general interface into +
+two very user _focused_ interfaces.
+
+[.fragment]
+It called +
+[.huge]#Segregation of Interfaces#.
+--
+
+== SOInterface 6.3
+
+
+[.center]
+--
+image::images/marc/flexibility-segregation_6.3.svg[width=600]
+
+So the general _Reporting Camera Interface_ +
+could be seen as a +
+_video interface_ for video interested users.
+--
+
+
+
+== SOInterface 6.4
+
+
+[.center]
+--
+image::images/marc/flexibility-segregation_6.4.svg[width=600]
+
+
+\...or a
+_Microphone interface_ for sound interested users.
+--
+
+
+== SOInterface 10
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_10.svg[width=600]
+--
+
+[.right-column]
+[.center]
+--
+*Segregation Of Interfaces* allows +
+to join different universes +
+with different point of view.
+
+Here the _TV universe_ +
+and +
+the camera _Manufacturer Universe_.
+--
+
+== Put a abstraction layer between component
+
+
+A interface is door fire-cut.
+
+
+== SingeResponsability 0
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-SingleResponsability_0.svg[width=600]
 --
 
 [.right-column]
@@ -326,8 +671,106 @@ image::images/marc/flexibility-segregation_5.svg[]
 Imagine
 --
 
-== Put a abstraction layer between component
+== SingeResponsability 1
 
-== Segeragtion of interface
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-SingleResponsability_1.svg[width=600]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+== SingeResponsability 2
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-SingleResponsability_2.svg[width=600]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+== SingeResponsability 3
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-SingleResponsability_3.svg[width=600]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+== SingeResponsability 4
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-SingleResponsability_4.svg[width=600]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+== SingeResponsability 5
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-SingleResponsability_5.svg[width=600]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+
+== SingeResponsability 6
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-SingleResponsability_6.svg[width=600]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+== SingeResponsability 7
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-SingleResponsability_7.svg[width=600]
+--
+
+[.right-column]
+--
+Imagine
+--
+
+
+
 
 //end::include[]
