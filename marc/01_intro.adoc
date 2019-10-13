@@ -26,7 +26,10 @@ We turn _human_ [.huge]#ideas#  into _computer_ [.huge]#code#
 
 
 [.fragment]
+
 --
+[.ppt]
+[.ppt]
 * There’s several ways of developing
 ** A lot of them have been tried by a lot of people,
 ** Some of them lead to *disaster*,
@@ -34,10 +37,13 @@ We turn _human_ [.huge]#ideas#  into _computer_ [.huge]#code#
 --
 [.fragment]
 --
+[.ppt]
+[.ppt]
 * We call them the *_good practices_*
 ** It's preferable to follow some of them
 --
 [.fragment]
+[.ppt]
 * Because developement could be *tricky*
 
 [.center]
@@ -46,6 +52,7 @@ We turn _human_ [.huge]#ideas#  into _computer_ [.huge]#code#
 image::images/marc/tricky.gif[]
 
 
+[.ppt]
 * There are several possible reasons to make development tricky.
 ** Difficult technologies,
 ** Difficult problem to solve,
@@ -56,15 +63,18 @@ But the main cause is our human nature...
 == Mainly Because Of Our Human Nature
 
 [.fragment]
+[.ppt]
 * Human Brain
 ** First processor to turn human ideas into computer code
 
 [.fragment]
+[.ppt]
 * Good Points
 ** It detects patterns, similarities,
 ** It learns, extrapolates and generalizes quickly.
 
 [.fragment]
+[.ppt]
 * Not So Good Points
 ** Short-memory buffer limited to "The Magical Number Seven, Plus or Minus Two",
 ** Hates repetitive tasks without interest,
@@ -102,7 +112,9 @@ So if we ignore our capacities, we empty the ocean with a small spoon.
 
 == How To Handle This ?
 
+[.ppt]
 * By following some good practices among a lot of them.
+[.ppt]
 * By applying them into these fields
 ** Be kind to our brain
 ** Adopt Favourable Attitude

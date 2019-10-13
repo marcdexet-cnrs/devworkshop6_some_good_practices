@@ -53,18 +53,19 @@
 }
 
 /* Lists */
-.reveal ul > li { 
+.reveal div.ppt > ul > li { 
 	list-style-type: disc; 
 	font-size: 1em;
 	font-weight: normal;
 }
 
-.reveal ul > li > p {
+
+.reveal div.ppt > ul > li > p {
 	margin: 20px 0 5px;
 }
 
 
-div.ulist > ul > li > p {
+div.ulist.ppt > ul > li > p {
   font-family: "Oswald", sans-serif;  
 }
 
@@ -354,3 +355,4 @@ td.content {
 pre.CodeRay.listingblock.large {
   width: 100%;
 } 
+

@@ -3,11 +3,27 @@
 
 //tag::include[]
 
+[.inverse.background]
+[.center]
+[%notitle]
+== Attitude
+
+:chapter_name: Adopt The Good Attitude
+
+[.big]#Chapter {counter:main_part_counter:1}# +
+[.huge]#{chapter_name}#
 
 
 [.subsection.background]
 [.center]
+[%notitle]
 == Be kind to our brain
+
+[.big]#{chapter_name} - Part {counter:general_counter:1}#
+
+
+[.huge]#Be Kind To Our Brain#
+
 
 [NOTE.notes]
 --
@@ -15,27 +31,34 @@ We have to be kind our brain.
 We have to help our brain to cope with all that stuff.
 --
 
-[background-color="black"]
-[.center]
-[%notitle]
-== Be Human
 
-image::images/marc/arrival-movie-2016-i-am-human-scene.jpg[width=800]
+// [background-color="black"]
+// [.center]
+// [%notitle]
+// == Be Human
 
-[.big]
-[.fragment]
-[.white-text]
-Be Kind To Our Human Brain
+// image::images/marc/arrival-movie-2016-i-am-human-scene.jpg[width=800]
+
+// [.big]
+// [.fragment]
+// [.white-text]
+// Be Kind To Our Human Brain
+
+
 
 [.splash.background]
 [.center]
 == Do Not Overload Mental Mapping
 
-Brain is not good +
-at following complex branching +
-or keeping _arbitrary_ references.
+Brain is not *good* +
+at following *complex* branching or keeping *arbitrary* references.
 
-image::images/marc/commons.wikimedia.org.DijkstraDemo.gif[]
+image::images/marc/commons.wikimedia.org.DijkstraDemo.gif[width=300]
+
+[.fragment]
+Keep things as [.huge]*simple* and [.huge]*direct* as possible +
+to do not get lost.
+
 
 [.splash.background]
 [.center]
@@ -43,8 +66,11 @@ image::images/marc/commons.wikimedia.org.DijkstraDemo.gif[]
 
 Brain learns from *patterns* if they're *visible*.
 
-image::images/marc/imagurc_BOMf4.jpg[width=800]
+image::images/marc/imagurc_BOMf4.jpg[width=500]
 
+
+[.fragment]
+This helps brain find its way through the architecture of software.
 
 == Don't Get Lost In Translation
 
@@ -72,45 +98,55 @@ Ever try to connect
 --
 
 
+
 [.splash.background]
-[.center]
 [%notitle]
-== Don't Be Afraid To Act
-
-image::images/marc/break_everything.gif[]
-
-[.notes]
---
-You know this fear of breaking what's working by changing a little thing.
-The fear of breaking something literally *blocks* our brain.
---
-
-[.splash.background]
 [.center]
-== Don't Be Afraid To Act
+== Freeze The Brownian Motion Of Ideas
 
-image::images/marc/break_everything.gif[width=200]
+[.big]#{chapter_name} - Part {counter:general_counter:1}#
 
+
+[.huge]#Freeze +
+The Brownian Motion Of +
+Ideas#
+
+
+== The Brownian Motion Of Ideas
+
+* When turning ideas into code, we get
+** Uncertainties about
+*** How to proceed,
+*** The choices to be made,
+*** The tools to be used,
+*** ...
+** A lot of _moving_ and _unfixed_ ideas,
 
 [.fragment]
-This *fear* reflects our inability to anticipate everything in the event of a change.
+The more [.huge]_complex_ and [.huge]_ambitious_ our ideas are, +
+the more [.huge]_elements_ and  [.huge]_steps_ are to think about.
 
-[.fragment]
-So we have to deal with it and find ways to limit it.
 
+[.at-top-right]
+[.behind]
+image::images/marc/brownian_ideas.gif[]
+
+[%notitle]
 
 == Freeze The Brownian Motion Of Ideas
 
-
-* When turning ideas into code, we get
-** Uncertainties about where to start.
-** A lot of moving and unfixed ideas,
-* The more _complex_ our ideas are, the more things we have to think about.
+[.big]
+--
+Firstly, We Need To Freeze The Brownian Motion Of Ideas !
+--
 
 [.big]
 [.fragment]
 --
-Firstly, We Need To Freeze The Brownian Motion Of Ideas !
+By [.huge]#expressing# +
+about +
+what we *want* +
+and *how* we want to do !
 --
 
 [.at-top-right]
@@ -124,19 +160,21 @@ image::images/marc/brownian_ideas.gif[]
 
 [.big]
 --
-It sounds simple, +
+"It sounds simple, +
 --
 [.fragment]
 [.big]
 --
-but in [.huge]#explaining# the problem to [.huge]#another# person +
+but in [.huge]#explaining# the problem +
+to [.huge]#another# person +
 --
 [.fragment]
 [.big]
 --
 you must [.huge]#explicitly# *state things* +
-that you may take for [.huge]#granted# +
-when going through the code yourself.
+that you may [.huge]#take for granted# +
+when going through the code yourself. +
+\...
 --
 
 [.splash.background]
@@ -144,23 +182,20 @@ when going through the code yourself.
 [.center]
 == Explain
 
-[.smaller]
-It sounds simple, +
-but in explaining the problem to another person +
-you must explicitly state things +
-that you may take for granted +
-when going through the code yourself.
+\...
 
 By having to [.huge]#verbalize# some of these assumptions, +
-you may suddenly gain [.huge]#new insight# into the problem.
+you may suddenly gain [.huge]#new insight# into the problem."
 
-
+[.fragment]
+--
 _"The Pragmatic Programmer"_
-
+--
 
 
 == Verbalize What Is Spinning In Your Head
 
+[.ppt]
 * Verbalize, describe your insights
 ** to a good fellow worker
 *** _the poor_
@@ -198,6 +233,7 @@ _Draw it, and it's fine_
 
 [.left-column]
 --
+[.ppt]
 * Formalism doesn't matter
 ** Sketch by hand
 ** Unified Language Method (UML)
@@ -205,6 +241,7 @@ _Draw it, and it's fine_
 
 [.right-column]
 --
+[.ppt]
 * Support does not matter
 ** Paper or blackboard, or Any click-and-connect online tool ( _draw.io_)
 --
@@ -215,6 +252,7 @@ _Draw it, and it's fine_
 [.big]
 [.center]
 --
+[.ppt]
 * Draw shapes and arrow
 ** Connect things,
 ** Make flow visual,
@@ -246,6 +284,27 @@ _Draw it, and it's fine_
 --
 
 
+[.splash.background]
+[.center]
+== Don't Be Afraid To Act
+
+The fear of breaking something literally *blocks* our brain.
+
+image::images/marc/break_everything.gif[width=200]
+
+
+[.fragment]
+This *fear* reflects our inability to anticipate everything in the event of a change
+in a complex context.
+
+[.fragment]
+So we have to deal with it and find ways to limit it.
+
+[.notes]
+--
+You know this fear of breaking what's working by changing a little thing.
+
+--
 
 //end::include[]
 

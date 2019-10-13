@@ -28,12 +28,14 @@ You are on holiday, +
 you see a pleasant _seaside scene_. +
 You want to _shoot a video_ with your smartphone.
 
+[.ppt]
 * What do you do ?
 [.fragment]
 ** _Take smartphone_,
 ** _Shoot video_.
 
 [.fragment]
+[.ppt]
 * Complexity
 ** At this level, I don't bother !
 --
@@ -52,6 +54,7 @@ image::https://media.giphy.com/media/t67IVjnTAVI64/giphy.gif[width=300]
 You want to send a _happy birthday song_ video +
 with _some friends_ to somebody.
 
+[.ppt]
 * What do you do ?
 [.fragment]
 ** _Prepare song with friends_,
@@ -62,6 +65,7 @@ with _some friends_ to somebody.
 ** _Send the movie by email_.
 
 [.fragment]
+[.ppt]
 * Complexity
 ** A few elements, but I'm handling, it's not a big deal !
 --
@@ -78,6 +82,7 @@ image::https://media.giphy.com/media/yoJC2GnSClbPOkV0eA/giphy.gif[]
 --
 You want to make a scientific popularization video about Euclid in your lab.
 
+[.ppt]
 * What do you do ?
 [.fragment]
 ** _Ask for the agreement of the Euclid consortium_,
@@ -97,10 +102,12 @@ image::https://media.giphy.com/media/fjxe2wl3trzjs1i9NE/giphy.gif[]
 
 == You want to shoot a video
 
+[.ppt]
 * Complexity
 ** You still haven't started filming.
 ** And already a lot of concern...
 
+[.ppt]
 * Concerns ?
 [.fragment]
 ** Scientific background
@@ -126,6 +133,7 @@ image::images/marc/star_wars.jpg[width=500]
 
 == You want to shoot a movie
 
+[.ppt]
 * What do you do ?
 [.fragment]
 ** TL;DR
@@ -145,6 +153,7 @@ image::https://nofilmschool.com/sites/default/files/styles/article_wide/public/f
 
 
 [transition=none]
+[%notitle]
 == Film SoC
 
 A Separation of Concerns of "shooting a movie" could be
@@ -153,6 +162,7 @@ A Separation of Concerns of "shooting a movie" could be
 image::images/marc/good_practices-MovieByConcern.svg[]
 
 [transition=none]
+[%notitle]
 == Film SoC
 
 [.left-column]
@@ -170,6 +180,7 @@ If we look at _"Art"_ concern, next level is compound of sub-concerns +
 
 
 [transition=none]
+[%notitle]
 == Film SoC
 
 Each of theses sub-concerns could be broken down into.
@@ -178,6 +189,7 @@ Each of theses sub-concerns could be broken down into.
 image::images/marc/good_practices-ArtConcern_1.5.svg[]
 
 [transition=none]
+[%notitle]
 == Film SoC
 
 Each of theses sub-concerns could be broken down into.
@@ -186,6 +198,7 @@ Each of theses sub-concerns could be broken down into.
 image::images/marc/good_practices-ArtConcern_2.svg[]
 
 [transition=none]
+[%notitle]
 == Film SoC
 
 And so on...
@@ -198,18 +211,16 @@ image::images/marc/good_practices-ArtConcern_3.svg[]
 [.center]
 == Conclusion
 
-A very _complex_ situation, (_Shooting a movie_) is possible +
-because of it's _broken down_ into +
-several layers +
-going more and more specialized.
+A very _complex_ situation is possible +
+by _breaking it down_.
 
-It use _Separation of concern_ and _Distinction of level of abstraction_
+By _concerns_ and _levels of abstraction_
 
 
 [.center]
 image::images/marc/credits.gif[]
 
-So each of them can work in a relative isolation from others.
+So each of them can work in a relative isolation from each other.
 
 //end::include[]
 

@@ -1,0 +1,83 @@
+= Writing
+
+//tag::include[]
+
+
+== Make Code Readable
+
+[.ppt]
+* As Any Writing, Code Tells Something.
+** It can tell **what** and **how** it does.
+
+[.fragment.ppt]
+* Let The Code Tell The Story
+** The more **self-explanatory**, the more **easy** to maintain.
+
+[.fragment]
+You read 10 more than you write
+
+[.fragment.ppt]
+* You write once, but you read
+** to _check_,
+** to _understand_,
+** to _remember_,
+** to _copy_,
+[.fragment]
+** and to _**rewrite**_.
+
+
+== Naming
+
+[.fragment]
+--
+[.ppt]
+* Size Doesn't Matter
+** You're coding, not compressing.
+--
+
+[.fragment]
+--
+[.ppt]
+* Comprehension Matters
+--
+
+[.fragment]
+--
+[.center]
+Compare
+
+[.left-column.very-big]
+[source,python]
+----
+if sa:
+    ssh()
+    claw()
+----
+--
+
+[.fragment]
+--
+[.right-column.very-big]
+[source,python]
+----
+if stage_accident:
+    stop_shooting()
+    call_lawyers()
+----
+--
+
+
+== Comprehension Matters
+
+[.ppt]
+* Avoid one or two letter names
+** Except for mathematical expressions and domain specific conventions.
+
+[.ppt]
+* Avoid *confusing* abridged names
+** As "_crptCrewMngt_" for "_CarpentryCrewManagement_"
+
+[.ppt]
+* Avoid *unpronounceable* names
+** As "_wcrfs_" for "_Waterproof Camera Ready For Scene_".
+//end::include[]

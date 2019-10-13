@@ -2,6 +2,31 @@
 
 //tag::include[]
 
+[.subsection.background]
+[.center]
+[%notitle]
+== Focus
+
+[.big]#{chapter_name} - Part {counter:design_counter:1}#
+
+[.huge]#Focus#
+
+
+== Focus
+
+Limit required knowledge of external by keeping focused on what a component has to do.
+
+[.ppt]
+* Single responsability
+** second level
+
+List normale
+
+* level 1
+** level 2
+
+Suite
+
 
 == SingeResponsability 0
 

@@ -2,7 +2,18 @@
 
 //tag::include[]
 
+[.subsection.background]
+[.center]
+[%notitle]
 == Separate Levels Of Abstraction
+
+Dealing With Complexity
+
+[.huge]#Separate Levels Of Abstraction#
+
+== Separate Levels Of Abstraction
+
+Let us take two areas of concern.
 
 [.center]
 image::images/marc/good_practices-level_complexity_2_0.svg[width=600]

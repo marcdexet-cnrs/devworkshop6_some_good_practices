@@ -2,6 +2,15 @@
 
 //tag::include[]
 
+[.subsection.background]
+[.center]
+[%notitle]
+== The WHAT and the HOW
+
+Dealing With Complexity
+
+[.huge]#The WHAT and the HOW#
+
 [.dark.background]
 [%notitle]
 [.center]
@@ -14,7 +23,7 @@ Guess what is this ?
 [%notitle]
 == What's this ?
 
-
+[.big]#_Recipe_# +
 Reheat the oven to 200ºC. +
 Peel 1 onion. +
 Place peeled onion with the mushrooms, rye bread and 1 teaspoon of ground coriander. +
@@ -37,13 +46,12 @@ Add a few shakes of Tabasco and season to taste. +
 
 [.fragment]
 --
-* All the _steps_ to get something?
-** => this is *HOW* to get something
-* But do you get *WHAT* is for ?
+* This is *HOW* to get something
+* But do you get exactly *WHAT* is done ?
 --
 
 [.fragment]
-No, you have all the steps but you have lost sight of the original idea.
+No, you lost sight of the ideas behind.
 
 [.fragment]
 [.center]
@@ -51,16 +59,19 @@ No, you have all the steps but you have lost sight of the original idea.
 You got lost in the translation.
 
 
-== What's this ?
+[.fragment]
+--
+[.left-column-2-3]
+[.smaller]
+_This is a recipe to cook roasted black bean burgers._
 
-This is a recipe to cook roasted black bean burgers.
-
-[.center]
-image::https://img.jamieoliver.com/jamieoliver/recipe-database/xtra_med/92507794.jpg[width=400]
+[.right-column-1-3]
+[.right]
+image::https://img.jamieoliver.com/jamieoliver/recipe-database/xtra_med/92507794.jpg[width=200]
 
 [.smaller]
 https://www.jamieoliver.com/recipes/vegetable-recipes/roasted-black-bean-burgers/
-
+--
 
 [.splash.background]
 [.center]
@@ -76,26 +87,36 @@ from +
 --
 
 
-== Separate WHAT you want from HOW you get
+== Separate WHAT you want from HOW you get it
 
+* Often you start getting a idea to _how to make thing_
+* But quickly, you could
+** be *trapped* by the details of implementation,
+** battle with your tool,
+** ...
 
 [.fragment]
 --
-* Often you get a idea to _how_ to make thing
-* but quicly, you could
-** => get *trapped* by the details of implementation,
-** => lost sight of the original idea.
+* And sometimes you still don't know exactly _what you really want_.
+--
+
+
+[.splash.background]
+[.center]
+[%notitle]
+== Separate WHAT you want from HOW you get it
+
+[.center]
+--
+Think about *WHAT* you want to achieve +
+[.huge]#_before_# +
+you consider *HOW* to get it.
 --
 
 [.fragment]
 [.center]
 --
-To calm the incessant movement of ideas:
-
-
-Think about *WHAT* you want to achieve +
-[.big]#_before_# +
-you consider *HOW* to get it.
+Even, and especially in the *coding* phases !
 --
 
 [.fragment]
@@ -107,69 +128,74 @@ And write or draw it !!
 [transition=none]
 == Think about WHAT before HOW
 
+A _WHAT_ defines the *_goal_*
+
 [.center]
 image::images/marc/good_practices-whatbeforehow_0.svg[]
 
+
 [.notes]
 --
-A WHAT defines our GOAL, what do we want.
+The goal to achieve, in human terms.
 --
 
 [transition=none]
 == Think about WHAT before HOW
+
+It identifies a block of instruction, the *_HOW_*.
 
 [.center]
 image::images/marc/good_practices-whatbeforehow_1.svg[]
 
-[.notes]
---
-It identifies a block of instruction, the HOW.
---
 
 [transition=none]
 == Think about WHAT before HOW
+
+This *_HOW_* block is composed of identifed goal itself.
 
 [.center]
 image::images/marc/good_practices-whatbeforehow_2.svg[]
 
-[.notes]
---
-This HOW block is composed of identifed goal.
---
-
-
 
 [transition=none]
 == Think about WHAT before HOW
+
+Illustration with a burger...
 
 [.center]
 image::images/marc/good_practices-whatbeforehowrecipe_0.svg[]
 
-[.notes]
---
-A WHAT defines our GOAL, what do we want.
---
 
 [transition=none]
 == Think about WHAT before HOW
+
 
 [.center]
 image::images/marc/good_practices-whatbeforehowrecipe_1.svg[]
 
-[.notes]
---
-It identifies a block of instruction, the HOW.
---
 
 [transition=none]
 == Think about WHAT before HOW
 
+We get all the major steps without be drowned by details.
+
 [.center]
 image::images/marc/good_practices-whatbeforehowrecipe_2.svg[]
 
+[.fragment]
+But we have to get deeper. +
+_To get from the idea to the solution._
 
+[transition=none]
+[%notitle]
+[.center]
 == From The Idea To The Solution
 
+Dealing With Complexity
+
+[.big]#The WHAT and the HOW#
+
+[.huge]#From The Idea To The Solution#
 
 [transition=none]
 [%notitle]
@@ -189,8 +215,9 @@ You think about *HOW* to get, in a little less abstract way
 
 image::images/marc/good_practices-what_how_call_hierarchie_1.svg[]
 
-but no far away
+but no so far away
 
+[transition=none]
 [%notitle]
 [.center]
 == From The Idea To The Solution
@@ -249,18 +276,52 @@ image::images/marc/good_practices-what_how_call_hierarchie_7.svg[]
 Langage, Librairies, other projects...
 
 [transition=none]
+[%notitle]
 == Think about WHAT before HOW
+
+[.center]
+There's a WHAT -> HOW chaining.
 
 [.center]
 image::images/marc/good_practices-scale_0.svg[]
 
 [transition=none]
+[%notitle]
 == Think about WHAT before HOW
+
+[.center]
+Going from higher level to lower level.
 
 [.center]
 image::images/marc/good_practices-scale_1.svg[]
 
+[transition=none]
+[%notitle]
+== Think about WHAT before HOW
+
+[.center]
+Coding is turning human ideas into code.
+
+[.center]
+image::images/marc/good_practices-scale_2.svg[]
+
+[transition=none]
+[%notitle]
+== Think about WHAT before HOW
+
+[.center]
+Refactoring is turning code into human ideas
+
+[.center]
+image::images/marc/good_practices-scale_3.svg[]
 
 
+[.center]
+== Sum Up
 
+Separate the WHAT from the HOW
+
+Think about WHAT before HOW
+
+Go from the idea to the solution
 //end::include[]

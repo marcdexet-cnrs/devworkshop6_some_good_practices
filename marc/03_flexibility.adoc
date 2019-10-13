@@ -2,12 +2,27 @@
 
 //tag::include[]
 
+[.subsection.background]
+[.center]
+[%notitle]
 == Flexibility
+
+[.big]#{chapter_name} - Part {counter:design_counter:1}#
+
+[.huge]#Flexibility#
+
+== Flexibility
+
+*A REFAIRE*
 
 * Why do you need flexibility ?
 ** flexibility for change
 ** flexibility for evolution without breaking anything
 ** Don't break everything
+
+* How to get flexibility
+** Reduce Coupling
+** Use contract
 
 [NOTE.notes]
 --
@@ -75,15 +90,11 @@ The WHAT if the promise, the HOW is the implementation.
 
 == Limit required knowledge
 
-Two main ways of doing
-* Fire and forget
-* Indirection
+* Only take into account contracts
+* Have the necessary and sufficient appearance
 
-== Fire and Forget
 
-* Send something to a
-
-== CHANGE ME Be bound by the contract 0
+== Only take into account contract 0
 
 
 [.left-column]
@@ -101,7 +112,7 @@ _uses_ a component of type *B*.
 This is a dependency between *A* and *B*.
 --
 
-== CHANGE ME Be bound by the contract 1
+== Only take into account contract 1
 
 
 [.left-column]
@@ -116,7 +127,7 @@ If *B* changes, *A* is certainly forced to _adapt_.
 --
 
 
-== CHANGE ME Be bound by the contract 1b
+== Only take into account contract 1b
 
 
 [.left-column]
@@ -132,7 +143,7 @@ image::images/marc/flexibility-bound2interface_propagation_0.svg[]
 image::images/marc/flexibility-bound2interface_propagation_1.svg[]
 --
 
-== CHANGE ME Be bound by the contract 2
+== Only take into account contract 2
 
 
 [.left-column]
@@ -158,7 +169,7 @@ and doesn't care *HOW*.
 --
 
 
-== CHANGE ME Be bound by the contract 2
+== Only take into account contract 2
 
 
 
@@ -181,7 +192,7 @@ and doesn't care *HOW*.
 image::images/marc/browser_contract.gif[]
 --
 
-== CHANGE ME Be bound by the contract 3
+== Only take into account contract 3
 
 
 [.left-column]
@@ -198,7 +209,7 @@ it could be anything.
 We say dependency *implements* the contract.
 --
 
-== CHANGE ME Be bound by the contract 4
+== Only take into account contract 4
 
 
 [.left-column]
@@ -214,7 +225,7 @@ as long as it respects the contract, +
 we don't care...
 --
 
-== CHANGE ME Be bound by the contract 5
+== Only take into account contract 5
 
 
 [.left-column]
@@ -230,7 +241,7 @@ both of them have to change.
 --
 
 
-== CHANGE ME Be bound by the contract 5
+== Only take into account contract 5
 
 
 [.left-column]
@@ -246,7 +257,7 @@ From the *A* point of view, +
 --
 
 
-== CHANGE ME Be bound by the contract 6
+== Only take into account contract 6
 
 
 [.left-column]
@@ -260,7 +271,7 @@ image::images/marc/flexibility-bound2interface_6.svg[width=400]
 Illustration with a Camera Operator _using_ a camera of Fony Inc.
 --
 
-== CHANGE ME Be bound by the contract 7
+== Only take into account contract 7
 
 
 [.left-column]
@@ -278,7 +289,7 @@ Camera Operator has certainly to _be adapted_.
 And we know there's a lot of camera model on the market...
 --
 
-== CHANGE ME Be bound by the contract 8
+== Only take into account contract 8
 
 
 [.left-column]
@@ -297,7 +308,7 @@ Contrat => [.huge]#interface#.
 
 --
 
-== CHANGE ME Be bound by the contract 9
+== Only take into account contract 9
 
 
 [.left-column]
@@ -315,7 +326,7 @@ we don't care.
 
 
 
-== CHANGE ME Be bound by the contract 10
+== Only take into account contract 10
 
 
 [.left-column]
@@ -338,6 +349,8 @@ We just have to use a Mock Camera implementing _Camera Interface_.
 
 == Conclusion of abstraction
 
+*A REFAIRE*
+
 * To gain flexibility
 ** Be linked to the contract, the interface, not the implementation.
 
@@ -354,7 +367,7 @@ We just have to use a Mock Camera implementing _Camera Interface_.
 --
 
 
-== SOInterface 0
+== Have The Necessary And Sufficient Appearance 0
 
 
 [.left-column]
@@ -388,7 +401,7 @@ _sound_.
 --
 
 
-== SOInterface 0.1
+== Have The Necessary And Sufficient Appearance 0.1
 
 
 [.left-column]
@@ -405,7 +418,7 @@ responsabilities +
 in two parts.
 --
 
-== SOInterface 2
+== Have The Necessary And Sufficient Appearance 2
 
 
 [.left-column]
@@ -419,7 +432,7 @@ image::images/marc/flexibility-segregation_2.svg[width=600]
 They use the same interface.
 --
 
-== SOInterface 3
+== Have The Necessary And Sufficient Appearance 3
 
 
 [.left-column]
@@ -437,7 +450,7 @@ We get a nonsense.
 A microphone that has to handle the video aspects is *stupid*.
 --
 
-== SOInterface 4
+== Have The Necessary And Sufficient Appearance 4
 
 
 [.left-column]
@@ -458,7 +471,7 @@ and *only* what they do.
 
 
 
-== SOInterface 5
+== Have The Necessary And Sufficient Appearance 5
 
 
 [.left-column]
@@ -475,7 +488,7 @@ satisfying the interface +
 could be used.
 --
 
-== SOInterface 6
+== Have The Necessary And Sufficient Appearance 6
 
 
 [.left-column]
@@ -493,7 +506,7 @@ could be used.
 --
 
 
-== SOInterface 6.1
+== Have The Necessary And Sufficient Appearance 6.1
 
 
 [.left-column]
@@ -512,7 +525,7 @@ Whether it's implemented by _two_ components...
 --
 
 
-== SOInterface 6.2
+== Have The Necessary And Sufficient Appearance 6.2
 
 
 [.left-column]
@@ -532,7 +545,7 @@ We don't care.
 
 
 
-== SOInterface 7
+== Have The Necessary And Sufficient Appearance 7
 
 
 [.left-column]
@@ -556,7 +569,7 @@ be a _Camera interface_ +
 a _Microphone interface_ too.
 --
 
-== SOInterface 8
+== Have The Necessary And Sufficient Appearance 8
 
 
 [.left-column]
@@ -570,9 +583,8 @@ image::images/marc/flexibility-segregation_8.svg[width=600]
 So you have a very flexible architecture like this...
 --
 
-== SOInterface 9
+== Have The Necessary And Sufficient Appearance 9
 
-*A REFAIRE* fausse
 
 [.left-column]
 [.center]
@@ -582,11 +594,11 @@ image::images/marc/flexibility-segregation_9.svg[width=600]
 
 [.right-column]
 --
-\... or this.
+\... or this with a delegation to the microphone for all the _Microphone stuff_.
 --
 
 
-== SOInterface 6.before.2
+== Have The Necessary And Sufficient Appearance 6.before.2
 
 
 [.left-column]
@@ -606,7 +618,7 @@ It called +
 [.huge]#Segregation of Interfaces#.
 --
 
-== SOInterface 6.3
+== Have The Necessary And Sufficient Appearance 6.3
 
 
 [.center]
@@ -620,7 +632,7 @@ _video interface_ for video interested users.
 
 
 
-== SOInterface 6.4
+== Have The Necessary And Sufficient Appearance 6.4
 
 
 [.center]
@@ -633,7 +645,7 @@ _Microphone interface_ for sound interested users.
 --
 
 
-== SOInterface 10
+== Have The Necessary And Sufficient Appearance 10
 
 
 [.left-column]

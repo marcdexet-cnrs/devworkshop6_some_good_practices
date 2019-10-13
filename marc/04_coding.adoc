@@ -4,6 +4,9 @@
 
 == Naming
 
+
+include::04_writing_reading.adoc[tag=include]
+
 == Small is beautiful
 
 === Small functions

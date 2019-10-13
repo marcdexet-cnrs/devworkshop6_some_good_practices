@@ -12,8 +12,17 @@ Ce sont des lignes de conduites
 
 //tag::include[]
 
+[.inverse.background]
+[.center]
+[%notitle]
+== Attitude
 
-{counter2:design_counter}
+:chapter_name: Design
+
+[.big]#Chapter {counter:main_part_counter:1}# +
+[.huge]#{chapter_name}#
+
+
 
 
 [.subsection.background]
@@ -21,11 +30,12 @@ Ce sont des lignes de conduites
 [%notitle]
 == Dealing With Complexity
 
-[.big]#Part {design_counter}# +
+[.big]#{chapter_name} - Part {counte_counter:1}#
+
+
 [.huge]#Dealing With Complexity#
 
-
-== Dealing With Complexity
+== Complexity, Complication
 
 
 [.fragment]
@@ -37,26 +47,24 @@ Ce sont des lignes de conduites
 
 [.fragment]
 --
-If _complexity_ is not a problem, _complication_ should be avoided.
+If [.big]*_complexity_* is not a problem, [.big]*_complication_* should be avoided.
 --
 
 [.fragment]
 --
 * Abstraction, Complixity, Complication
-** The more _abstract_ are ideas, the more _complex_ is implementation.
-** The more _complex_ is implementation, the more _complicated_ *may be* the code
+** The more *_abstract_* and *_high-level_* are ideas, the more *_complex_* is implementation.
+** The more *_complex_* is implementation, the more *_complicated_* *may be* the code
 --
 
 [.fragment]
 [.center]
 --
-[big]#Complexity#  => [.big]#Complicated#
-
-
 In general, _complexity_ leads to _complication_ if you are not careful.
 --
 
 [.fragment]
+[.center]
 --
 So be careful...
 --
@@ -80,14 +88,24 @@ https://www.itrw.net/2016/06/27/organized-cabling-is-better-cabling-avoid-server
 --
 
 
-== Dealing With Complexity
+== How To Deal With Complexity
 
+[.step]
 * Reduce the number of elements to take into account
 * Distinguish different levels of abstraction
 * Isolate and decouple elements
 
 
-== Reduce the number of elements to take into account
+[.subsection.background]
+[.center]
+[%notitle]
+== Reduce The Number Of Elements To Take Into Account
+
+Dealing With Complexity
+
+[.huge]#Reduce The Number Of Elements To Take Into Account#
+
+== Reduce The Number Of Elements To Take Into Account
 
 If there's a few elements, it doesn't really matter.
 
@@ -103,7 +121,8 @@ If there's a few elements, it doesn't really matter.
 --
 
 [transition=none]
-== Reduce the number of elements to take into account
+[%notitle]
+== Reduce The Number Of Elements To Take Into Account
 
 But with some more...
 
@@ -111,7 +130,8 @@ But with some more...
 image::images/marc/good_practices-reduce_complexity_1.svg[]
 
 [transition=none]
-== Reduce the number of elements to take into account
+[%notitle]
+== Reduce The Number Of Elements To Take Into Account
 
 Imagine each element could be linked to a concern...
 
@@ -124,6 +144,7 @@ A concern is a subject of interest, a goal
 
 [.left-column]
 --
+[.ppt]
 * For a restaurant
 ** Kitchen
 ** Cooking
@@ -136,6 +157,7 @@ A concern is a subject of interest, a goal
 
 [.right-column]
 --
+[.ppt]
 * For a car
 ** Engine
 ** Fuel
@@ -149,25 +171,36 @@ A concern is a subject of interest, a goal
 Try to connect each element to a concern !
 --
 
-== Group by concern
+[transition=none]
+[%notitle]
+== Reduce The Number Of Elements To Take Into Account
 
 [.center]
 image::images/marc/good_practices-reduce_complexity_2.svg[]
 
 [transition=none]
-== Group by concern
+[%notitle]
+== Reduce The Number Of Elements To Take Into Account
+
+Group them by _concern_
 
 [.center]
 image::images/marc/good_practices-reduce_complexity_3.svg[]
 
 [transition=none]
-== Group by concern
+[%notitle]
+== Reduce The Number Of Elements To Take Into Account
+
+Group them by _concern_
 
 [.center]
 image::images/marc/good_practices-reduce_complexity_4.svg[]
 
 [transition=none]
-== Group by concern
+[%notitle]
+== Reduce The Number Of Elements To Take Into Account
+
+Group them by _concern_
 
 [.center]
 image::images/marc/good_practices-reduce_complexity_6.svg[]
@@ -176,7 +209,7 @@ image::images/marc/good_practices-reduce_complexity_6.svg[]
 == Separation of concern
 
 [.center]
-image::images/marc/good_practices-reduce_complexity_6.svg[width=200]
+image::images/marc/good_practices-reduce_complexity_6.svg[width=300]
 
 [.center]
 This is, +
@@ -198,21 +231,22 @@ But, you have reduced _cognitively_ the number of elements ...
 
 == Separation of concern
 
-Grouping element by concern could be a question of point of view.
+Grouping element by concern could be *a question of point of view*.
 
 
 * Choose contents such as
-** They have limited _intersection_,
+** They have *limited _intersection_*,
 *** _but intersection will occur._
-** They are consistent and focused,
+** They are *consistent* and *focused*,
 *** _Cooking and Astronomy_ is not very consistent !
 
 [.fragment]
-* In programming world :
-** Module
-** Package
-** Namespace
-** Classe
+[.ppt]
+* In programming world =>
+** _Module_
+** _Package_
+** _Namespace_
+** _Classe_
 
 include::03_levels_of_abstraction.adoc[tag=include]
 
