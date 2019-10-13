@@ -88,18 +88,18 @@ from +
 --
 
 [.fragment]
+[.center]
 --
-====
 To calm the incessant movement of ideas:
 
 
-Think about WHAT you want to achieve +
-_before_ +
-you consider HOW to get it.
-====
+Think about *WHAT* you want to achieve +
+[.big]#_before_# +
+you consider *HOW* to get it.
 --
 
 [.fragment]
+[.center]
 And write or draw it !!
 
 
@@ -338,7 +338,7 @@ And *I don't care*... now.
 
 And so on ...
 
-[.very-big]
+[.big]
 [source,python]
 ----
 class ApplePieRecipe(Recipe):
@@ -369,6 +369,8 @@ class ApplePieRecipe(Recipe):
 ----
 
 == Learn to delegate to a futur you
+
+*A REFAIRE*
 
 This way you could quickly define what you really need.
 

@@ -58,6 +58,8 @@ image::images/marc/OpenBCoupling.gif[]
 
 == How to decouple ?
 
+*A REFAIRE*
+
 In software, coupling means you're bound by too much knowledge.
 
 * Limit required knowledge
@@ -570,6 +572,7 @@ So you have a very flexible architecture like this...
 
 == SOInterface 9
 
+*A REFAIRE* fausse
 
 [.left-column]
 [.center]
@@ -653,6 +656,7 @@ the camera _Manufacturer Universe_.
 
 == Put a abstraction layer between component
 
+*A REFAIRE*
 
 A interface is door fire-cut.
 

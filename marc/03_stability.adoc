@@ -2,6 +2,7 @@
 
 //tag::include[]
 
+[transition=fade]
 == Open Closed 0
 
 [.left-column]
@@ -20,6 +21,7 @@ _battery_, +
 and so on.
 --
 
+[transition=fade]
 == Open Closed 1
 
 [.left-column]
@@ -36,6 +38,7 @@ with differents connectors +
 for _optical_, _battery_, ...
 --
 
+[transition=fade]
 == Open Closed 2
 
 [.left-column]
@@ -49,6 +52,7 @@ image::images/marc/flexibility-openclosed_2.svg[]
 So you can create several configurations.
 --
 
+[transition=fade]
 == Open Closed 3
 
 [.left-column]
@@ -62,6 +66,7 @@ image::images/marc/flexibility-openclosed_3.svg[]
 One with a more powerful _battery_...
 --
 
+[transition=fade]
 == Open Closed 4
 
 [.left-column]
@@ -75,6 +80,7 @@ image::images/marc/flexibility-openclosed_4.svg[]
 One with a different _optical system_...
 --
 
+[transition=fade]
 == Open Closed 5
 
 [.left-column]
@@ -88,6 +94,7 @@ image::images/marc/flexibility-openclosed_5.svg[]
 One with a deported _monitoring device_...
 --
 
+[transition=fade]
 == Open Closed 6
 
 [.left-column]
@@ -102,6 +109,7 @@ Or a waterproof model with deported _commands_.
 --
 
 
+[transition=fade]
 == Open Closed 6.1
 
 [.left-column]
@@ -115,6 +123,7 @@ image::images/marc/flexibility-openclosed_6.1.svg[]
 But you can not modify the _command sytem_...
 --
 
+[transition=fade]
 == Open Closed 6.2
 
 [.left-column]
@@ -160,9 +169,13 @@ This is a illustration of the +
 The *Open/Closed* principle ensure that usage of your component could be extended safely without being modified.
 
 
-It's very useful when the components is *_shared_* +
-over several project.
+* It's very useful when the component
+** is *_shared_* over several project,
+** is validated and well tested,
+** is sealed
+*** modification will be impossible.
 
+[transition=fade]
 == Open Closed 7
 
 [.left-column]
@@ -177,6 +190,7 @@ Imagine a camera for the general public, +
 with all included inside the frame.
 --
 
+[transition=fade]
 == Open Closed 8
 
 [.left-column]
@@ -190,6 +204,7 @@ image::images/marc/flexibility-openclosed_8.svg[]
 There's no way to extend it...
 --
 
+[transition=fade]
 == Open Closed 9
 
 [.left-column]
@@ -203,6 +218,7 @@ image::images/marc/flexibility-openclosed_9.svg[]
 Impossible to change the _battery_ ...
 --
 
+[transition=fade]
 == Open Closed 10
 
 [.left-column]
@@ -216,6 +232,7 @@ image::images/marc/flexibility-openclosed_10.svg[]
 Nor the _optical system_...
 --
 
+[transition=fade]
 == Open Closed 11
 
 [.left-column]
@@ -229,6 +246,7 @@ image::images/marc/flexibility-openclosed_11.svg[]
 Nor the _visor_.
 --
 
+[transition=fade]
 == Open Closed 12
 
 [.left-column]
@@ -246,6 +264,7 @@ This camera doesn't respect the *open/closed* principle.
 --
 
 
+[transition=fade]
 == Open closed behavior
 
 A _FilmDirector_ has to check everything is ready before starting to shoot.
@@ -285,6 +304,7 @@ class FilmDirector:
 This class is not open to extends its _behavior_.
 
 
+[transition=fade]
 == Open closed behavior
 
 Using a list of directors opens the component for an extension of its behavior.

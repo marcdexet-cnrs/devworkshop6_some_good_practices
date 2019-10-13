@@ -4,38 +4,72 @@
 
 //tag::include[]
 
+
+[.dark.background]
+[.center]
+== What Do We Do When Developing Software?
+
+
+Basically ?
+
+
+[.fragment]
+We turn _human_ [.huge]#ideas#  into _computer_ [.huge]#code#
+
+
+[.fragment]
+[.smaller]
+\...for the sake of simplicity
+
+
 == Why A Talk About Good Practices ?
 
-* Developing is turning human ideas into computer code
-** for the sake of simplicity
-* There's several way of doing it
-** A lot of them have been followed by a lot of people,
-** Some of them lead to disaster
-** other to a kind consensus
-* We call them the _good practices_
-** It's preferable to follow some of them
-* Because developement could be tricky
 
+[.fragment]
+--
+* There’s several ways of developing
+** A lot of them have been tried by a lot of people,
+** Some of them lead to *disaster*,
+** Other to a *consensus* in Software Engineering how to _avoid_ disaster.
+--
+[.fragment]
+--
+* We call them the *_good practices_*
+** It's preferable to follow some of them
+--
+[.fragment]
+* Because developement could be *tricky*
 
 [.center]
 == Why It's So Tricky ?
 
 image::images/marc/tricky.gif[]
 
+
+* There are several possible reasons to make development tricky.
+** Difficult technologies,
+** Difficult problem to solve,
+** Rapid evolution of software concepts.
+
+But the main cause is our human nature...
+
 == Mainly Because Of Our Human Nature
 
-* First processor is human brain
+[.fragment]
+* Human Brain
+** First processor to turn human ideas into computer code
 
+[.fragment]
 * Good Points
 ** It detects patterns, similarities,
 ** It learns, extrapolates and generalizes quickly.
 
-
+[.fragment]
 * Not So Good Points
 ** Short-memory buffer limited to "The Magical Number Seven, Plus or Minus Two",
 ** Hates repetitive tasks without interest,
 ** Get quickly lost by arbitrary,
-** cognitive and cultural biases we have to deal with.
+** Cognitive and cultural biases we have to deal with.
 
 [.fragment]
 --
@@ -70,8 +104,8 @@ So if we ignore our capacities, we empty the ocean with a small spoon.
 
 * By following some good practices among a lot of them.
 * By applying them into these fields
-** Brain food
-** Attitude
+** Be kind to our brain
+** Adopt Favourable Attitude
 ** Conception
 ** Coding
 ** Testing

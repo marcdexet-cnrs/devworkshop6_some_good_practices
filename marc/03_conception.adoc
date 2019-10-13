@@ -176,17 +176,23 @@ image::images/marc/good_practices-reduce_complexity_6.svg[]
 == Separation of concern
 
 [.center]
-image::images/marc/good_practices-reduce_complexity_6.svg[width=400]
+image::images/marc/good_practices-reduce_complexity_6.svg[width=200]
 
-This is, roughly speaking, the principle of good practice *Separation of Concern*.
+[.center]
+This is, +
+roughly speaking, +
+the principle of +
+[.huge]#Separation of Concern#.
 
-
+[.center]
 You didn't magically remove _all_ the complexity.
 
 [.fragment]
+[.center]
 But, you have reduced _cognitively_ the number of elements ...
 
 [.fragment]
+[.center]
 \... per *level of abstraction*
 
 
@@ -196,109 +202,19 @@ Grouping element by concern could be a question of point of view.
 
 
 * Choose contents such as
-** they have limited _intersection_,
+** They have limited _intersection_,
 *** _but intersection will occur._
-** they are consistent and focused,
+** They are consistent and focused,
 *** _Cooking and Astronomy_ is not very consistent !
 
 [.fragment]
 * In programming world :
-** module
-** package
-** namespace
-** classe
+** Module
+** Package
+** Namespace
+** Classe
 
-
-== Separate levels of abstraction
-
-[.center]
-image::images/marc/good_practices-level_complexity_2_0.svg[width=600]
-
-
-[transition=none]
-== Separate levels of abstraction
-
-[.left-column]
-[.center]
-image::images/marc/good_practices-level_complexity_2_1.svg[width=600]
-
-[.right-column]
---
-* Several layers of abstraction,
-** From the general concepts to the specialized components.
---
-
-[transition=none]
-== Separate levels of abstraction
-
-[.left-column]
-[.center]
-image::images/marc/good_practices-level_complexity_2_1_bis.svg[width=600]
-
-
---
-* On each layer we found the elements
-** by level  of abstraction.
---
-
-[transition=none]
-== Separate levels of abstraction
-
-[.left-column]
-[.center]
-image::images/marc/good_practices-level_complexity_2_2.svg[width=600]
-
-
-[.right-column]
---
-* Each level could be separated by sub-concern
---
-
-[transition=none]
-== Separate levels of abstraction
-
-[.left-column]
-[.center]
-image::images/marc/good_practices-level_complexity_2_3.svg[width=600]
-
-
-[.right-column]
---
-* Element could interact
-** Inside a concern
-*** At the same level
-*** From level to another one
-** Between concerns
---
-
-[transition=none]
-== Separate levels of abstraction
-
-[.left-column]
-[.center]
-image::images/marc/good_practices-level_complexity_2_4.svg[width=600]
-
-[.right-column]
---
-* But one of the best way of doing
-** is to interact through the top levels
---
-
-
-[transition=none]
-== Separate levels of abstraction
-
-[.left-column]
-[.center]
-image::images/marc/good_practices-level_complexity_blackboxes.svg[width=600]
-
-[.right-column]
---
-* Such as black boxes
-** whose contents can be more freely modified.
-* It provides more *isolation*
---
-
+include::03_levels_of_abstraction.adoc[tag=include]
 
 include::03_illustration_with_movie_industry.adoc[tag=include]
 
@@ -308,80 +224,8 @@ include::03_flexibility.adoc[tag=include]
 
 include::03_stability.adoc[tag=include]
 
-== Single Responsability
+include::03_focus.adoc[tag=include]
 
-
-== Segregation of interface
-
-
-[source,python]
-----
-class FilmDirector :
-...
-	def say_action(self, john: John):
-		if john.say_set_is_ready():
-			do_something()
-		if john.say_lighting_is_ok():
-			do_something_else()
-
-----
-
-But John is tired and is remplaced by Barabara who give lightnig direction to Tuong
-
-
-
-[source,python]
-----
-class FilmDirector :
-...
-	def say_action(self, barabara: Barabara):
-		if barabara.say_set_is_ready():
-			do_something()
-		if barabara.say_lighting_is_ok(): # Oooops
-			do_something_else()
-
-----
-
-
-
-[source,python]
-----
-class FilmDirector :
-...
-	def say_action(self, barabara: Barabara, tuong: Tuong):
-		if barabara.say_set_is_ready():
-			do_something()
-		if tuong.say_lighting_is_ok():
-			do_something_else()
-
-----
-
-
-FilmDirector is coupled to implementation.
-
-it's bad
-
-What itreally need is specific responsability centric abstraction
-
-[source,python]
-----
-class FilmDirector :
-...
-	def say_action(self, set_director: SetDirector, lighting_director: LightingDirector):
-		if set_director.say_set_is_ready():
-			do_something()
-		if lighting_director.say_lighting_is_ok():
-			do_something_else()
-
-----
-
-
-
-[NOTE.notes]
---
-Imagine that John is the Set Director and the Lighting Director.
-The Film Director is thigly coupled to knwoledge of what John does.
---
 
 
 //end::include[]

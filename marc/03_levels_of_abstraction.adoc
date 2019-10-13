@@ -1,0 +1,95 @@
+= Separation of level of abstraction
+
+//tag::include[]
+
+== Separate Levels Of Abstraction
+
+[.center]
+image::images/marc/good_practices-level_complexity_2_0.svg[width=600]
+
+
+[transition=none]
+== Separate Levels Of Abstraction
+
+[.left-column]
+[.center]
+image::images/marc/good_practices-level_complexity_2_1.svg[width=600]
+
+[.right-column]
+--
+* Several layers of abstraction,
+** From the general concepts to the specialized components.
+--
+
+[transition=none]
+== Separate Levels Of Abstraction
+
+[.left-column]
+[.center]
+image::images/marc/good_practices-level_complexity_2_1_bis.svg[width=600]
+
+
+--
+* On each layer we found the elements
+** by level  of abstraction.
+--
+
+[transition=none]
+== Separate Levels Of Abstraction
+
+[.left-column]
+[.center]
+image::images/marc/good_practices-level_complexity_2_2.svg[width=600]
+
+
+[.right-column]
+--
+* Each level could be separated by sub-concern
+--
+
+[transition=none]
+== Separate Levels Of Abstraction
+
+[.left-column]
+[.center]
+image::images/marc/good_practices-level_complexity_2_3.svg[width=600]
+
+
+[.right-column]
+--
+* Element could interact
+** Inside a concern
+*** At the same level
+*** From level to another one
+** Between concerns
+--
+
+[transition=none]
+== Separate Levels Of Abstraction
+
+[.left-column]
+[.center]
+image::images/marc/good_practices-level_complexity_2_4.svg[width=600]
+
+[.right-column]
+--
+* But one of the best way of doing
+** is to interact through the top levels
+--
+
+
+[transition=none]
+== Separate Levels Of Abstraction
+
+[.left-column]
+[.center]
+image::images/marc/good_practices-level_complexity_blackboxes.svg[width=600]
+
+[.right-column]
+--
+* Such as black boxes
+** whose contents can be more freely modified.
+* It provides more *isolation*
+--
+
+//end::include[]

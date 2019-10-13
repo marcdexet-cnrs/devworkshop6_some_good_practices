@@ -27,16 +27,31 @@ image::images/marc/arrival-movie-2016-i-am-human-scene.jpg[width=800]
 [.white-text]
 Be Kind To Our Human Brain
 
+[.splash.background]
+[.center]
 == Do Not Overload Mental Mapping
 
-* reprendre slide
+Brain is not good +
+at following complex branching +
+or keeping _arbitrary_ references.
 
+image::images/marc/commons.wikimedia.org.DijkstraDemo.gif[]
+
+[.splash.background]
+[.center]
 == Give Regularity And Consistency
 
-* reprendre slide
+Brain learns from *patterns* if they're *visible*.
 
-== Don't get lost in translation
+image::images/marc/imagurc_BOMf4.jpg[width=800]
 
+
+== Don't Get Lost In Translation
+
+*A REFAIRE*
+
+[.at-top-right]
+image::https://media.giphy.com/media/1WWh4ixLrxxTy/giphy.gif[]
 
 [.fragment]
 --
@@ -46,17 +61,43 @@ Be Kind To Our Human Brain
 
 [.fragment]
 --
-* Translation Implies Distorsion
-** The further _away_ from the code, the _greater_ the distortion.
-** To _convert_ and _adapt_ into code => To _modify_ or _lost_ the meaning of our original ideas
+* Translation implies distorsion
+** The further *_away_* from the _code_, the _greater_ the *distortion*.
+** To _convert_ and _adapt_ into code => To _modify_ or _lost_ part of our original ideas
+--
+
+[.fragment]
+--
+Ever try to connect
 --
 
 
-== Help it to do not fear to act
+[.splash.background]
+[.center]
+[%notitle]
+== Don't Be Afraid To Act
 
-* Fear limit our creativity
+image::images/marc/break_everything.gif[]
 
-Reprendre le slide
+[.notes]
+--
+You know this fear of breaking what's working by changing a little thing.
+The fear of breaking something literally *blocks* our brain.
+--
+
+[.splash.background]
+[.center]
+== Don't Be Afraid To Act
+
+image::images/marc/break_everything.gif[width=200]
+
+
+[.fragment]
+This *fear* reflects our inability to anticipate everything in the event of a change.
+
+[.fragment]
+So we have to deal with it and find ways to limit it.
+
 
 == Freeze The Brownian Motion Of Ideas
 
@@ -69,8 +110,7 @@ Reprendre le slide
 [.big]
 [.fragment]
 --
-We Need To Freeze +
-The Brownian Motion Of Ideas !
+Firstly, We Need To Freeze The Brownian Motion Of Ideas !
 --
 
 [.at-top-right]
@@ -132,6 +172,15 @@ _"The Pragmatic Programmer"_
 [.center]
 image::images/marc/Rubber_duck_assisting_with_debugging.jpg[width=300]
 
+
+[.notes]
+--
+Our brain is sometime to small for so many ideas.
+You have to translate your problems and concepts to somebody else.
+If you don't make the effort to try, you will be the only person on earth to understand what's your doing.
+And it's not good for you.
+--
+
 [.dark.background]
 [%notitle]
 [.center]
@@ -149,9 +198,9 @@ _Draw it, and it's fine_
 
 [.left-column]
 --
-* Formalisme doesn't matter
+* Formalism doesn't matter
 ** Sketch by hand
-** Unified Langage Method (UML)
+** Unified Language Method (UML)
 --
 
 [.right-column]
