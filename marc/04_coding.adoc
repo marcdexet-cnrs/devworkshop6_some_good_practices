@@ -1,0 +1,17 @@
+= Coding
+
+//tag::include[]
+
+== Naming
+
+== Small is beautiful
+
+=== Small functions
+
+
+include::04_learn_to_delegate.adoc[tag=include]
+
+
+== Don't comment, code
+
+//end::include[]

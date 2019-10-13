@@ -1,0 +1,119 @@
+= Learn to delegate
+
+//tag::include[]
+
+
+[.dark.background]
+[%notitle]
+[.center]
+== Learn to delegate to a futur you
+
+[.fragment]
+[.huge]
+--
+Learn To Delegate problems
+--
+
+[.fragment]
+[.huge]
+--
+\... to a future you
+--
+
+== Learn to delegate to a futur you
+
+* Don't try to fix everything *NOW*
+** Identify *WHAT* you want
+** _Postpone_ the resolution of the *HOW* to later
+* Don't get _trapped_ into implementation details from the beginning.
+
+== Learn to delegate to a futur you
+
+[.very-big]
+[source,python]
+----
+class ApplePieRecipe(Recipe):
+
+    def make_an_apple_pie(self, nb_person: int) -> ApplePie :
+        pass
+----
+
+[%notitle]
+== Exemple Of Delegation
+
+[.very-big]
+[source,python]
+----
+class ApplePieRecipe(Recipe):
+
+    def make_an_apple_pie(self, nb_person: int) -> ApplePie :
+        self.collect_ingredients(nb_person)
+----
+
+_collect_ingredients_ doesn't exist.
+
+[.fragment]
+--
+I created _collect_ingredients_, ...
+[.very-big]
+[source,python]
+----
+class ApplePieRecipe(Recipe):
+
+    def make_an_apple_pie(self, nb_person: int) -> ApplePie :
+        self.collect_ingredients(nb_person)
+
+
+    def collect_ingredients(self, nb_person: int):
+        # Thank you futur me to code this
+        pass
+----
+
+\..., but I don't know *HOW* it will work.
+--
+
+[.fragment]
+And *I don't care*... now.
+
+[%notitle]
+== Exemple Of Delegation
+
+And so on ...
+
+[.big]
+[source,python]
+----
+class ApplePieRecipe(Recipe):
+
+    def make_an_apple_pie(self, nb_person: int) -> ApplePie :
+        self.collect_ingredients(nb_person)
+        self.collect_kitchen_ustensils()
+        self.prepare_mixture()
+        self.prepare_the_cake_dough()
+        self.set_the_mixture_in_cake_dough()
+        self.put_to_oven()
+
+    def collect_ingredients(self, nb_person: int):
+        # Thank you futur me to code this
+        pass
+
+    def collect_kitchen_ustensils(self):
+        # Thank you futur me to code this
+        pass
+
+    def prepare_mixture(self):
+        # Thank you futur me to code this
+        pass
+
+    def prepare_the_cake_dough(self):
+        # Thank you futur me to code this
+        pass
+----
+
+== Learn to delegate to a futur you
+
+*A REFAIRE*
+
+This way you could quickly define what you really need.
+
+//end::include[]

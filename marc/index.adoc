@@ -16,30 +16,7 @@ include::02_general.adoc[tag=include]
 
 include::03_conception.adoc[tag=include]
 
---
-Idée de garder un fil rouge
-
-* Quelques principes généraux (human, compréhension, décomposition)
-* Application à travers les différents aspects.
-
-Quel est mon fil rouge ?
-
-
-Mon fil rouge est qu'il faut garder le lien entre les idées et la réalisation.
-Il faut garder le code humain car nous n'avons pas d'autres alternatives.
-Il faut avoir une pratique qui ne relève pas de la virtuosité, mais de l'utilité élégante.
-Il ne faut pas s'esbaudir devant la performance d'un premier violon, avec l'idée que nous ne saurions pas faire de même, mais devant l'élégance et le pragmatisme d'une mise en oeuvre qui nous fait progresser.
-Il faut remettre le logiciel, surtout dans le cadre d'Euclid, à sa juste place: celle d'un outil au service d'idées.
-Toutefois, le message qu'il faut faire passer, c'est que c'est beau être un outil (au sens que ce n'est pas une fin en soi), mal utilisé, mal construit, mal compris, l'outil va desservir sa finalité, il va se retourner contre son créateur, et d'outil apportant son soutient, il va devenir un fardeau.
-
-
-Le fil rouge est de donner des bonnes pratiques parmi tant d'autres, sur plusieurs niveaux
-
-* Général
-* Conception
-* Codage
-* Validation
---
+include::04_coding.adoc[tag=include]
 
 
 
