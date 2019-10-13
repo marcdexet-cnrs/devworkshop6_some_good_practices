@@ -41,8 +41,7 @@ You read 10 more than you write
 * Comprehension Matters
 --
 
-[.fragment]
---
+== Comprehension Matters
 [.center]
 Compare
 
@@ -53,10 +52,7 @@ if sa:
     ssh()
     claw()
 ----
---
 
-[.fragment]
---
 [.right-column.very-big]
 [source,python]
 ----
@@ -64,7 +60,6 @@ if stage_accident:
     stop_shooting()
     call_lawyers()
 ----
---
 
 
 == Comprehension Matters
@@ -79,5 +74,5 @@ if stage_accident:
 
 [.ppt]
 * Avoid *unpronounceable* names
-** As "_wcrfs_" for "_Waterproof Camera Ready For Scene_".
+** As "_kwcrfs_" for "_Key Waterproof Camera Ready For Scene_".
 //end::include[]
