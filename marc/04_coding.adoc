@@ -7,7 +7,7 @@
 
 include::04_writing_reading.adoc[tag=include]
 
-== Small is beautiful
+include::04_think_small_and_modular.adoc[tag=include]
 
 === Small functions
 
