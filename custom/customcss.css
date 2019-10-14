@@ -164,7 +164,8 @@ section.splash.background h6 {
 }
 
 pre.listingblock code {
-  font-family: "Source Code Pro"
+  /*font-family: "Source Code Pro"*/
+  font-family: "Roboto Mono";
 }
 
 pre.CodeRay.listingblock.left-column,
@@ -173,12 +174,12 @@ pre.CodeRay.listingblock.right-column {
 }
 
 pre.CodeRay.listingblock.big {
-    line-height: 1em;
+    /*line-height: 1em;*/
     font-size: 0.8em;
 }
 
 pre.CodeRay.listingblock.very-big {
-    line-height: 1.2em;
+    /*line-height: 1.2em;*/
     font-size: 1em;
 }
 
