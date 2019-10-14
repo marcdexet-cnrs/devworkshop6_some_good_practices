@@ -163,6 +163,10 @@ section.splash.background h6 {
     color: burlywood;
 }
 
+pre.listingblock code {
+  font-family: "Source Code Pro"
+}
+
 pre.CodeRay.listingblock.left-column,
 pre.CodeRay.listingblock.right-column {
     width: 45%;
