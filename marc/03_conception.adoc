@@ -30,7 +30,7 @@ Ce sont des lignes de conduites
 [%notitle]
 == Dealing With Complexity
 
-[.big]#{chapter_name} - Part {counte_counter:1}#
+[.big]#{chapter_name} - Part {counter:design_counter:1}#
 
 
 [.huge]#Dealing With Complexity#
@@ -206,6 +206,7 @@ Group them by _concern_
 image::images/marc/good_practices-reduce_complexity_6.svg[]
 
 
+[%notitle]
 == Separation of concern
 
 [.center]

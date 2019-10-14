@@ -33,7 +33,7 @@ We turn _human_ [.huge]#ideas#  into _computer_ [.huge]#code#
 * There’s several ways of developing
 ** A lot of them have been tried by a lot of people,
 ** Some of them lead to *disaster*,
-** Other to a *consensus* in Software Engineering how to _avoid_ disaster.
+** Other to a *consensus* about how to _avoid_ disaster.
 --
 [.fragment]
 --
@@ -53,7 +53,7 @@ image::images/marc/tricky.gif[]
 
 
 [.ppt]
-* There are several possible reasons to make development tricky.
+* Several possible reasons
 ** Difficult technologies,
 ** Difficult problem to solve,
 ** Rapid evolution of software concepts.
@@ -102,10 +102,10 @@ So if we ignore our capacities, we empty the ocean with a small spoon.
 == What Are The Challenges Of Development ?
 
 * To handle **complexity**,
-* To successfully translate human ideas into computer code
+* To successfully *translate* human ideas into computer code
 ** and vice versa
 * To allow changement and evolution
-** To not be afraid to break everything
+** To not be *afraid to break everything*
 * To ensure that software is doing what is expected to do,
 
 
@@ -116,9 +116,8 @@ So if we ignore our capacities, we empty the ocean with a small spoon.
 * By following some good practices among a lot of them.
 [.ppt]
 * By applying them into these fields
-** Be kind to our brain
-** Adopt Favourable Attitude
-** Conception
+** Attitude
+** Design
 ** Coding
 ** Testing
 
