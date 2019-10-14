@@ -61,6 +61,13 @@ if stage_accident:
     call_lawyers()
 ----
 
+[.reset-column]
+
+[.fragment]
+You *have* to be as direct as possible.
+
+[.fragment]
+No `short symbole` -> `human words` -> `oh, wait ...`
 
 == Comprehension Matters
 
@@ -76,8 +83,53 @@ if stage_accident:
 * Avoid *unpronounceable* names
 ** As "_kwcrfs_" for "_Key Waterproof Camera Ready For Scene_".
 
+[%notitle]
+[.center]
+== Use Meaningful Names
 
-== Follow Scope Length Rule
+
+To avoid to be +
+_lost in translation_, +
+[.huge]#stay close +
+to +
+human words +
+(world)#
+
+
+[%notitle]
+[.center]
+== Use Meaningful Names
+
+Use [.huge]#meaningful# names !
+
+[.fragment]
+_Short names only save time when writing, not when understanding._
+
+[.fragment]
+But a *meaningful* name save time and avoid headaches...
+
+[%notitle]
+[.center]
+== Use Meaningful Names
+
+image::images/marc/searching_meaningful_variable_name2.png[height=600]
+
+[NOTE.notes]
+--
+Getting a meaningful name is so important that's it's a joke in developement community.
+--
+
+[.center]
+== Naming rules
+
+A guide to get meaningful names...
+
+[NOTE.notes]
+--
+C++ have to translate into the C++ convention
+--
+
+== Naming: Follow Scope Length Rule
 
 [.center]
 The name +
@@ -87,7 +139,7 @@ be as [.huge]#*short*# +
 as its [.huge]#*scope*#.
 
 
-== Follow Scope Length Rule
+== Naming: Follow Scope Length Rule
 
 [.center]
 The name _**can**_ ( and not _should_ ) +
@@ -101,39 +153,21 @@ def turn_on_cameras(cameras):
       s = c.status
       if s == 'off':
         c.turn_on()
+
+# And we don't care anymore of 'c' and 's',
+# end of the story !
 ----
 
-[.center]
-vs
+== Naming: Follow Scope Length Rule
 
 [.big]
 [source,python]
 ----
 wc = WaterproofCamera()
-cm = CameraMan()
-----
 
-[.center]
-and 100 lines further
-
-[.big]
-[source,python]
-----
-if wc.is_ready() == False or cm is None :
-    stop_all()
-----
-
-
-== Follow Scope Length Rule
-
-[.big]
-[source,python]
-----
-wc = WaterproofCamera()
-cm = CameraMan()
 # and 100 lines further
 
-if wc.is_ready() == False or cm is None :
+if wc.is_ready() == False: # What is this wc ?
     stop_all()
 ----
 
@@ -144,15 +178,14 @@ vs
 [source,python]
 ----
 waterproof_camera = WaterproofCamera()
-cameraman = CameraMan()
+
 # and 100 lines further
 
-if waterproof_camera.is_ready() == False or cameraman is None :
+if waterproof_camera.is_ready() == False:
     stop_all()
 ----
 
 == Naming: Follow Universal Convention
-
 
 * Object, variable, property &rarr; **NOUN**.
 
@@ -164,6 +197,8 @@ stunter = stunt.Stunter()
 ----
 
 
+[.fragment]
+--
 * Action, function, method &rarr; **VERB**.
 
 [.big]
@@ -173,8 +208,10 @@ def feed_movie_star(star):
     caviar = get_food_for("star")
     star.eat(food)
 ----
+--
 
-
+[.fragment]
+--
 * Collection, list, set &rarr; **PLURIAL**.
 
 [.big]
@@ -183,7 +220,7 @@ def feed_movie_star(star):
 actors = find_actors_for_movie('Euclid 2 the return')
 actor_names = ['Kitty', 'Sam']
 ----
-
+--
 
 == Naming: Follow Universal Convention
 
@@ -191,16 +228,33 @@ actor_names = ['Kitty', 'Sam']
 * Dictionary, Map : indicate *key* to not be mistaken with collections.
 
 [.big]
+----
+<subject>_by_<key>()
+
+<subject>_to_<key>()
+----
+
+As
+
+[.big]
 [source,python]
 ----
 actors_by_movie['Euclid 2 the return']
 
-country_to_actors_map['ES'] = find_actors_in_country('ES')
+country_to_actors['ES'] = find_actors_in_country('ES')
 ----
 
+== Naming: Follow Universal Convention
 
 * Use _suffix_ if it helps to avoid mistake
-when your language is dynamically typed.
+when *your language is dynamically typed*.
+
+[.big]
+----
+<subject>_<type>()
+----
+
+As
 
 [.big]
 [source,python]
@@ -217,8 +271,7 @@ camera_set
 
 * Following pattern
 
-[.big]
-[source]
+[.very-big]
 ----
 <action>_<subject>()
 ----
@@ -228,14 +281,14 @@ As
 [.big]
 [source,python]
 ----
-decorations = build_decorations("scene 1.3")
+bring_camera_for_set(waterproof_camera, "scene 1.3")
 
-move_decorations_to(decorations, "New York")
+move_actors_to(actors, "New York")
 
 get_decorations_settings("scene 1.3")
 ----
 
-== Include Useful Informations
+== Naming: Include Useful Informations
 
 [.big]
 [source,python]

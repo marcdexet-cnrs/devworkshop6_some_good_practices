@@ -315,6 +315,14 @@ Refactoring is turning code into human ideas
 [.center]
 image::images/marc/good_practices-scale_3.svg[]
 
+[.center]
+== Premature Optimization Is The Root Of All Evil
+
+Do not get into optimize prematurely
+
+Wait until you have the full sequence *working*
+
+Wait to constat you get really a problem of performance
 
 [.center]
 == Sum Up
@@ -324,4 +332,6 @@ Separate the WHAT from the HOW
 Think about WHAT before HOW
 
 Go from the idea to the solution
+
+Do not get into optimize prematurely
 //end::include[]
