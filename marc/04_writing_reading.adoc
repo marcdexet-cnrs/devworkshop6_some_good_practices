@@ -45,7 +45,7 @@ You read 10 more than you write
 [.center]
 Compare
 
-[.left-column.very-big]
+[.left-column.big]
 [source,python]
 ----
 if sa:
@@ -53,7 +53,7 @@ if sa:
     claw()
 ----
 
-[.right-column.very-big]
+[.right-column.big]
 [source,python]
 ----
 if stage_accident:
@@ -75,4 +75,193 @@ if stage_accident:
 [.ppt]
 * Avoid *unpronounceable* names
 ** As "_kwcrfs_" for "_Key Waterproof Camera Ready For Scene_".
+
+
+== Follow Scope Length Rule
+
+[.center]
+The name +
+[.huge]#_**can**_# +
+( and not _should_ ) +
+be as [.huge]#*short*# +
+as its [.huge]#*scope*#.
+
+
+== Follow Scope Length Rule
+
+[.center]
+The name _**can**_ ( and not _should_ ) +
+be as *short* as its *scope*.
+
+[.big]
+[source,python]
+----
+def turn_on_cameras(cameras):
+    for c in cameras :
+      s = c.status
+      if s == 'off':
+        c.turn_on()
+----
+
+[.center]
+vs
+
+[.big]
+[source,python]
+----
+wc = WaterproofCamera()
+cm = CameraMan()
+----
+
+[.center]
+and 100 lines further
+
+[.big]
+[source,python]
+----
+if wc.is_ready() == False or cm is None :
+    stop_all()
+----
+
+
+== Follow Scope Length Rule
+
+[.big]
+[source,python]
+----
+wc = WaterproofCamera()
+cm = CameraMan()
+# and 100 lines further
+
+if wc.is_ready() == False or cm is None :
+    stop_all()
+----
+
+[.center]
+vs
+
+[.big]
+[source,python]
+----
+waterproof_camera = WaterproofCamera()
+cameraman = CameraMan()
+# and 100 lines further
+
+if waterproof_camera.is_ready() == False or cameraman is None :
+    stop_all()
+----
+
+== Naming: Follow Universal Convention
+
+
+* Object, variable, property &rarr; **NOUN**.
+
+[.big]
+[source,python]
+----
+actor = Actor()
+stunter = stunt.Stunter()
+----
+
+
+* Action, function, method &rarr; **VERB**.
+
+[.big]
+[source,python]
+----
+def feed_movie_star(star):
+    caviar = get_food_for("star")
+    star.eat(food)
+----
+
+
+* Collection, list, set &rarr; **PLURIAL**.
+
+[.big]
+[source,python]
+----
+actors = find_actors_for_movie('Euclid 2 the return')
+actor_names = ['Kitty', 'Sam']
+----
+
+
+== Naming: Follow Universal Convention
+
+
+* Dictionary, Map : indicate *key* to not be mistaken with collections.
+
+[.big]
+[source,python]
+----
+actors_by_movie['Euclid 2 the return']
+
+country_to_actors_map['ES'] = find_actors_in_country('ES')
+----
+
+
+* Use _suffix_ if it helps to avoid mistake
+when your language is dynamically typed.
+
+[.big]
+[source,python]
+----
+actor_list
+
+scenes_dict
+
+camera_set
+----
+
+
+== Naming: Action Name Must Tell What It Does
+
+* Following pattern
+
+[.big]
+[source]
+----
+<action>_<subject>()
+----
+
+As
+
+[.big]
+[source,python]
+----
+decorations = build_decorations("scene 1.3")
+
+move_decorations_to(decorations, "New York")
+
+get_decorations_settings("scene 1.3")
+----
+
+== Include Useful Informations
+
+[.big]
+[source,python]
+----
+find_actors_by_name(name)
+
+find_actors_by_name_in_movie(name, movie_name)
+
+find_all_actors_by_movie_name(movie_name)
+----
+
+== Naming: Use Antonym To Enclose Action
+
+* _begin_ &rarr; _end_
+* _open_ &rarr; _close_
+* _create_ &rarr; _destroy_
+* _start_ &rarr; _stop_
+*  ...
+
+[.big]
+[source,python]
+----
+begin_shooting()
+start_camera()
+...
+stop_camera()
+end_shooting()
+----
 //end::include[]
