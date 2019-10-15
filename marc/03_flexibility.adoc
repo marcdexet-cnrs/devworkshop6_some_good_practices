@@ -282,11 +282,11 @@ image::images/marc/flexibility-bound2interface_7.svg[width=400]
 
 [.right-column]
 --
-If the camera is changed to a _very_ different modele, +
+If the camera is changed to a _very_ different model, +
 Camera Operator has certainly to _be adapted_.
 
 [.fragment]
-And we know there's a lot of camera model on the market...
+And we know there's a lot of camera models on the market...
 --
 
 == Only take into account contract 8

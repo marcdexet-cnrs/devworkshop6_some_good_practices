@@ -32,7 +32,7 @@ We turn _human_ [.huge]#ideas#  into _computer_ [.huge]#code#
 * There’s several ways of developing
 ** A lot of them have been tried by a lot of people,
 ** Some of them lead to *disaster*,
-** Other to a *consensus* about how to _avoid_ disaster.
+** Others to a *consensus* about how to _avoid_ disaster.
 --
 [.fragment]
 --
@@ -71,7 +71,7 @@ But the main cause is our human nature...
 [.ppt]
 * Not So Good Points
 ** Short-memory buffer limited to _"The Magical Number Seven, Plus or Minus Two"_,
-** Reinterprets everything we say to him,
+** Reinterprets everything we say to it,
 ** => Cognitive and cultural biases we have to deal with.
 
 [.fragment]
@@ -99,7 +99,7 @@ So if we ignore our capacities, we empty the ocean with a small spoon.
 * To handle **complexity**,
 * To allow changement and evolution
 ** To not be *afraid to break everything*
-* To ensure that software is doing what is expected to do,
+* To ensure that software is doing what it is expected to do,
 
 
 

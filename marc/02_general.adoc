@@ -258,7 +258,7 @@ _Draw it, and it's fine_
 [.center]
 --
 [.ppt]
-* Draw shapes and arrow
+* Draw shapes and arrows
 ** Connect things,
 ** Make flow visual,
 ** Assign place to components

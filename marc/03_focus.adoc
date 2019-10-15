@@ -20,11 +20,9 @@ Limit required knowledge of external by keeping focused on what a component has 
 *A REFAIRE*
 
 * Single Responsability
-* Dependency invertion (middle layer) ? TBD
-* Dependencies injection
 
 
-== SingeResponsability 0
+== Single Responsability 0
 
 
 [.left-column]
@@ -38,7 +36,7 @@ image::images/marc/flexibility-SingleResponsability_0.svg[width=600]
 Imagine *A REFAIRE*
 --
 
-== SingeResponsability 1
+== Single Responsability 1
 
 
 [.left-column]
@@ -52,7 +50,7 @@ image::images/marc/flexibility-SingleResponsability_1.svg[width=600]
 Imagine *A REFAIRE*
 --
 
-== SingeResponsability 2
+== Single Responsability 2
 
 
 [.left-column]
@@ -66,7 +64,7 @@ image::images/marc/flexibility-SingleResponsability_2.svg[width=600]
 Imagine *A REFAIRE*
 --
 
-== SingeResponsability 3
+== Single Responsability 3
 
 
 [.left-column]
@@ -80,7 +78,7 @@ image::images/marc/flexibility-SingleResponsability_3.svg[width=600]
 Imagine *A REFAIRE*
 --
 
-== SingeResponsability 4
+== Single Responsability 4
 
 
 [.left-column]
@@ -94,7 +92,7 @@ image::images/marc/flexibility-SingleResponsability_4.svg[width=600]
 Imagine *A REFAIRE*
 --
 
-== SingeResponsability 5
+== Single Responsability 5
 
 
 [.left-column]
@@ -109,7 +107,7 @@ Imagine *A REFAIRE*
 --
 
 
-== SingeResponsability 6
+== Single Responsability 6
 
 
 [.left-column]
@@ -123,7 +121,7 @@ image::images/marc/flexibility-SingleResponsability_6.svg[width=600]
 Imagine *A REFAIRE*
 --
 
-== SingeResponsability 7
+== Single Responsability 7
 
 
 [.left-column]
@@ -137,7 +135,7 @@ image::images/marc/flexibility-SingleResponsability_7.svg[width=600]
 Imagine *A REFAIRE*
 --
 
-== SingeResponsability conclusion
+== Single Responsability conclusion
 
 *A REFAIRE* conclusion
 

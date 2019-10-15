@@ -61,6 +61,8 @@ On the contrary, a simple idea could be complicated to implement as software, co
 
 == Complexity, Complication And Abstraction
 
+*A REFAIRE*
+
 [.center]
 --
 The more *_abstract_* and *_high-level_* are ideas, +
@@ -250,7 +252,7 @@ But, you have reduced _cognitively_ the number of elements ...
 Grouping element by concern could be *a question of point of view*.
 
 
-* Choose contents such as
+* Choose concerns such as
 ** They have *limited _intersection_*,
 *** _but intersection will occur._
 ** They are *consistent* and *focused*,

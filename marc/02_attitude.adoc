@@ -1,6 +1,0 @@
-= Attitude
-
-//tag::include[]
-
-
-//end::include[]

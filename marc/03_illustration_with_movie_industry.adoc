@@ -233,8 +233,6 @@ By _concerns_ and _levels of abstraction_
 [.center]
 image::images/marc/credits.gif[]
 
-[.fragment]
-So each of them can work in a relative isolation from each other.
 
 //end::include[]
 

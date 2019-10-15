@@ -2,6 +2,10 @@
 
 //tag::include[]
 
+== Stability
+
+*A REFAIRE*
+
 [transition=fade]
 == Open Closed 0
 
@@ -12,13 +16,9 @@ image::images/marc/flexibility-openclosed_0.svg[]
 --
 
 [.right-column]
+[.center]
 --
-Imagine a professional Camera +
-based on _camera frame_, +
-_optical_, +
-_visor_, +
-_battery_, +
-and so on.
+Imagine a professional Camera
 --
 
 [transition=fade]
@@ -31,11 +31,14 @@ image::images/marc/flexibility-openclosed_1.svg[]
 --
 
 [.right-column]
+[.center]
 --
-This camera is built upon +
-a _Base camera_ +
-with differents connectors +
-for _optical_, _battery_, ...
+It is built upon +
+a _base camera_ +
+with differents *connectors* +
+for _optical_, +
+_battery_, +
+visor...
 --
 
 [transition=fade]
@@ -105,7 +108,8 @@ image::images/marc/flexibility-openclosed_6.svg[]
 
 [.right-column]
 --
-Or a waterproof model with deported _commands_.
+Or a waterproof model +
+with deported _commands_.
 --
 
 
@@ -166,14 +170,13 @@ This is a illustration of the +
 
 == Open closed.
 
-The *Open/Closed* principle ensure that usage of your component could be extended safely without being modified.
+The *Open/Closed* principle ensure that a component could be *extended* safely without being *modified*.
 
 
 * It's very useful when the component
 ** is *_shared_* over several project,
 ** is validated and well tested,
-** is sealed
-*** modification will be impossible.
+** is sealed and modification is impossible.
 
 [transition=fade]
 == Open Closed 7
@@ -264,60 +267,59 @@ This camera doesn't respect the *open/closed* principle.
 --
 
 
-[transition=fade]
-== Open closed behavior
+// [transition=fade]
+// == Open closed behavior
+// A _FilmDirector_ has to check everything is ready before starting to shoot.
 
-A _FilmDirector_ has to check everything is ready before starting to shoot.
+// [.big]
+// [.large]
+// [source,python,linums]
+// ----
+// class FilmDirector:
+//     #...
+//     def before_shooting_check_set_is_ready(camera: CameraDirector,
+//                                            lighting: LightDirector):
 
-[.big]
-[.large]
-[source,python,linums]
-----
-class FilmDirector:
-    #...
-    def before_shooting_check_set_is_ready(camera: CameraDirector,
-                                           lighting: LightDirector):
-
-        return camera.is_ok() and lighting.is_ok()
-----
-
-
-[.fragment]
-But on a movie with special effects, it have to get the Ok from FX director...
-
-[.fragment]
-[.big]
-[.large]
-[source,python,linums]
-----
-class FilmDirector:
-    #...
-    def before_shooting_check_set_is_ready(camera: CameraDirector,
-                                           lighting: LightDirector,
-                                           fx: SpecialEffectDirector):
-        return camera.is_ok()
-               and lighting.is_ok()
-               and fx.is_ok()
-----
-
-[.fragment]
-This class is not open to extends its _behavior_.
+//         return camera.is_ok() and lighting.is_ok()
+// ----
 
 
-[transition=fade]
-== Open closed behavior
+// [.fragment]
+// But on a movie with special effects, it have to get the Ok from FX director...
 
-Using a list of directors opens the component for an extension of its behavior.
+// [.fragment]
+// [.big]
+// [.large]
+// [source,python,linums]
+// ----
+// class FilmDirector:
+//     #...
+//     def before_shooting_check_set_is_ready(camera: CameraDirector,
+//                                            lighting: LightDirector,
+//                                            fx: SpecialEffectDirector):
+//         return camera.is_ok()
+//                and lighting.is_ok()
+//                and fx.is_ok()
+// ----
 
-[.big]
-[.large]
-[source,python,linums]
-----
-class FilmDirector:
-    #...
-    def before_shooting_check_set_is_ready(directors: List):
-        return all(d.is_ok() for d in directors)
-----
+// [.fragment]
+// This class is not open to extends its _behavior_.
+
+
+// [transition=fade]
+// == Open closed behavior
+
+// Using a list of directors opens the component for an extension of its behavior.
+
+// [.big]
+// [.large]
+// [source,python,linums]
+// ----
+// class FilmDirector:
+//     #...
+//     def before_shooting_check_set_is_ready(directors: List):
+//         return all(d.is_ok() for d in directors)
+// ----
 
 
 //end::include[]
