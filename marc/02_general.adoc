@@ -196,6 +196,10 @@ _"The Pragmatic Programmer"_
 
 == Verbalize What Is Spinning In Your Head
 
+
+[.at-top-right]
+image::https://media.giphy.com/media/cRNE6NAfEmLNwfpUlq/giphy.gif[width=300]
+
 [.ppt]
 * Verbalize, describe your insights
 ** to a good fellow worker
@@ -354,6 +358,7 @@ image::images/marc/git_commits.gif[width=800]
 image::images/marc/git_para.gif[width=800]
 
 You could try something in a parallel universe, +
+with _branching_, +
 without *spoiling* the work done, +
 and merge if it's better.
 --

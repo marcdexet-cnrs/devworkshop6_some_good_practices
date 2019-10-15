@@ -151,7 +151,7 @@ image::images/marc/good_practices-whatbeforehow_1.svg[]
 [transition=none]
 == Think about WHAT before HOW
 
-This *_HOW_* block is composed of identifed goal itself.
+This *_HOW_* block is composed of identified goals.
 
 [.center]
 image::images/marc/good_practices-whatbeforehow_2.svg[]

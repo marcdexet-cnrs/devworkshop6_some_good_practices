@@ -631,7 +631,7 @@ _video interface_ for video interested users.
 --
 
 
-
+[transition=fade]
 == Have The Necessary And Sufficient Appearance 6.4
 
 

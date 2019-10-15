@@ -2,19 +2,34 @@
 
 //tag::include[]
 
-== Naming
+!:design_counter:
 
+:chapter_name: Coding
 
 include::04_writing_reading.adoc[tag=include]
 
 include::04_think_small_and_modular.adoc[tag=include]
 
-=== Small functions
-
 
 include::04_learn_to_delegate.adoc[tag=include]
 
+== Don't comment, refactor code
 
-== Don't comment, code
+*A REFAIRE*
+
+Last but not the least
+
+Comments can lie, Code never lies
+
+
+== Sum Up
+
+*A REFAIRE*
+
+
+== Testing
+
+*A REFAIRE*
+
 
 //end::include[]

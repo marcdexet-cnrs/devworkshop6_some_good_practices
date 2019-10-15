@@ -29,7 +29,7 @@ Learn To Delegate problems
 
 == Learn to delegate to a futur you
 
-[.very-big]
+[.big]
 [source,python]
 ----
 class ApplePieRecipe(Recipe):
@@ -41,7 +41,7 @@ class ApplePieRecipe(Recipe):
 [%notitle]
 == Exemple Of Delegation
 
-[.very-big]
+[.big]
 [source,python]
 ----
 class ApplePieRecipe(Recipe):
@@ -55,7 +55,7 @@ _collect_ingredients_ doesn't exist.
 [.fragment]
 --
 I created _collect_ingredients_, ...
-[.very-big]
+[.big]
 [source,python]
 ----
 class ApplePieRecipe(Recipe):

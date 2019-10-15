@@ -2,6 +2,101 @@
 
 //tag::include[]
 
+
+[.subsection.background]
+[.center]
+[%notitle]
+== Small Is Beautiful
+
+[.big]#{chapter_name} - Part {counter:design_counter:1}#
+
+[.huge]#Small Is Beautiful#
+
+
+== Small Is Beautiful
+
+Limit the required scope to take into account.
+
+Good practices disapprove :
+
+[.dark.background]
+[.center]
+== God Class-Module-Function
+
+image::images/marc/writing-god.svg[]
+
+image::https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Sky_August_2010-1a.jpg/1024px-Sky_August_2010-1a.jpg[background]
+
+== God Class-Module-Function
+
+[.at-top-right]
+image::images/marc/writing-god.svg[]
+
+God Class-Module-Function
+
+* knows everything,
+* does everything,
+* influence every aspect of the software
+
+
+== God Class-Module-Function
+
+[.at-top-right]
+image::images/marc/writing-god_2.svg[]
+
+God Class-Module-Function
+
+* but if it failed...
+
+== Make Small Code Units
+
+Try to make
+
+* Small functions -> a few tens of lines (30 max ?)
+* Small classes/modules
+** -> a few tens of methods (30 max ?)
+** -> a few hundreds of lines (300 max ?)
+* Small packages -> a few tens items (30 max ?)
+
+Aka the _Rule of 30_
+
+
+== Make Small Signature
+
+[source,python]
+----
+def identify(x,y,z,h,m,s,model):
+	...
+----
+
+[source,python]
+----
+what_is_this = identify(2.456,-1.4,8.0,7,6,32,'plane')
+----
+
+[.fragment]
+--
+'''
+[source,python]
+----
+def identify(position,time,model):
+	...
+----
+--
+
+
+[.fragment]
+--
+[source,python]
+----
+position = Position(2.456, -1.4, 8.0)
+time = Time(7,6,32)
+
+what_is_this = identify(position, time, 'plane')
+----
+--
+
+
 [transition=fade]
 == tsam 0
 [.left-column.center]
@@ -105,7 +200,7 @@ image::images/marc/writing-think-modular_5.svg[]
 --
 We can put under test to test it and only it.
 
-[.huge]#Independantly# of other ones.
+[.huge]#independantly# of other ones.
 
 --
 
