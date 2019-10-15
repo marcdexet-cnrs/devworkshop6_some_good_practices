@@ -37,8 +37,6 @@ Ce sont des lignes de conduites
 
 == Complexity, Complication
 
-
-[.fragment]
 --
 * Complex vs Complicated ?
 ** _Complex_ as opposed to _simple_ => _indirect_,
@@ -50,17 +48,42 @@ Ce sont des lignes de conduites
 If [.big]*_complexity_* is not a problem, [.big]*_complication_* should be avoided.
 --
 
+[NOTE.notes]
+--
+There is always some confusion between Complex and Complicated.
+Complex can be opposed to simple while complicated can be opposed to easy.
+Software can be complex, because the implementation of the underlying ideas requires several steps or depths.
+
+But such architecture is not complicated, it is just not direct.
+
+On the contrary, a simple idea could be complicated to implement as software, could be very tricky and difficult to write, to understand.
+--
+
+== Complexity, Complication And Abstraction
+
+[.center]
+--
+The more *_abstract_* and *_high-level_* are ideas, +
+the more *_complex_* is implementation. +
+
 [.fragment]
+_the less *direct* to implement._
+
+
+'''
+
+The more *_complex_* is implementation, +
+the more *_complicated_* *may be* the code. +
+
+[.fragment]
+_the less *easy* to understand the code..._
 --
-* Abstraction, Complixity, Complication
-** The more *_abstract_* and *_high-level_* are ideas, the more *_complex_* is implementation.
-** The more *_complex_* is implementation, the more *_complicated_* *may be* the code
---
+
 
 [.fragment]
 [.center]
 --
-In general, _complexity_ leads to _complication_ if you are not careful.
+if you are not careful about complexity...
 --
 
 [.fragment]
@@ -71,14 +94,6 @@ So be careful...
 
 [NOTE.notes]
 --
-There is always some confusion between Complex and Complicated.
-Complex can be opposed to simple while complicated can be opposed to easy.
-Software can be complex, because the implementation of the underlying ideas requires several steps or depths.
-
-But such architecture is not complicated, it is just not direct.
-
-On the contrary, a simple idea could be complicated to implement as software, could be very tricky and difficult to write, to understand.
-
 In general, complexity leads to complication if you are not careful.
 
 

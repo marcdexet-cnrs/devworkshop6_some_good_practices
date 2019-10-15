@@ -101,9 +101,9 @@ So if we ignore our capacities, we empty the ocean with a small spoon.
 
 == What Are The Challenges Of Development ?
 
-* To handle **complexity**,
 * To successfully *translate* human ideas into computer code
 ** and vice versa
+* To handle **complexity**,
 * To allow changement and evolution
 ** To not be *afraid to break everything*
 * To ensure that software is doing what is expected to do,
@@ -112,9 +112,7 @@ So if we ignore our capacities, we empty the ocean with a small spoon.
 
 == How To Handle This ?
 
-[.ppt]
 * By following some good practices among a lot of them.
-[.ppt]
 * By applying them into these fields
 ** Attitude
 ** Design

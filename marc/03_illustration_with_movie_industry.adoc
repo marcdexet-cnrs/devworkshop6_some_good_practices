@@ -16,7 +16,7 @@ image::https://media.giphy.com/media/7J1llSYGJhKQJpVS9V/giphy.gif[]
 [.fragment]
 [.big]
 --
-A illustration of _conception principles_ with +
+A illustration of _design principles_ with +
 the movie industry.
 --
 
@@ -102,11 +102,17 @@ image::https://media.giphy.com/media/fjxe2wl3trzjs1i9NE/giphy.gif[]
 
 == You want to shoot a video
 
+[.left-column]
+--
 [.ppt]
 * Complexity
 ** You still haven't started filming.
 ** And already a lot of concern...
+--
 
+[.right-column]
+--
+[.fragment]
 [.ppt]
 * Concerns ?
 [.fragment]
@@ -115,16 +121,21 @@ image::https://media.giphy.com/media/fjxe2wl3trzjs1i9NE/giphy.gif[]
 ** Actor
 ** Set
 ** ..
-
-[.fragment]
 --
-May be it's time to get [.big]#a little organized# and to [.huge]#*separate concerns*# +
+
+[.reset-column]
+
+
+[.fragment.center]
+--
+May be it's time to get [.big]#a little bit organized# +
+and to [.huge]#*separate concerns*# +
 before being _overwhelmed_.
 --
 
 == You want to shoot a movie
 
-You want to shoot a real movie with actors, costume and so on...
+You want to shoot a *real* movie with _actors_, _costumes_, _decorations_ and so on...
 
 [.fragment]
 [.center]
@@ -211,15 +222,18 @@ image::images/marc/good_practices-ArtConcern_3.svg[]
 [.center]
 == Conclusion
 
+[.fragment]
+--
 A very _complex_ situation is possible +
 by _breaking it down_.
 
 By _concerns_ and _levels of abstraction_
-
+--
 
 [.center]
 image::images/marc/credits.gif[]
 
+[.fragment]
 So each of them can work in a relative isolation from each other.
 
 //end::include[]

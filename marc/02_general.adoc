@@ -75,6 +75,7 @@ This helps brain find its way through the architecture of software.
 == Don't Get Lost In Translation
 
 *A REFAIRE*
+*FAIRE UN SCHEMA*
 
 [.at-top-right]
 image::https://media.giphy.com/media/1WWh4ixLrxxTy/giphy.gif[]
@@ -99,7 +100,7 @@ Ever try to connect
 
 
 
-[.splash.background]
+[.subsection.background]
 [%notitle]
 [.center]
 == Freeze The Brownian Motion Of Ideas
@@ -156,7 +157,7 @@ image::images/marc/brownian_ideas.gif[]
 [.splash.background]
 [%notitle]
 [.center]
-== Explain
+== Explain 1
 
 [.big]
 --
@@ -180,7 +181,7 @@ when going through the code yourself. +
 [.splash.background]
 [%notitle]
 [.center]
-== Explain
+== Explain 2
 
 \...
 
@@ -284,6 +285,17 @@ _Draw it, and it's fine_
 --
 
 
+[.subsection.background]
+[.center]
+[%notitle]
+== Don't Be Afraid To Act
+
+[.big]#{chapter_name} - Part {counter:general_counter:1}#
+
+
+[.huge]#Don't Be Afraid To Act#
+
+
 [.splash.background]
 [.center]
 == Don't Be Afraid To Act
@@ -294,7 +306,7 @@ image::images/marc/break_everything.gif[width=200]
 
 
 [.fragment]
-This *fear* reflects our inability to anticipate everything in the event of a change
+This *fear* reflects our inability to anticipate everything +
 in a complex context.
 
 [.fragment]
@@ -303,8 +315,86 @@ So we have to deal with it and find ways to limit it.
 [.notes]
 --
 You know this fear of breaking what's working by changing a little thing.
-
 --
+
+== Don't Be Afraid ...
+
+
+* To go too far and be unable to go back,
+* To miss side effects,
+* To break a fragile building.
+
+
+[transition=fade]
+== Don't Be Afraid ...
+
+
+* To go too far and be unable to go back -> *Use GIT*
+* To miss side effects,
+* To break a fragile building.
+
+
+== Use git
+
+[.center]
+*Save* each significant step, even significant *small steps*.
+
+[.center]
+image::images/marc/git_commits.gif[width=800]
+
+[.fragment]
+[.center]
+[.huge]#So *nothing* will be never *lost*!#
+
+
+== Don't Be Afraid To Try
+
+[.center]
+--
+image::images/marc/git_para.gif[width=800]
+
+You could try something in a parallel universe, +
+without *spoiling* the work done, +
+and merge if it's better.
+--
+
+
+== Don't Be Afraid To Try
+
+[.center]
+--
+image::images/marc/git_stop.gif[width=800]
+
+\... or abandon if it's worse.
+--
+
+== Don't Be Afraid To Lost
+
+
+[.center]
+--
+image::images/marc/git-reuse.gif[width=800]
+
+Nothing is *never* lost.
+--
+
+
+
+== Don't Be Afraid ...
+
+
+* To go too far and be unable to go back -> *Use GIT*
+* To miss side effects -> Use *automated tests*,
+* To break a fragile building -> Get a *good design*.
+
+== Sum Up
+
+
+* Be Kind To Our Brain
+* Don't Get Lost In Translation
+* Freeze The Brownian Motion Of Ideas
+* Don't Be Afraid To Act
+
 
 //end::include[]
 

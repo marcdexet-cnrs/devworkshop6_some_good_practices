@@ -38,6 +38,21 @@ image::images/marc/writing-think-modular_2.svg[]
 Each of them using results of preceding.
 --
 
+
+[transition=fade]
+== tsam 3.a
+[.left-column.center]
+--
+image::images/marc/writing-think-modular_3.a.svg[]
+--
+
+[.right-column]
+--
+If we want to look at a part of this processing, +
+as it is delimitated, +
+we can isolate it and focus...
+--
+
 [transition=fade]
 == tsam 3
 [.left-column.center]
@@ -47,7 +62,7 @@ image::images/marc/writing-think-modular_3.svg[]
 
 [.right-column]
 --
-If we want to look at a part of this processing, as it is isolated, we can extract it...
+Modify it...
 --
 
 [transition=fade]
@@ -59,14 +74,11 @@ image::images/marc/writing-think-modular_4.svg[]
 
 [.right-column]
 --
-And put this processing under test, +
-to test it *and only* it +
+And put it under test.
+
+We can test it +
 [.huge]#independantly# +
-of preceding or succeding.
-
-We try inputs and make assertions about expected outputs.
-
-As a kind of black box.
+of others.
 --
 
 
