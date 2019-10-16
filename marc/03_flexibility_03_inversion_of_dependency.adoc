@@ -1,0 +1,230 @@
+= Inversion of dependency
+
+
+//tag::include[]
+
+
+[transition=fade]
+[%notitle]
+== Inversion of dependency 0
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-inversion-dependance_0.a.1.svg[]
+--
+
+[.right-column]
+[.center]
+--
+CHANGE ME
+--
+
+[transition=fade]
+[%notitle]
+== Inversion of dependency 0
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-inversion-dependance_0.svg[]
+--
+
+[.right-column]
+[.center]
+--
+CHANGE ME
+--
+
+[transition=fade]
+[%notitle]
+== Inversion of dependency 1
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-inversion-dependance_1.svg[]
+--
+
+[.right-column]
+[.center]
+--
+CHANGE ME
+--
+
+[transition=fade]
+[%notitle]
+== Inversion of dependency 2
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-inversion-dependance_2.svg[]
+--
+
+[.right-column]
+[.center]
+--
+CHANGE ME
+--
+
+[transition=fade]
+[%notitle]
+== Inversion of dependency 3
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-inversion-dependance_3.svg[]
+--
+
+[.right-column]
+[.center]
+--
+CHANGE ME
+--
+
+[transition=fade]
+[%notitle]
+== Inversion of dependency 4
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-inversion-dependance_4.svg[]
+--
+
+[.right-column]
+[.center]
+--
+CHANGE ME
+--
+
+[transition=fade]
+[%notitle]
+== Inversion of dependency 5
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-inversion-dependance_5.svg[]
+--
+
+[.right-column]
+[.center]
+--
+CHANGE ME
+--
+
+[transition=fade]
+[%notitle]
+== Inversion of dependency 6
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-inversion-dependance_6.svg[]
+--
+
+[.right-column]
+[.center]
+--
+CHANGE ME
+--
+
+[transition=fade]
+[%notitle]
+== Inversion of dependency 7
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-inversion-dependance_7.svg[]
+--
+
+[.right-column]
+[.center]
+--
+CHANGE ME
+--
+
+[transition=fade]
+[%notitle]
+== Inversion of dependency 8
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-inversion-dependance_8.svg[]
+--
+
+[.right-column]
+[.center]
+--
+CHANGE ME
+--
+[transition=fade]
+[%notitle]
+== Inversion of dependency 9
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-inversion-dependance_9.svg[]
+--
+
+[.right-column]
+[.center]
+--
+CHANGE ME
+--
+[transition=fade]
+[%notitle]
+== Inversion of dependency 10
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-inversion-dependance_10.svg[]
+--
+
+[.right-column]
+[.center]
+--
+CHANGE ME
+--
+[transition=fade]
+[%notitle]
+== Inversion of dependency 11
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-inversion-dependance_11.svg[]
+--
+
+[.right-column]
+[.center]
+--
+CHANGE ME
+--
+[transition=fade]
+[%notitle]
+== Inversion of dependency 12
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-inversion-dependance_12.svg[]
+--
+
+[.right-column]
+[.center]
+--
+CHANGE ME
+--
+
+
+
+
+//end::include[]

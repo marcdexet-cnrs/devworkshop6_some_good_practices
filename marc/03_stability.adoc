@@ -266,6 +266,117 @@ The *Open/Closed* principle ensure that a component could be *extended* safely w
 ** is  well tested and validated,
 ** is sealed and modification is impossible.
 
+[transition=fade]
+== Substitution 0
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-substitution_0.svg[]
+--
+
+[.right-column]
+--
+Range of optical of type could use the "ultra-stabilization" engine of the camera.
+--
+
+[transition=fade]
+== Substitution 1
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-substitution_1.svg[]
+--
+
+[.right-column]
+--
+A premium product _extends_ the first one +
+with more capabilities, and +
+more expensive.
+--
+
+
+[transition=fade]
+== Substitution 2
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-substitution_2.svg[]
+--
+
+[.right-column]
+--
+It still uses the "ultra-stabilization" engine.+
+It still "a type A optical".
+
+It could be _substitued_ to the first one.
+--
+
+
+[transition=fade]
+== Substitution 3
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-substitution_3.svg[]
+--
+
+[.right-column]
+--
+A cheap version is created, *but* it can not use the "ultra-stabilization" engine.
+--
+
+
+
+[transition=fade]
+== Substitution 3
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-substitution_3.svg[]
+--
+
+[.right-column]
+--
+Althouh this last optical is branded as "a type A optical", it *can not be substitued* to the parent type +
+because it breaks something.
+--
+
+
+[transition=fade]
+[%notitle]
+== Substitution of Liskov
+
+[.center]
+Provide subtypes (_"type A minus"_) +
+that could be *substitued* +
+to the parent type (_"type A"_) +
+without breaking something.
+
+
+[transition=fade]
+[%notitle]
+== Substitution of Liskov
+
+[.center]
+This is, roughly, +
+the
+[.huge]#_Liskov Substitution_ Principle#.
+
+[.fragment]
+[quote]
+[.center]
+____
+If S is a subtype of T, +
+then objects of type T may be replaced +
+with objects of type S without side effects.
+____
+
+
 
 // [transition=fade]
 // == Open closed behavior

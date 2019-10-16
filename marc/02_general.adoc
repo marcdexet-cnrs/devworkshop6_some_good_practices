@@ -144,7 +144,7 @@ Of Ideas#
 [.center]
 When translating +
 ideas into code, +
-there's a lot of _moving_ and _unfixed_ ideas +
+there's many _moving_ and _unfixed_ ideas +
 spinning in our heads.
 
 
@@ -214,6 +214,8 @@ _"The Pragmatic Programmer"_
 
 [.at-top-right]
 image::https://media.giphy.com/media/cRNE6NAfEmLNwfpUlq/giphy.gif[width=300]
+
+Don't keep problems to yourself
 
 [.ppt]
 * Verbalize your insights
@@ -359,7 +361,6 @@ You know this fear of breaking what's working by changing a little thing.
 [.center]
 image::images/marc/git_commits.gif[width=800]
 
-[.fragment]
 [.center]
 [.huge]#So *nothing* will be never *lost*!#
 
@@ -397,13 +398,13 @@ Nothing is *never* lost.
 --
 
 
-
 == Don't Be Afraid ...
 
 
 * To go too far and be unable to go back -> *Use GIT*
 * To miss side effects -> Use *automated tests*,
 * To break a fragile building -> Get a *good design*.
+
 
 == Sum Up
 

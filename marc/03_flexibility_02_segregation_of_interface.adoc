@@ -1,0 +1,359 @@
+= 03 flexibility 02 _soi
+
+//tag::include[]
+
+
+[transition=fade]
+== Have the necessary and sufficient appearance FIND A NEW NAME 0
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_0.svg[width=600]
+--
+
+[.center]
+[.right-column]
+--
+
+
+A TV _Reporting Camera Operator_ +
+use a +
+_Reporting Camera_ +
+described by a +
+_Reporting Camera Interface_.
+
+[.fragment]
+A _reporting camera_ is used +
+for _reporting_ in the streets +
+
+
+[.fragment]
+It records
+_video_
+and
+_sound_.
+--
+
+
+[transition=fade]
+== Have the necessary and sufficient appearance FIND A NEW NAME 0.1
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_0.1.svg[width=600]
+--
+
+[.right-column]
+--
+Someone decided to split +
+_Reporting Camera Operator_ +
+responsabilities +
+in two parts.
+--
+
+[transition=fade]
+== Have the necessary and sufficient appearance FIND A NEW NAME 0copie
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_0.svg[width=600]
+--
+
+[transition=fade]
+== Have the necessary and sufficient appearance FIND A NEW NAME 2
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_2.svg[width=600]
+--
+
+[.right-column]
+--
+They use the same interface.
+--
+
+[transition=fade]
+== Have the necessary and sufficient appearance FIND A NEW NAME 3
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_3.svg[width=600]
+--
+
+[.right-column]
+--
+But if the camera itself is separated into two components...
+
+We get a nonsense.
+
+A microphone that has to handle the video aspects is *stupid*.
+--
+
+[transition=fade]
+== Have the necessary and sufficient appearance FIND A NEW NAME 4
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_4.svg[width=600]
+--
+
+[.right-column]
+[.center]
+--
+We have to limit each of them +
+to *WHAT* they do +
+and *only* what they do.
+
+*No more and no less.*
+--
+
+
+
+[transition=fade]
+== Have the necessary and sufficient appearance FIND A NEW NAME 5
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_5.svg[width=600]
+--
+
+[.right-column]
+[.center]
+--
+This way, any dependency +
+satisfying the interfaces +
+could be used.
+--
+
+[transition=fade]
+== Have the necessary and sufficient appearance FIND A NEW NAME 6
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_6.svg[width=600]
+--
+
+[.right-column]
+[.center]
+--
+This way, any dependency +
+satisfying the interfaces +
+could be used.
+--
+
+
+[transition=fade]
+== Have the necessary and sufficient appearance FIND A NEW NAME 6.1
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_6.1.svg[width=600]
+--
+
+[.right-column]
+--
+What about our _Reporting Camera Operator_ ? +
+
+It could use the both interfaces.
+
+Whether it's implemented by _two_ components...
+--
+
+
+[transition=fade]
+== Have the necessary and sufficient appearance FIND A NEW NAME 6.2
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_6.2.svg[width=600]
+--
+
+[.right-column]
+--
+\... or implemented by _only one_ component !
+
+We don't care.
+--
+
+
+
+
+
+[transition=fade]
+== Have the necessary and sufficient appearance FIND A NEW NAME 7
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_7.svg[width=600]
+--
+
+[.right-column]
+--
+But if you're in a field +
+limited to TV Reporting only, +
+you would prefer talking about _Reporting camera_.
+--
+
+
+[transition=fade]
+== Have the necessary and sufficient appearance FIND A NEW NAME 7
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_7.svg[width=600]
+--
+
+[.right-column]
+--
+How to reconcile the two universes ?
+--
+
+
+[transition=fade]
+== Have the necessary and sufficient appearance FIND A NEW NAME 7
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_7.svg[width=600]
+--
+
+[.right-column]
+--
+By making _Reporting camera_ +
+be a _Camera interface_ +
+*and* +
+a _Microphone interface_ too.
+--
+
+
+[transition=fade]
+== Have the necessary and sufficient appearance FIND A NEW NAME 8
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_8.svg[width=600]
+--
+
+[.right-column]
+--
+So you have a very flexible architecture like this...
+--
+
+[transition=fade]
+== Have the necessary and sufficient appearance FIND A NEW NAME 9
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_9.svg[width=600]
+--
+
+[.right-column]
+--
+\... or this with a delegation to the microphone for all the _Microphone stuff_.
+--
+
+
+[transition=fade]
+== Have the necessary and sufficient appearance FIND A NEW NAME 6.before.2
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_6.before.2.svg[width=600]
+--
+
+[.right-column]
+[.center]
+--
+We split a too general interface into +
+two very user _focused_ interfaces.
+
+[.fragment]
+It called +
+[.huge]#Segregation of Interfaces#.
+--
+
+[transition=fade]
+== Have the necessary and sufficient appearance FIND A NEW NAME 6.3
+
+
+[.center]
+--
+image::images/marc/flexibility-segregation_6.3.svg[width=600]
+
+So the general _Reporting Camera Interface_ +
+could be seen as a +
+_video interface_ for video interested users.
+--
+
+
+
+[transition=fade][transition=fade]
+== Have the necessary and sufficient appearance FIND A NEW NAME 6.4
+
+
+[.center]
+--
+image::images/marc/flexibility-segregation_6.4.svg[width=600]
+
+
+\...or a
+_Microphone interface_ for sound interested users.
+--
+
+
+[transition=fade]
+== Have the necessary and sufficient appearance FIND A NEW NAME 10
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_10.svg[width=600]
+--
+
+[.right-column]
+[.center]
+--
+*Segregation Of Interfaces* allows +
+to join different universes +
+with different point of view.
+
+Here the _TV universe_ +
+and +
+the camera _Manufacturer Universe_.
+--
+
+
+//end::include[]

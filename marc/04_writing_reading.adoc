@@ -3,8 +3,33 @@
 //tag::include[]
 
 
+== Be direct CHANGE ME
 
+*A REFAIRE*
 
+Make comprehension easy
+
+[.left-column.center]
+--
+What we want...
+
+image::images/marc/writing-direct_0.svg[]
+--
+
+[.right-column.fragment]
+[.center]
+--
+What we get...
+
+image::images/marc/writing-direct_1.svg[]
+--
+
+[.reset-column]
+[.fragment.center]
+--
+Ask yourself if your code is direct or ambiguous ! +
+As if someone could be looking over your shoulder.
+--
 
 == Make Code Readable
 
@@ -351,4 +376,9 @@ start_camera()
 stop_camera()
 end_shooting()
 ----
+
+== Avoid ambigous parameters
+
+*A REFAIRE* boolean
+
 //end::include[]

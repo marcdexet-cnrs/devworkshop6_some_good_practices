@@ -148,9 +148,6 @@ Imagine *A REFAIRE*
 
 *A REFAIRE* conclusion
 
-== Dependency inversion
 
-
-*A REFAIRE*
 
 //end::include[]

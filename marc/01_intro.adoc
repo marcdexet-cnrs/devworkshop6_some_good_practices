@@ -24,7 +24,8 @@ image::images/marc/tricky.gif[width=400]
 
 --
 [.ppt]
-* A lot of ways of developing have been tried,
+* Because turning ideas into code could be tricky !
+* Many ways have been tried by people,
 ** Some of them lead to *disaster*,
 ** Others to a *consensus* about how to _avoid_ disaster.
 --
@@ -33,13 +34,14 @@ image::images/marc/tricky.gif[width=400]
 --
 [.ppt]
 * They're the *_good practices_*
-** and it's preferable to follow some of them
+** It's preferable to know some of them
+** Regardless of your experience :)
 --
 
 == Mainly Because Of Our Human Limitations
 
 [.ppt]
-* Don't Forget The Human Brain
+* Remember Human Brain
 ** First processor to turn human ideas into computer code
 
 [.fragment]

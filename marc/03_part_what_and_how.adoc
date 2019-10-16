@@ -5,11 +5,11 @@
 [.subsection.background]
 [.center]
 [%notitle]
-== The WHAT and the HOW
+== Take Things Into Order
 
 Dealing With Complexity
 
-[.huge]#The WHAT and the HOW#
+[.huge]#Take Things Into Order#
 
 [.dark.background]
 [%notitle]
@@ -87,6 +87,41 @@ from +
 --
 
 
+[transition=fade]
+[%notitle]
+== Separate
+
+A _WHAT_ defines the *_goal_*
+
+[.center]
+image::images/marc/good_practices-whatbeforehow_0.svg[]
+
+
+[.notes]
+--
+The goal to achieve, in human terms.
+--
+
+[transition=fade]
+[%notitle]
+== Separate
+
+It identifies a block of instruction, the *_HOW_*.
+
+[.center]
+image::images/marc/good_practices-whatbeforehow_1.svg[]
+
+
+[transition=fade]
+[%notitle]
+== Separate
+
+This *_HOW_* block is composed of identified goals.
+
+[.center]
+image::images/marc/good_practices-whatbeforehow_2.svg[]
+
+
 == Separate WHAT you want from HOW you get it
 
 * Often you start getting _how to make thing_
@@ -108,7 +143,7 @@ from +
 
 [.center]
 --
-Think about +
+Define +
 *WHAT* you want to achieve +
 [.huge]#_before_# +
 you consider +
@@ -121,71 +156,39 @@ you consider +
 Even, and especially in the *coding* phases !
 --
 
-[.fragment]
-[.center]
-And write or draw it !!
-
-
 
 [transition=fade]
-== Think about WHAT before HOW
-
-A _WHAT_ defines the *_goal_*
-
-[.center]
-image::images/marc/good_practices-whatbeforehow_0.svg[]
+== Illustration with a burger...
 
 
-[.notes]
---
-The goal to achieve, in human terms.
---
-
-[transition=fade]
-== Think about WHAT before HOW
-
-It identifies a block of instruction, the *_HOW_*.
-
-[.center]
-image::images/marc/good_practices-whatbeforehow_1.svg[]
-
-
-[transition=fade]
-== Think about WHAT before HOW
-
-This *_HOW_* block is composed of identified goals.
-
-[.center]
-image::images/marc/good_practices-whatbeforehow_2.svg[]
-
-
-[transition=fade]
-== Think about WHAT before HOW
-
-Illustration with a burger...
 
 [.center]
 image::images/marc/good_practices-whatbeforehowrecipe_0.svg[]
 
+Define the goal
 
 [transition=fade]
+[%notitle]
 == Think about WHAT before HOW
 
 
 [.center]
 image::images/marc/good_practices-whatbeforehowrecipe_1.svg[]
 
+Think about the process (recipe)
 
 [transition=fade]
+[%notitle]
 == Think about WHAT before HOW
 
-We get all the major steps without be drowned by details.
 
 [.center]
 image::images/marc/good_practices-whatbeforehowrecipe_2.svg[]
 
+Get all the major steps without be drowned by details.
+
 [.fragment]
-But we have to get deeper. +
+But you have to go beyond to get your burger. +
 _To get from the idea to the solution._
 
 [transition=fade]
@@ -202,11 +205,11 @@ image::images/marc/good_practices-what_how_call_hierarchie_0.svg[]
 [.center]
 == From The Idea To The Solution
 
-You think about *HOW* to get, in a little less abstract way
+You think about *HOW* to get, in a _little_ less abstract way
 
 image::images/marc/good_practices-what_how_call_hierarchie_1.svg[]
 
-but no so far away
+but no so far away.
 
 [transition=fade]
 [%notitle]
@@ -222,18 +225,18 @@ image::images/marc/good_practices-what_how_call_hierarchie_2.svg[]
 [.center]
 == From The Idea To The Solution
 
-Each _instruction_ is, itself, something you want to get
+Each _instruction_ is, itself, a goal to reach
 
 image::images/marc/good_practices-what_how_call_hierarchie_3.svg[]
 
-\... they're a *WHAT* in a _less_ abstract way.
+\... a *WHAT* at a _less_ abstract level.
 
 [transition=fade]
 [%notitle]
 [.center]
 == From The Idea To The Solution
 
-Think about *HOW* getting them working...
+And so on...
 
 image::images/marc/good_practices-what_how_call_hierarchie_4.svg[]
 
@@ -260,11 +263,11 @@ image::images/marc/good_practices-what_how_call_hierarchie_6.svg[]
 [.center]
 == From The Idea To The Solution
 
-\...Until you find solution into the provided development ecosystem.
+\...Until you find _solution_ into the provided development ecosystem.
 
 image::images/marc/good_practices-what_how_call_hierarchie_7.svg[]
 
-As langage, librairies, other projects...
+As language, librairies, other projects...
 
 [transition=fade]
 [%notitle]
@@ -315,6 +318,10 @@ image::images/marc/good_practices-scale_3.svg[]
 
 // Wait to constat you get really a problem of performance
 
+
+include::03_think_components.adoc[tag=include]
+
+
 [.center]
 == Sum Up
 
@@ -323,6 +330,7 @@ Separate the WHAT from the HOW
 Think about WHAT before HOW
 
 Follow the WHAT then HOW chaining
+
 
 // Do not get into optimize prematurely
 //end::include[]
