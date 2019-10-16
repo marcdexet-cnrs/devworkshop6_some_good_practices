@@ -104,7 +104,7 @@ https://www.itrw.net/2016/06/27/organized-cabling-is-better-cabling-avoid-server
 ** Focus
 
 [.fragment]
-Along this journey, with see some well known principles as SOLID.
+Along this journey, we'll see some well known principles as SOLID.
 
 
 [.subsection.background]
@@ -292,12 +292,15 @@ Among them, I hope someone have recognized
 ** Segregation of Interfaces
 ** Inversion of Dependencies
 
-== Some opening
+== Some Opening
 
 * Explore the topics of the development principles in more depth
 ** https://en.wikipedia.org/wiki/Category:Programming_principles[]
 * Explore Designs Patterns
 ** https://en.wikipedia.org/wiki/Software_design_pattern#Classification_and_list[]
+* Read good books
+** https://en.wikipedia.org/wiki/The_Pragmatic_Programmer[Pragmatic Programer]
+** https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882[Clean Code]
 
 
 == Conclusion
