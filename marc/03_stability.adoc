@@ -2,11 +2,19 @@
 
 //tag::include[]
 
+
+[.subsection.background]
+[.center]
+[%notitle]
 == Stability
 
-*A REFAIRE*
+[.big]#{chapter_name} - Part {counter:design_counter:1}#
+
+[.huge]#Stability#
+
 
 [transition=fade]
+[%notitle]
 == Open Closed 0
 
 [.left-column]
@@ -22,6 +30,7 @@ Imagine a professional Camera
 --
 
 [transition=fade]
+[%notitle]
 == Open Closed 1
 
 [.left-column]
@@ -42,6 +51,7 @@ visor...
 --
 
 [transition=fade]
+[%notitle]
 == Open Closed 2
 
 [.left-column]
@@ -56,6 +66,7 @@ So you can create several configurations.
 --
 
 [transition=fade]
+[%notitle]
 == Open Closed 3
 
 [.left-column]
@@ -70,6 +81,7 @@ One with a more powerful _battery_...
 --
 
 [transition=fade]
+[%notitle]
 == Open Closed 4
 
 [.left-column]
@@ -84,6 +96,7 @@ One with a different _optical system_...
 --
 
 [transition=fade]
+[%notitle]
 == Open Closed 5
 
 [.left-column]
@@ -98,6 +111,7 @@ One with a deported _monitoring device_...
 --
 
 [transition=fade]
+[%notitle]
 == Open Closed 6
 
 [.left-column]
@@ -114,6 +128,7 @@ with deported _commands_.
 
 
 [transition=fade]
+[%notitle]
 == Open Closed 6.1
 
 [.left-column]
@@ -128,6 +143,7 @@ But you can not modify the _command sytem_...
 --
 
 [transition=fade]
+[%notitle]
 == Open Closed 6.2
 
 [.left-column]
@@ -149,11 +165,11 @@ And of course it's forbidden, only Manufacturer could do this.
 
 
 
+[%notitle]
 == Open closed.
 
 [.center]
 --
-[.fragment]
 The camera is +
 [.fragment]
 [.huge]#Open# for *extension* +
@@ -169,6 +185,7 @@ This is a illustration of the +
 
 
 [transition=fade]
+[%notitle]
 == Open Closed 7
 
 [.left-column]
@@ -184,6 +201,7 @@ with all included inside the frame.
 --
 
 [transition=fade]
+[%notitle]
 == Open Closed 8
 
 [.left-column]
@@ -198,6 +216,7 @@ There's no way to extend it...
 --
 
 [transition=fade]
+[%notitle]
 == Open Closed 9
 
 [.left-column]
@@ -212,6 +231,7 @@ Impossible to change the _battery_ ...
 --
 
 [transition=fade]
+[%notitle]
 == Open Closed 10
 
 [.left-column]
@@ -222,10 +242,11 @@ image::images/marc/flexibility-openclosed_10.svg[]
 
 [.right-column]
 --
-Nor the _optical system_...
+Neither the _optical system_...
 --
 
 [transition=fade]
+[%notitle]
 == Open Closed 11
 
 [.left-column]
@@ -240,6 +261,7 @@ Nor the _visor_.
 --
 
 [transition=fade]
+[%notitle]
 == Open Closed 12
 
 [.left-column]
@@ -250,7 +272,7 @@ image::images/marc/flexibility-openclosed_12.svg[]
 
 [.right-column]
 --
-It could also not be extended as _waterproof camera_ with _deported commands_.
+Nor could be extended either as _waterproof camera_ with _deported commands_.
 
 [.fragment]
 This camera doesn't respect the *open/closed* principle.
@@ -267,6 +289,7 @@ The *Open/Closed* principle ensure that a component could be *extended* safely w
 ** is sealed and modification is impossible.
 
 [transition=fade]
+[%notitle]
 == Substitution 0
 
 [.left-column]
@@ -277,10 +300,13 @@ image::images/marc/flexibility-substitution_0.svg[]
 
 [.right-column]
 --
-Range of optical of type could use the "ultra-stabilization" engine of the camera.
+Imagine our professional camera again.
+
+There's a range of optical of type _A_ that could use the "ultra-stabilization" engine of the camera.
 --
 
 [transition=fade]
+[%notitle]
 == Substitution 1
 
 [.left-column]
@@ -293,11 +319,12 @@ image::images/marc/flexibility-substitution_1.svg[]
 --
 A premium product _extends_ the first one +
 with more capabilities, and +
-more expensive.
+higher price.
 --
 
 
 [transition=fade]
+[%notitle]
 == Substitution 2
 
 [.left-column]
@@ -308,14 +335,15 @@ image::images/marc/flexibility-substitution_2.svg[]
 
 [.right-column]
 --
-It still uses the "ultra-stabilization" engine.+
-It still "a type A optical".
+It still uses the "ultra-stabilization" engine. +
+It still is _"a type A optical"_.
 
 It could be _substitued_ to the first one.
 --
 
 
 [transition=fade]
+[%notitle]
 == Substitution 3
 
 [.left-column]
@@ -326,12 +354,13 @@ image::images/marc/flexibility-substitution_3.svg[]
 
 [.right-column]
 --
-A cheap version is created, *but* it can not use the "ultra-stabilization" engine.
+A cheap version is created, *but* this one *can not* use the "ultra-stabilization" engine.
 --
 
 
 
 [transition=fade]
+[%notitle]
 == Substitution 3
 
 [.left-column]
@@ -342,8 +371,13 @@ image::images/marc/flexibility-substitution_3.svg[]
 
 [.right-column]
 --
-Althouh this last optical is branded as "a type A optical", it *can not be substitued* to the parent type +
-because it breaks something.
+Althouh this last optical is branded as +
+_"a type A optical"_, +
+it *can not be substitued* to the parent type +
+because it breaks the "ultra-stabilization" engine feature.
+
+[.fragment]
+It's not good :(
 --
 
 
@@ -352,7 +386,7 @@ because it breaks something.
 == Substitution of Liskov
 
 [.center]
-Provide subtypes (_"type A minus"_) +
+Check you provide subtypes (_"type A minus"_) +
 that could be *substitued* +
 to the parent type (_"type A"_) +
 without breaking something.
@@ -379,7 +413,8 @@ ____
 
 
 // [transition=fade]
-// == Open closed behavior
+//[%notitle]
+//== Open closed behavior
 // A _FilmDirector_ has to check everything is ready before starting to shoot.
 
 // [.big]
@@ -418,7 +453,8 @@ ____
 
 
 // [transition=fade]
-// == Open closed behavior
+//[%notitle]
+//== Open closed behavior
 
 // Using a list of directors opens the component for an extension of its behavior.
 

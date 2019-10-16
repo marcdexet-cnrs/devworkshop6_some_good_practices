@@ -258,9 +258,20 @@ include::03_stability.adoc[tag=include]
 
 include::03_focus.adoc[tag=include]
 
-== Design
+== Sump Up of Design
 
-*A REFAIRE*
+
+*A REFAIRE* Reprendre ici les principes énoncés.
+
+
+Separation of Concern
+
+Differentiation of Levels Of Abstraction
+
+Only take into account contract
+
+Segrg
+
 
 SOLID
 

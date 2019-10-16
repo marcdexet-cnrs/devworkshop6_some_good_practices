@@ -29,20 +29,12 @@ image::images/marc/coupling.gif[]
 [.center]
 When any change to one component implies to modify the other one.
 
-
-== Coupling
-
-[.at-top-right]
-image::images/marc/coupling.gif[width=200]
-
-* When components are tightly coupled
-** Evolving one can quickly become a nightmare.
-** Side effects will be numerous and discouraging.
-
 [.fragment]
+[.center]
 --
 For a few components, it doesn't really matter.
 --
+
 
 == Coupling
 
@@ -68,12 +60,11 @@ By putting a flexible layer !
 
 * In software engineering, coupling means
 bound by *too much* knowledge.
-* Decoupling => Limit required knowledge
 
-* Three strategies
-** Only take into account contract FIND A NEW NAME s
-** Have the necessary and sufficient appearance FIND A NEW NAME
-** inversion of dependencies
+* 3 strategies to limit required knowledge
+** Only take contract into account
+** Show only what's is needed
+** Inversion of dependencies
 
 
 include::03_flexibility_01_abstraction.adoc[tag=include]

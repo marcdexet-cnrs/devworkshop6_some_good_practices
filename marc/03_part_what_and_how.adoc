@@ -132,7 +132,7 @@ image::images/marc/good_practices-whatbeforehow_2.svg[]
 
 [.fragment]
 --
-* And sometimes you still don't define exactly _what you really want_.
+* And sometimes you still haven't defined exactly _what you really want_.
 --
 
 
@@ -142,12 +142,12 @@ image::images/marc/good_practices-whatbeforehow_2.svg[]
 == Separate WHAT you want from HOW you get it
 
 [.center]
+[.huge]
 --
 Define +
-*WHAT* you want to achieve +
-[.huge]#_before_# +
-you consider +
-*HOW* to get it.
+_WHAT_ you want +
+*_before_* +
+_HOW_ to get it.
 --
 
 [.fragment]
@@ -330,6 +330,8 @@ Separate the WHAT from the HOW
 Think about WHAT before HOW
 
 Follow the WHAT then HOW chaining
+
+Think Components
 
 
 // Do not get into optimize prematurely

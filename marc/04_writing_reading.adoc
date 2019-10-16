@@ -3,6 +3,30 @@
 //tag::include[]
 
 
+
+== Make Code Readable
+
+[.ppt]
+* As Any Writing, Code Tells Something.
+** It can tell **what** and **how** it does.
+
+[.fragment.ppt]
+* Let The Code Tell The Story
+** The more **self-explanatory**, the more **easy** to maintain.
+
+[.fragment]
+You read 10 more than you write
+
+[.fragment.ppt]
+* You write once, but you read
+** to _check_,
+** to _understand_,
+** to _remember_,
+** to _copy_,
+[.fragment]
+** and to _**rewrite**_.
+
+
 == Be direct CHANGE ME
 
 *A REFAIRE*
@@ -30,29 +54,6 @@ image::images/marc/writing-direct_1.svg[]
 Ask yourself if your code is direct or ambiguous ! +
 As if someone could be looking over your shoulder.
 --
-
-== Make Code Readable
-
-[.ppt]
-* As Any Writing, Code Tells Something.
-** It can tell **what** and **how** it does.
-
-[.fragment.ppt]
-* Let The Code Tell The Story
-** The more **self-explanatory**, the more **easy** to maintain.
-
-[.fragment]
-You read 10 more than you write
-
-[.fragment.ppt]
-* You write once, but you read
-** to _check_,
-** to _understand_,
-** to _remember_,
-** to _copy_,
-[.fragment]
-** and to _**rewrite**_.
-
 
 == Naming
 

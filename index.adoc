@@ -3,7 +3,7 @@
 = Some Software Development Good Practices
 include::_inc_revealjs.adoc[]
 
-A kind of illustrated developer experience journey...
+_Sélection du jour_
 
 include::marc/index.adoc[tag=include]
 

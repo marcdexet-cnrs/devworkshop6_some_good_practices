@@ -3,10 +3,12 @@
 
 //tag::include[]
 
+[.center]
+== Inversion of dependency
 
 [transition=fade]
 [%notitle]
-== Inversion of dependency 0
+== Inversion of dependency
 
 [.left-column]
 [.center]
@@ -17,12 +19,14 @@ image::images/marc/flexibility-inversion-dependance_0.a.1.svg[]
 [.right-column]
 [.center]
 --
-CHANGE ME
+Imagine a professional Camera built upon +
+a _base camera_ +
+with differents *connectors*.
 --
 
 [transition=fade]
 [%notitle]
-== Inversion of dependency 0
+== Inversion of dependency
 
 [.left-column]
 [.center]
@@ -33,12 +37,12 @@ image::images/marc/flexibility-inversion-dependance_0.svg[]
 [.right-column]
 [.center]
 --
-CHANGE ME
+It's possible to change optical following a specific connector linked to a zoom driver.
 --
 
 [transition=fade]
 [%notitle]
-== Inversion of dependency 1
+== Inversion of dependency
 
 [.left-column]
 [.center]
@@ -49,12 +53,12 @@ image::images/marc/flexibility-inversion-dependance_1.svg[]
 [.right-column]
 [.center]
 --
-CHANGE ME
+But we need a different connector according optical manufacturer.
 --
 
 [transition=fade]
 [%notitle]
-== Inversion of dependency 2
+== Inversion of dependency
 
 [.left-column]
 [.center]
@@ -65,12 +69,12 @@ image::images/marc/flexibility-inversion-dependance_2.svg[]
 [.right-column]
 [.center]
 --
-CHANGE ME
+_Coupling alert ..._
 --
 
 [transition=fade]
 [%notitle]
-== Inversion of dependency 3
+== Inversion of dependency
 
 [.left-column]
 [.center]
@@ -81,12 +85,12 @@ image::images/marc/flexibility-inversion-dependance_3.svg[]
 [.right-column]
 [.center]
 --
-CHANGE ME
+_Coupling alert ..._
 --
 
 [transition=fade]
 [%notitle]
-== Inversion of dependency 4
+== Inversion of dependency
 
 [.left-column]
 [.center]
@@ -97,12 +101,12 @@ image::images/marc/flexibility-inversion-dependance_4.svg[]
 [.right-column]
 [.center]
 --
-CHANGE ME
+In term of concern
 --
 
 [transition=fade]
 [%notitle]
-== Inversion of dependency 5
+== Inversion of dependency
 
 [.left-column]
 [.center]
@@ -113,12 +117,15 @@ image::images/marc/flexibility-inversion-dependance_5.svg[]
 [.right-column]
 [.center]
 --
-CHANGE ME
+The dependency goes +
+from the "_high level_" to the "_low level_".
+
+_(yes, in this exemple it's a little bit arbitrary, let say that optical is at service of the camera)_
 --
 
 [transition=fade]
 [%notitle]
-== Inversion of dependency 6
+== Inversion of dependency
 
 [.left-column]
 [.center]
@@ -129,12 +136,14 @@ image::images/marc/flexibility-inversion-dependance_6.svg[]
 [.right-column]
 [.center]
 --
-CHANGE ME
+It's _inconfortable_ for camera manufacturer.
+
+Too much required knowledge.
 --
 
 [transition=fade]
 [%notitle]
-== Inversion of dependency 7
+== Inversion of dependency
 
 [.left-column]
 [.center]
@@ -145,12 +154,43 @@ image::images/marc/flexibility-inversion-dependance_7.svg[]
 [.right-column]
 [.center]
 --
-CHANGE ME
+It's better to conceive camera with a given connector, +
+and let optical brands propose adapted lens.
 --
 
 [transition=fade]
 [%notitle]
-== Inversion of dependency 8
+== Inversion of dependency
+
+[.center]
+--
+This is the main idea of +
+[.huge]#Inversion Of Dependency# +
+principle.
+--
+
+[.fragment]
+[.center]
+--
+Do not bother with the details of low-level dependencies out of concern. +
+Propose a interface. +
+They will adapt.
+--
+
+
+=== Definition of Inversion Of Dependencies
+
+[quote]
+____
+* High-level modules should not depend on low-level modules. Both should depend on abstractions (e.g. interfaces).
+* Abstractions should not depend on details. Details (concrete implementations) should depend on abstractions.
+____
+
+
+
+
+[transition=fade]
+== Inversion of dependency
 
 [.left-column]
 [.center]
@@ -161,56 +201,78 @@ image::images/marc/flexibility-inversion-dependance_8.svg[]
 [.right-column]
 [.center]
 --
-CHANGE ME
+If none of them are compatibles, use the _Adaptator_ pattern.
 --
+
+
 [transition=fade]
 [%notitle]
-== Inversion of dependency 9
+== Inversion of dependency
+
+[.center]
+Classical dependency orientation.
 
 [.left-column]
+[.center]
+--
+image::images/marc/flexibility-inversion-dependance_5.svg[]
+--
+
+[.right-column]
 [.center]
 --
 image::images/marc/flexibility-inversion-dependance_9.svg[]
 --
 
-[.right-column]
-[.center]
---
-CHANGE ME
---
+
+
 [transition=fade]
 [%notitle]
-== Inversion of dependency 10
+== Inversion of dependency
+
+[.center]
+Inversion of dependency.
+
 
 [.left-column]
+[.center]
+--
+image::images/marc/flexibility-inversion-dependance_7.svg[]
+--
+
+[.right-column]
 [.center]
 --
 image::images/marc/flexibility-inversion-dependance_10.svg[]
 --
 
-[.right-column]
-[.center]
---
-CHANGE ME
---
+
+
+
+
+
 [transition=fade]
 [%notitle]
-== Inversion of dependency 11
+== Inversion of dependency
+
+[.center]
+Use of Adaptator pattern.
+
 
 [.left-column]
 [.center]
 --
-image::images/marc/flexibility-inversion-dependance_11.svg[]
+image::images/marc/flexibility-inversion-dependance_8.svg[]
 --
 
 [.right-column]
 [.center]
 --
-CHANGE ME
+image::images/marc/flexibility-inversion-dependance_11.svg[]
 --
 [transition=fade]
 [%notitle]
-== Inversion of dependency 12
+== Inversion of dependency
 
 [.left-column]
 [.center]
@@ -221,7 +283,9 @@ image::images/marc/flexibility-inversion-dependance_12.svg[]
 [.right-column]
 [.center]
 --
-CHANGE ME
+Note that with ad hoc _Adaptator_ pattern, there's absolutly *no coupling* between the two universes.
+
+They can evolve independently, as long as Adaptator follows the evolutions.
 --
 
 

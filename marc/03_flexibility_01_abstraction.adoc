@@ -4,7 +4,7 @@
 
 
 [transition=fade]
-== Only take into account contract  FIND A NEW NAME 0
+== Only take contract into account
 
 
 [.left-column]
@@ -15,15 +15,14 @@ image::images/marc/flexibility-bound2interface_0.svg[width=200]
 
 [.right-column]
 --
-A component of type *A* +
-_uses_ +
+A component of type *A* _uses_ +
 a component of type *B*.
 
 This is a *_dependency_* between *A* and *B*.
 --
 
 [transition=fade]
-== Only take into account contract  FIND A NEW NAME 1
+== Only take contract into account
 
 
 [.left-column]
@@ -39,7 +38,7 @@ If *B* changes, *A* is certainly forced to _adapt_.
 
 
 [transition=fade]
-== Only take into account contract 1 FIND A NEW NAME b
+== Only take contract into account
 
 
 [.left-column]
@@ -56,7 +55,7 @@ image::images/marc/flexibility-bound2interface_propagation_1.svg[]
 --
 
 [transition=fade]
-== Only take into account contract  FIND A NEW NAME 2
+== Only take contract into account
 
 
 [.left-column]
@@ -73,14 +72,13 @@ Do not _bound_ *A*  +
 but *to* what it [.big]#*offers*#.
 
 [.fragment]
-A kind of [.big]#*contract*# describing only +
-*WHAT* dependency does +
-(and not *HOW* it does).
+A kind of [.big]#*contract*# describing *only* +
+*WHAT* it *does*.
 --
 
 
 [transition=fade]
-== Only take into account contract  FIND A NEW NAME 2
+== Only take contract into account
 
 
 
@@ -102,7 +100,7 @@ image::images/marc/browser_contract.gif[]
 --
 
 [transition=fade]
-== Only take into account contract  FIND A NEW NAME 3
+== Only take contract into account
 
 
 [.left-column]
@@ -113,15 +111,15 @@ image::images/marc/flexibility-bound2interface_3.svg[width=200]
 
 [.right-column]
 --
-So as long as component +
-*_respect_* the contract, +
+So as long as the component +
+*_respects_* the contract, +
 it could be _anything_.
 
 Dependency *implements* the contract.
 --
 
 [transition=fade]
-== Only take into account contract  FIND A NEW NAME 4
+== Only take contract into account
 
 
 [.left-column]
@@ -132,15 +130,15 @@ image::images/marc/flexibility-bound2interface_4.svg[width=200]
 
 [.right-column]
 --
-So as long as component +
-*_respect_* the contract, +
+So as long as the component +
+*_respects_* the contract, +
 it could be modified.
 
 We don't care...
 --
 
 [transition=fade]
-== Only take into account contract  FIND A NEW NAME 5
+== Only take contract into account
 
 
 [.left-column]
@@ -157,7 +155,7 @@ both of them have to change.
 
 
 [transition=fade]
-== Only take into account contract  FIND A NEW NAME 5
+== Only take contract into account
 
 
 [.left-column]
@@ -170,11 +168,14 @@ image::images/marc/flexibility-bound2interface_5bis.svg[width=200]
 --
 From the *A* point of view, +
 *only* _B contract_ exists.
+
+
+The contrat is a [.huge]#interface#.
 --
 
 
 [transition=fade]
-== Only take into account contract  FIND A NEW NAME 6
+== Only take contract into account
 
 
 [.left-column]
@@ -189,7 +190,7 @@ Illustration with a Camera Operator _using_ a camera of Fony Inc.
 --
 
 [transition=fade]
-== Only take into account contract  FIND A NEW NAME 7
+== Only take contract into account
 
 
 [.left-column]
@@ -200,12 +201,11 @@ image::images/marc/flexibility-bound2interface_7.svg[width=400]
 
 [.right-column]
 --
-If camera changes to a _very_ different model, +
-_Camera Operator_ has certainly to _be adapted_.
+If camera changes _Camera Operator_ has certainly to _be adapted_.
 --
 
 [transition=fade]
-== Only take into account contract  FIND A NEW NAME 8
+== Only take contract into account
 
 
 [.left-column]
@@ -220,13 +220,12 @@ As there's a lot of camera models, +
 the better is to relate to a +
 _camera contract_ instead of a _camera model_.
 
-Contrat => [.huge]#interface#.
 
 
 --
 
 [transition=fade]
-== Only take into account contract  FIND A NEW NAME 9
+== Only take contract into account
 
 
 [.left-column]
@@ -237,8 +236,9 @@ image::images/marc/flexibility-bound2interface_9.svg[width=400]
 
 [.right-column]
 --
-So camera model could change, +
-as long as it _implements_ the required *interface*...
+So as long as it +
+_implements_ the required *interface*, +
+camera could change...
 
 
 We don't care.
@@ -247,7 +247,7 @@ We don't care.
 
 
 [transition=fade]
-== Only take into account contract 1 FIND A NEW NAME 0
+== Only take into account contract
 
 
 [.left-column]
@@ -262,7 +262,6 @@ We could make tests
 of _Camera Operator_ +
 without *hacking* a real camera.
 
-[.fragment]
 Just use a _mock_ Camera implementing _Camera Interface_.
 --
 
@@ -271,10 +270,13 @@ Just use a _mock_ Camera implementing _Camera Interface_.
 [.center]
 == Conclusion Of Abstraction
 
-To get flexibility +
-be bound to contract (interface), +
+[.huge]
+--
+To get _flexibility_ +
+be bound +
+to *contract* (interface), +
 not implementation.
-
+--
 
 
 [NOTE.notes]

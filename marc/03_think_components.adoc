@@ -214,7 +214,7 @@ image::images/marc/writing-think-modular_13.svg[]
 
 [.right-column]
 --
-Modification of an non-isolated portion of code could have side effects on the whole bloc.
+Modification of an non-isolated portion of code could have side effects on the whole block.
 --
 
 

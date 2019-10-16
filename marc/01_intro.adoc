@@ -7,14 +7,11 @@
 
 [.dark.background]
 [.center]
+[%notitle]
 == What Do We Do When Developing Software?
 
 
-Basically ?
-
-
-[.fragment]
-We just turn _human_ [.huge]#ideas#  into _computer_ [.huge]#code#
+We turn _human_ [.huge]#ideas#  into _computer_ [.huge]#code#
 
 
 == Why A Talk About Good Practices ?
@@ -71,26 +68,20 @@ And we get a lot of them
 --
 
 
-== What Are The Challenges Of Development ?
-
-*A REFAIRE*
-
-* To successfully *translate* human ideas into computer code
-** and vice versa
-* To handle **complexity**,
-* To allow changement and evolution
-* To not be *afraid to break everything*
-* To ensure that software is doing what it is expected to do,
+== Good practices discussed ?
 
 
+There's too much to say.
 
-== How To Handle This ?
-
-* By following some good practices into
+* We will focus about
+** To successfully *translate* human ideas into computer code
+** To handle **complexity**,
+** To not be *afraid to break everything*
+* In our
 ** Attitude
 ** Design
-** Coding
-** Testing
+*** in conception and coding
+** Unit tests (with Antoine)
 
 
 

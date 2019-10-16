@@ -2,15 +2,33 @@
 
 //tag::include[]
 
+[.center]
+== Show only what's is needed
+
 
 [transition=fade]
-== Have the necessary and sufficient appearance FIND A NEW NAME 0
+[%notitle]
+== Show only what's is needed
 
 
 [.left-column]
-[.center]
 --
+[.center]
 image::images/marc/flexibility-segregation_0.svg[width=600]
+
+[source,python]
+----
+class ReportingCamera:
+
+	def start_video(self):
+		...
+	def stop_video(self):
+		...
+	def start_sound(self):
+		...
+	def stop_sound(self):
+		...
+----
 --
 
 [.center]
@@ -25,11 +43,6 @@ described by a +
 _Reporting Camera Interface_.
 
 [.fragment]
-A _reporting camera_ is used +
-for _reporting_ in the streets +
-
-
-[.fragment]
 It records
 _video_
 and
@@ -38,7 +51,8 @@ _sound_.
 
 
 [transition=fade]
-== Have the necessary and sufficient appearance FIND A NEW NAME 0.1
+[%notitle]
+== Show only what's is needed
 
 
 [.left-column]
@@ -48,6 +62,7 @@ image::images/marc/flexibility-segregation_0.1.svg[width=600]
 --
 
 [.right-column]
+[.center]
 --
 Someone decided to split +
 _Reporting Camera Operator_ +
@@ -56,7 +71,8 @@ in two parts.
 --
 
 [transition=fade]
-== Have the necessary and sufficient appearance FIND A NEW NAME 0copie
+[%notitle]
+== Show only what's is needed
 
 
 [.left-column]
@@ -65,8 +81,15 @@ in two parts.
 image::images/marc/flexibility-segregation_0.svg[width=600]
 --
 
+[.right-column]
+[.center]
+--
+They use the same interface.
+--
+
 [transition=fade]
-== Have the necessary and sufficient appearance FIND A NEW NAME 2
+[%notitle]
+== Show only what's is needed
 
 
 [.left-column]
@@ -76,12 +99,14 @@ image::images/marc/flexibility-segregation_2.svg[width=600]
 --
 
 [.right-column]
+[.center]
 --
 They use the same interface.
 --
 
 [transition=fade]
-== Have the necessary and sufficient appearance FIND A NEW NAME 3
+[%notitle]
+== Show only what's is needed
 
 
 [.left-column]
@@ -91,22 +116,45 @@ image::images/marc/flexibility-segregation_3.svg[width=600]
 --
 
 [.right-column]
+[.center]
 --
 But if the camera itself is separated into two components...
 
-We get a nonsense.
+We get a nonsense...
 
-A microphone that has to handle the video aspects is *stupid*.
+*We show too much.*
 --
 
 [transition=fade]
-== Have the necessary and sufficient appearance FIND A NEW NAME 4
+[%notitle]
+== Show only what's is needed
 
 
 [.left-column]
-[.center]
 --
+[.center]
 image::images/marc/flexibility-segregation_4.svg[width=600]
+
+[source,python]
+----
+class Video(ABC):
+	@abstractmethod
+	def start_video(self):
+		...
+	@abstractmethod
+	def stop_video(self):
+		...
+
+class Microphone(ABC):
+	@abstractmethod
+	def start_sound(self):
+		...
+	@abstractmethod
+	def stop_sound(self):
+		...
+----
+
+
 --
 
 [.right-column]
@@ -122,7 +170,8 @@ and *only* what they do.
 
 
 [transition=fade]
-== Have the necessary and sufficient appearance FIND A NEW NAME 5
+[%notitle]
+== Show only what's is needed
 
 
 [.left-column]
@@ -140,7 +189,8 @@ could be used.
 --
 
 [transition=fade]
-== Have the necessary and sufficient appearance FIND A NEW NAME 6
+[%notitle]
+== Show only what's is needed
 
 
 [.left-column]
@@ -159,7 +209,8 @@ could be used.
 
 
 [transition=fade]
-== Have the necessary and sufficient appearance FIND A NEW NAME 6.1
+[%notitle]
+== Show only what's is needed
 
 
 [.left-column]
@@ -169,6 +220,7 @@ image::images/marc/flexibility-segregation_6.1.svg[width=600]
 --
 
 [.right-column]
+[.center]
 --
 What about our _Reporting Camera Operator_ ? +
 
@@ -179,7 +231,8 @@ Whether it's implemented by _two_ components...
 
 
 [transition=fade]
-== Have the necessary and sufficient appearance FIND A NEW NAME 6.2
+[%notitle]
+== Show only what's is needed
 
 
 [.left-column]
@@ -189,6 +242,7 @@ image::images/marc/flexibility-segregation_6.2.svg[width=600]
 --
 
 [.right-column]
+[.center]
 --
 \... or implemented by _only one_ component !
 
@@ -200,50 +254,52 @@ We don't care.
 
 
 [transition=fade]
-== Have the necessary and sufficient appearance FIND A NEW NAME 7
-
+[%notitle]
+== Show only what's is needed
 
 [.left-column]
 [.center]
 --
-image::images/marc/flexibility-segregation_7.svg[width=600]
+image::images/marc/flexibility-segregation_6.before.2.b.svg[width=600]
 --
 
 [.right-column]
+[.center]
 --
-But if you're in a field +
-limited to TV Reporting only, +
-you would prefer talking about _Reporting camera_.
+What about the _Reporting camera_ interface ?
 --
 
 
 [transition=fade]
-== Have the necessary and sufficient appearance FIND A NEW NAME 7
-
+[%notitle]
+== Show only what's is needed
 
 [.left-column]
 [.center]
 --
-image::images/marc/flexibility-segregation_7.svg[width=600]
+image::images/marc/flexibility-segregation_6.before.2.b.svg[width=600]
 --
 
 [.right-column]
+[.center]
 --
 How to reconcile the two universes ?
 --
 
 
 [transition=fade]
-== Have the necessary and sufficient appearance FIND A NEW NAME 7
-
+[%notitle]
+== Show only what's is needed
 
 [.left-column]
-[.center]
 --
-image::images/marc/flexibility-segregation_7.svg[width=600]
+[.center]
+image::images/marc/flexibility-segregation_6.before.2.svg[width=600]
+
 --
 
 [.right-column]
+[.center]
 --
 By making _Reporting camera_ +
 be a _Camera interface_ +
@@ -253,74 +309,73 @@ a _Microphone interface_ too.
 
 
 [transition=fade]
-== Have the necessary and sufficient appearance FIND A NEW NAME 8
-
+[%notitle]
+== Show only what's is needed
 
 [.left-column]
-[.center]
 --
-image::images/marc/flexibility-segregation_8.svg[width=600]
+[.center]
+image::images/marc/flexibility-segregation_7.svg[width=600]
+
+[source,python]
+----
+class ReportingCamera(Camera,Microphone):
+	...
+----
+
 --
 
 [.right-column]
---
-So you have a very flexible architecture like this...
---
-
-[transition=fade]
-== Have the necessary and sufficient appearance FIND A NEW NAME 9
-
-
-[.left-column]
 [.center]
 --
-image::images/marc/flexibility-segregation_9.svg[width=600]
---
-
-[.right-column]
---
-\... or this with a delegation to the microphone for all the _Microphone stuff_.
+By making _Reporting camera_ +
+be a _Camera interface_ +
+*and* +
+a _Microphone interface_ too.
 --
 
 
 [transition=fade]
-== Have the necessary and sufficient appearance FIND A NEW NAME 6.before.2
+[%notitle]
+== Show only what's is needed
 
 
-[.left-column]
 [.center]
 --
 image::images/marc/flexibility-segregation_6.before.2.svg[width=600]
 --
 
-[.right-column]
 [.center]
 --
-We split a too general interface into +
-two very user _focused_ interfaces.
+A interface with *too much information* +
+is split into very _user focused_ interfaces.
 
 [.fragment]
-It called +
-[.huge]#Segregation of Interfaces#.
+It's the +
+[.huge]#Segregation of Interfaces# +
+principle.
 --
 
+
 [transition=fade]
-== Have the necessary and sufficient appearance FIND A NEW NAME 6.3
+[%notitle]
+== Show only what's is needed
 
 
 [.center]
 --
 image::images/marc/flexibility-segregation_6.3.svg[width=600]
 
-So the general _Reporting Camera Interface_ +
+So it
 could be seen as a +
 _video interface_ for video interested users.
 --
 
 
 
-[transition=fade][transition=fade]
-== Have the necessary and sufficient appearance FIND A NEW NAME 6.4
+[transition=fade]
+[%notitle]
+== Show only what's is needed
 
 
 [.center]
@@ -333,8 +388,74 @@ _Microphone interface_ for sound interested users.
 --
 
 
+
 [transition=fade]
-== Have the necessary and sufficient appearance FIND A NEW NAME 10
+[%notitle]
+=== Show only what's is needed
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_8.svg[width=600]
+--
+
+[.right-column]
+--
+It allows very flexible architecture like this...
+--
+
+
+
+[.reset-column]
+[source,python]
+----
+class FonyStreet(ReportingCamera):
+
+	# microphone interface
+
+	def start_sound(self):
+		...
+----
+
+
+[transition=fade]
+[%notitle]
+=== Show only what's is needed
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_9.svg[width=600]
+--
+
+[.right-column]
+--
+\... or this with a delegation to the microphone for all the _Microphone stuff_.
+
+
+--
+
+[.reset-column]
+[source,python]
+----
+class FonyStreet(ReportingCamera):
+
+	def __init__(self, connected_microphone):
+		self.microphone = connected_microphone
+
+	# microphone interface
+
+	def start_sound(self):
+		self.microphone.start_sound() # <- delegation pattern
+----
+
+
+
+[transition=fade]
+[%notitle]
+=== Show only what's is needed
 
 
 [.left-column]

@@ -8,7 +8,7 @@
 [%notitle]
 == Attitude
 
-:chapter_name: Adopt The Good Attitude
+:chapter_name: Attitude
 
 [.big]#Chapter {counter:main_part_counter:1}# +
 [.huge]#{chapter_name}#
@@ -113,7 +113,9 @@ Try to ever answer to these questions :
 [.center]
 --
 "How I came to write this piece of code ?" +
+
 "How I connect it to my original idea ?" +
+
 "What I'm writing indeed ?"
 --
 
@@ -406,7 +408,7 @@ Nothing is *never* lost.
 * To break a fragile building -> Get a *good design*.
 
 
-== Sum Up
+== Attitude Sum Up
 
 
 * Be Kind To Our Brain
