@@ -16,7 +16,7 @@ include::02_general.adoc[tag=include]
 
 include::03_conception.adoc[tag=include]
 
-include::04_coding.adoc[tag=include]
+// include::04_coding.adoc[tag=include]
 
 
 

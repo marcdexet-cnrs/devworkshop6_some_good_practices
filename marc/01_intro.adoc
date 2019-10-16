@@ -73,16 +73,13 @@ And we get a lot of them
 
 There's too much to say.
 
-* We will focus about
+* We will focus about in attitude and design about
 ** To successfully *translate* human ideas into computer code
 ** To handle **complexity**,
 ** To not be *afraid to break everything*
-* In our
-** Attitude
-** Design
-*** in conception and coding
-** Unit tests (with Antoine)
 
+[.fragment]
+For coding part, see https://marcdexet-cnrs.github.io/devworkshop5_tips_for_maintainability
 
 
 //end::include[]

@@ -1,0 +1,328 @@
+= Naming
+
+//tag::include[]
+
+== Naming
+
+[.fragment]
+--
+[.ppt]
+* Size Doesn't Matter
+** You're coding, not compressing.
+** => let names be of use, not only required symbols by language...
+--
+
+[.fragment]
+--
+[.ppt]
+* Comprehension Matters
+--
+
+== Comprehension Matters
+[.center]
+Compare
+
+[.left-column.big]
+[source,python]
+----
+if sa:
+    ssh()
+    claw()
+----
+
+[.right-column.big]
+[source,python]
+----
+if stage_accident:
+    stop_shooting()
+    call_lawyers()
+----
+
+[.reset-column]
+
+[.fragment]
+You *have* to be as direct as possible.
+
+
+== Comprehension Matters
+
+[.left-column.center]
+--
+What we want...
+
+image::images/marc/writing-direct_0.svg[]
+--
+
+[.right-column.fragment]
+[.center]
+--
+What we get...
+
+image::images/marc/writing-direct_1.svg[]
+--
+
+[.reset-column]
+[.fragment.center]
+--
+Ask yourself if your code is direct or ambiguous ! +
+As if someone could be looking over your shoulder.
+--
+
+== Comprehension Matters
+
+[.ppt]
+* Avoid one or two letter names
+** Except for mathematical expressions and domain specific conventions.
+
+[.ppt]
+* Avoid *confusing* abridged names
+** As "_crptCrewMngt_" for "_CarpentryCrewManagement_"
+
+[.ppt]
+* Avoid *unpronounceable* names
+** As "_kwcrfs_" for "_Key Waterproof Camera Ready For Scene_".
+
+[%notitle]
+[.center]
+== Use Meaningful Names
+
+
+To avoid to be +
+_lost in translation_, +
+[.huge]#stay close +
+to +
+human words +
+(world)#
+
+
+[%notitle]
+[.center]
+== Use Meaningful Names
+
+Use [.huge]#meaningful# names !
+
+[.fragment]
+_Short names only save time when writing, not when understanding._
+
+[.fragment]
+But a *meaningful* name save time and avoid headaches...
+
+[%notitle]
+[.center]
+== Use Meaningful Names
+
+image::images/marc/searching_meaningful_variable_name2.png[height=600]
+
+[NOTE.notes]
+--
+Getting a meaningful name is so important that's it's a joke in developement community.
+--
+
+[.center]
+== Naming rules
+
+A guide to get meaningful names...
+
+[NOTE.notes]
+--
+C++ have to translate into the C++ convention
+--
+
+== Naming: Follow Scope Length Rule
+
+[.center]
+The name +
+[.huge]#_**can**_# +
+( and not _should_ ) +
+be as [.huge]#*short*# +
+as its [.huge]#*scope*#.
+
+
+== Naming: Follow Scope Length Rule
+
+[.center]
+The name _**can**_ ( and not _should_ ) +
+be as *short* as its *scope*.
+
+[.big]
+[source,python]
+----
+def turn_on_cameras(cameras):
+    for c in cameras :
+      s = c.status
+      if s == 'off':
+        c.turn_on()
+
+# And we don't care anymore of 'c' and 's',
+# end of the story !
+----
+
+== Naming: Follow Scope Length Rule
+
+[.big]
+[source,python]
+----
+wc = WaterproofCamera()
+
+# blah, blah, blah
+
+# blah, blah, blah
+
+# and 100 lines further
+
+if wc.is_ready() == False: # What is this wc ?
+    stop_all()
+----
+
+[.center]
+vs
+
+[.big]
+[source,python]
+----
+waterproof_camera = WaterproofCamera()
+
+# blah, blah, blah
+
+# blah, blah, blah
+
+# and 100 lines further
+
+if waterproof_camera.is_ready() == False:
+    stop_all()
+----
+
+== Naming: Follow Universal Convention
+
+* Object, variable, property &rarr; **NOUN**.
+
+[.big]
+[source,python]
+----
+actor = Actor()
+stunter = stunt.Stunter()
+----
+
+
+[.fragment]
+--
+* Action, function, method &rarr; **VERB**.
+
+[.big]
+[source,python]
+----
+def feed_movie_star(star):
+    caviar = get_food_for("star")
+    star.eat(food)
+----
+--
+
+[.fragment]
+--
+* Collection, list, set &rarr; **PLURIAL**.
+
+[.big]
+[source,python]
+----
+actors = find_actors_for_movie('Euclid 2 the return')
+actor_names = ['Kitty', 'Sam']
+----
+--
+
+== Naming: Follow Universal Convention
+
+
+* Dictionary, Map : indicate *key* to not be mistaken with collections.
+
+[.big]
+----
+<subject>_by_<key>()
+
+<subject>_to_<key>()
+----
+
+As
+
+[.big]
+[source,python]
+----
+actors_by_movie['Euclid 2 the return']
+
+country_to_actors['ES'] = find_actors_in_country('ES')
+----
+
+== Naming: Follow Universal Convention
+
+* Use _suffix_ if it helps to avoid mistake
+when *your language is dynamically typed*.
+
+[.big]
+----
+<subject>_<type>()
+----
+
+As
+
+[.big]
+[source,python]
+----
+actor_list
+
+scenes_dict
+
+camera_set
+----
+
+
+== Naming: Action Name Must Tell What It Does
+
+* Following pattern
+
+[.big]
+----
+<action>_<subject>()
+----
+
+As
+
+[.big]
+[source,python]
+----
+bring_camera_for_set(waterproof_camera, "scene 1.3")
+
+move_actors_to(actors, "New York")
+
+get_decorations_settings("scene 1.3")
+----
+
+== Naming: Include Useful Informations
+
+[.big]
+[source,python]
+----
+find_actors_by_name(name)
+
+find_actors_by_name_in_movie(name, movie_name)
+
+find_all_actors_by_movie_name(movie_name)
+----
+
+== Naming: Use Antonym To Enclose Action
+
+* _begin_ &rarr; _end_
+* _open_ &rarr; _close_
+* _create_ &rarr; _destroy_
+* _start_ &rarr; _stop_
+*  ...
+
+[.big]
+[source,python]
+----
+begin_shooting()
+start_camera()
+...
+stop_camera()
+end_shooting()
+----
+
+//end::include[]

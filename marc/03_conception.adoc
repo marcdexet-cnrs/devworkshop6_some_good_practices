@@ -67,14 +67,16 @@ The more *_abstract_* and *_high-level_* are ideas, +
 the more *_complex_* is implementation. +
 
 _(the less *direct* to implement)_
+--
 
+== Complexity, Complication And Abstraction
 
-'''
-
+[.center]
+--
 The more *_complex_* is implementation, +
-the more *_complicated_* *may be* the code. +
+the more *_complicated_* *MAY BE* the code. +
 
-_(the less *easy* to understand the code)_
+_(the less *easy* to understand)_
 --
 
 
@@ -97,6 +99,12 @@ https://www.itrw.net/2016/06/27/organized-cabling-is-better-cabling-avoid-server
 * Distinguish different levels of abstraction
 * Take things in order
 * Isolate and decouple elements
+** Flexibility
+** Stability
+** Focus
+
+[.fragment]
+Along this journey, with see some well known principles as SOLID.
 
 
 [.subsection.background]
@@ -240,7 +248,7 @@ Grouping element by concern could be *a question of point of view*.
 
 [.fragment]
 [.ppt]
-* In programming world =>
+* In programming world:
 ** _Module_
 ** _Package_
 ** _Namespace_
@@ -258,22 +266,42 @@ include::03_stability.adoc[tag=include]
 
 include::03_focus.adoc[tag=include]
 
-== Sump Up of Design
+== Sump Up Of Seen Principles
 
 
-*A REFAIRE* Reprendre ici les principes énoncés.
+I have tried to make you feel through graphiques the following principles.
+
+* Separation of Concern
+* Differentiation of Levels Of Abstraction
+* Only take into account contract
+* Segregation of Interfaces
+* Inversion of Dependencies
+* Open/Closed principle
+* Liskov Substitution principle
+* Single Responsability principle
 
 
-Separation of Concern
+== Sump Up Of Seen Principles
 
-Differentiation of Levels Of Abstraction
+Among them, I hope someone have recognized
 
-Only take into account contract
+* SOLID
+** Single Responsability principle
+** Open/Closed principle
+** Liskov Substitution principle
+** Segregation of Interfaces
+** Inversion of Dependencies
 
-Segrg
+== Some opening
+
+* Explore the topics of the development principles in more depth
+** https://en.wikipedia.org/wiki/Category:Programming_principles[]
+* Explore Designs Patterns
+** https://en.wikipedia.org/wiki/Software_design_pattern#Classification_and_list[]
 
 
-SOLID
+== Conclusion
 
+There's too much to say, I regret to not have asked for 2h to maurice, sorry.
 
 //end::include[]

@@ -58,6 +58,10 @@ No, you lost sight of the ideas behind.
 [.huge]
 You got lost in the translation.
 
+[.fragment]
+[.center]
+I have seen some code not so far way from this recipe...
+
 
 [.fragment]
 --

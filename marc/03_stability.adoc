@@ -12,6 +12,9 @@
 
 [.huge]#Stability#
 
+[.center]
+== Open Closed
+
 
 [transition=fade]
 [%notitle]
@@ -288,6 +291,11 @@ The *Open/Closed* principle ensure that a component could be *extended* safely w
 ** is  well tested and validated,
 ** is sealed and modification is impossible.
 
+
+[.center]
+== Liskov Substitution Principle
+
+
 [transition=fade]
 [%notitle]
 == Substitution 0
@@ -383,7 +391,7 @@ It's not good :(
 
 [transition=fade]
 [%notitle]
-== Substitution of Liskov
+== Liskov Substitution Principle
 
 [.center]
 Check you provide subtypes (_"type A minus"_) +
@@ -394,7 +402,7 @@ without breaking something.
 
 [transition=fade]
 [%notitle]
-== Substitution of Liskov
+== Liskov Substitution Principle
 
 [.center]
 This is, roughly, +

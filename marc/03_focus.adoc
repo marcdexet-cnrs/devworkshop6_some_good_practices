@@ -12,13 +12,8 @@
 [.huge]#Focus#
 
 
-== Focus
-
-
-
-*A REFAIRE*
-
-* Single Responsability
+[.center]
+== Single Responsability
 
 
 [transition=fade]
@@ -135,7 +130,7 @@ image::images/marc/flexibility-SingleResponsability_5.svg[width=600]
 
 [.right-column]
 --
-Let's see a violotaion of this principle.
+Let's see a violation of this principle.
 --
 
 

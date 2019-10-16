@@ -17,21 +17,15 @@
 [.big]#Chapter {counter:main_part_counter:1}# +
 [.huge]#{chapter_name}#
 
-include::04_writing_reading.adoc[tag=include]
-
-include::04_think_small_and_modular.adoc[tag=include]
-
-include::04_learn_to_delegate.adoc[tag=include]
 
 
-== Sum Up
 
-*A REFAIRE*
+// include::04_writing_reading.adoc[tag=include]
 
+// include::04_think_small_and_modular.adoc[tag=include]
 
-== Testing
+// include::04_learn_to_delegate.adoc[tag=include]
 
-*A REFAIRE*
 
 
 //end::include[]

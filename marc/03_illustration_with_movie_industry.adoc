@@ -221,6 +221,23 @@ image::images/marc/good_practices-ArtConcern_3.svg[]
 [.center]
 == End Of The Parenthesis
 
+--
+It illustrates how +
+_complexity_ could increase and be handled +
+by _breaking it down_
+
+by _concerns_ +
+and +
+_levels of abstraction_
+--
+
+[.center]
+image::images/marc/credits.gif[]
+
+[.inverse.background]
+[.center]
+== End Of The Parenthesis
+
 Seaside scene -> a few lines of code
 
 Birthday song -> a few classes or modules
@@ -229,22 +246,8 @@ Euclid video -> a code for few days
 
 Movie -> a PF at Euclid ?
 
-
-[.inverse.background]
-[.center]
-== End Of The Parenthesis
-
---
-A very _complex_ situation is possible +
-by _breaking it down_
-
-By _concerns_ +
-and +
-_levels of abstraction_
---
-
-[.center]
-image::images/marc/credits.gif[]
+[.fragment]
+_Where do you place your work ?_
 
 
 //end::include[]

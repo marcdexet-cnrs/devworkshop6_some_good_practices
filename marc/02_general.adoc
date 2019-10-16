@@ -238,14 +238,14 @@ If you don't make the effort to try, you will be the only person on earth to und
 And it's not good for you.
 --
 
-[.dark.background]
-[%notitle]
-[.center]
-== Mine
+// [.dark.background]
+// [%notitle]
+// [.center]
+// == Mine
 
-My listener
+// My listener
 
-image::images/marc/mascotte.jpg[]
+// image::images/marc/mascotte.jpg[]
 
 == Dessinez, c'est gagné
 

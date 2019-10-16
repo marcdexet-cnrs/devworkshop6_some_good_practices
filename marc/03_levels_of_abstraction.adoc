@@ -42,8 +42,7 @@ image::images/marc/good_practices-level_complexity_2_1_bis.svg[width=600]
 
 
 --
-On each layer +
-there's elements +
+Several elements +
 per level of abstraction.
 --
 
@@ -57,7 +56,7 @@ image::images/marc/good_practices-level_complexity_2_2.svg[width=600]
 
 [.right-column]
 --
-Each element could be grouped by sub-concern.
+They could be grouped by sub-concern.
 --
 
 [transition=fade]
@@ -70,11 +69,7 @@ image::images/marc/good_practices-level_complexity_2_3.svg[width=600]
 
 [.right-column]
 --
-* Elements interact
-** Inside a concern
-*** At the same level
-*** From level to another one
-** Between concerns
+They interact inside a concern, from level to another one, between concerns.
 --
 
 [transition=fade]

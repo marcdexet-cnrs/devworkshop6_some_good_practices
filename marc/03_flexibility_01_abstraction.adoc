@@ -4,6 +4,7 @@
 
 
 [transition=fade]
+[%notitle]
 == Only take contract into account
 
 
@@ -14,6 +15,7 @@ image::images/marc/flexibility-bound2interface_0.svg[width=200]
 --
 
 [.right-column]
+[.center]
 --
 A component of type *A* _uses_ +
 a component of type *B*.
@@ -22,6 +24,7 @@ This is a *_dependency_* between *A* and *B*.
 --
 
 [transition=fade]
+[%notitle]
 == Only take contract into account
 
 
@@ -32,12 +35,14 @@ image::images/marc/flexibility-bound2interface_1.svg[width=200]
 --
 
 [.right-column]
+[.center]
 --
 If *B* changes, *A* is certainly forced to _adapt_.
 --
 
 
 [transition=fade]
+[%notitle]
 == Only take contract into account
 
 
@@ -55,6 +60,7 @@ image::images/marc/flexibility-bound2interface_propagation_1.svg[]
 --
 
 [transition=fade]
+[%notitle]
 == Only take contract into account
 
 
@@ -65,6 +71,7 @@ image::images/marc/flexibility-bound2interface_2.svg[width=200]
 --
 
 [.right-column]
+[.center]
 --
 
 Do not _bound_ *A*  +
@@ -78,6 +85,7 @@ A kind of [.big]#*contract*# describing *only* +
 
 
 [transition=fade]
+[%notitle]
 == Only take contract into account
 
 
@@ -100,6 +108,7 @@ image::images/marc/browser_contract.gif[]
 --
 
 [transition=fade]
+[%notitle]
 == Only take contract into account
 
 
@@ -110,15 +119,18 @@ image::images/marc/flexibility-bound2interface_3.svg[width=200]
 --
 
 [.right-column]
+[.center]
 --
 So as long as the component +
 *_respects_* the contract, +
 it could be _anything_.
 
-Dependency *implements* the contract.
+*_respects_* the contract +
+=> *implements* the contract.
 --
 
 [transition=fade]
+[%notitle]
 == Only take contract into account
 
 
@@ -129,6 +141,7 @@ image::images/marc/flexibility-bound2interface_4.svg[width=200]
 --
 
 [.right-column]
+[.center]
 --
 So as long as the component +
 *_respects_* the contract, +
@@ -138,6 +151,7 @@ We don't care...
 --
 
 [transition=fade]
+[%notitle]
 == Only take contract into account
 
 
@@ -148,6 +162,7 @@ image::images/marc/flexibility-bound2interface_5.svg[width=200]
 --
 
 [.right-column]
+[.center]
 --
 But if contract changes, +
 both of them have to change.
@@ -155,6 +170,7 @@ both of them have to change.
 
 
 [transition=fade]
+[%notitle]
 == Only take contract into account
 
 
@@ -165,6 +181,7 @@ image::images/marc/flexibility-bound2interface_5bis.svg[width=200]
 --
 
 [.right-column]
+[.center]
 --
 From the *A* point of view, +
 *only* _B contract_ exists.
@@ -175,6 +192,7 @@ The contrat is a [.huge]#interface#.
 
 
 [transition=fade]
+[%notitle]
 == Only take contract into account
 
 
@@ -185,11 +203,13 @@ image::images/marc/flexibility-bound2interface_6.svg[width=400]
 --
 
 [.right-column]
+[.center]
 --
 Illustration with a Camera Operator _using_ a camera of Fony Inc.
 --
 
 [transition=fade]
+[%notitle]
 == Only take contract into account
 
 
@@ -200,11 +220,13 @@ image::images/marc/flexibility-bound2interface_7.svg[width=400]
 --
 
 [.right-column]
+[.center]
 --
 If camera changes _Camera Operator_ has certainly to _be adapted_.
 --
 
 [transition=fade]
+[%notitle]
 == Only take contract into account
 
 
@@ -215,6 +237,7 @@ image::images/marc/flexibility-bound2interface_8.svg[width=400]
 --
 
 [.right-column]
+[.center]
 --
 As there's a lot of camera models, +
 the better is to relate to a +
@@ -225,6 +248,7 @@ _camera contract_ instead of a _camera model_.
 --
 
 [transition=fade]
+[%notitle]
 == Only take contract into account
 
 
@@ -235,6 +259,7 @@ image::images/marc/flexibility-bound2interface_9.svg[width=400]
 --
 
 [.right-column]
+[.center]
 --
 So as long as it +
 _implements_ the required *interface*, +
@@ -247,6 +272,7 @@ We don't care.
 
 
 [transition=fade]
+[%notitle]
 == Only take into account contract
 
 
@@ -257,6 +283,7 @@ image::images/marc/flexibility-bound2interface_10.svg[width=400]
 --
 
 [.right-column]
+[.center]
 --
 We could make tests
 of _Camera Operator_ +
@@ -272,7 +299,7 @@ Just use a _mock_ Camera implementing _Camera Interface_.
 
 [.huge]
 --
-To get _flexibility_ +
+To get _flexibility_, +
 be bound +
 to *contract* (interface), +
 not implementation.
