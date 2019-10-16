@@ -2,7 +2,6 @@
 [.center]
 = Some Software Development Good Practices
 include::_inc_revealjs.adoc[]
-:notitle:
 
 A kind of illustrated developer experience journey...
 

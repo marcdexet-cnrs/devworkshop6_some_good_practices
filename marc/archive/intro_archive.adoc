@@ -129,16 +129,6 @@ If _complexity_ is not a problem, _complication_ should be avoided.
 ** The more _complex_ is implementation, the more _complicated_ *may be* the code
 --
 
-[.fragment]
---
-In general, _complexity_ leads to _complication_ if you are not careful.
---
-
-[.fragment]
---
-So be careful...
---
-
 [NOTE.notes]
 --
 There is always some confusion between Complex and Complicated.

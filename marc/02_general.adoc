@@ -69,36 +69,59 @@ Brain learns from *patterns* if they're *visible*.
 image::images/marc/imagurc_BOMf4.jpg[width=500]
 
 
-[.fragment]
-This helps brain find its way through the architecture of software.
-
+[.subsection.background]
+[%notitle]
+[.center]
 == Don't Get Lost In Translation
 
-*A REFAIRE*
-*FAIRE UN SCHEMA*
+[.big]#{chapter_name} - Part {counter:general_counter:1}#
+
+
+[.huge]#Don't Get Lost In Translation#
+
+
+[.splash.background]
+[.center]
+== Don't Get Lost In Translation
 
 [.at-top-right]
 image::https://media.giphy.com/media/1WWh4ixLrxxTy/giphy.gif[]
 
-[.fragment]
---
-* Translate *ideas* into *code*
-** As the Italian say "Traduttore, traditore" -> _Translator, traitor_
---
+[.center]
+[.big]#Traduttore, traditore# +
+ _Translator, traitor_
 
 [.fragment]
+[.center]
 --
-* Translation implies distorsion
-** The further *_away_* from the _code_, the _greater_ the *distortion*.
-** To _convert_ and _adapt_ into code => To _modify_ or _lost_ part of our original ideas
+The further *_away_* from the _code_ is the _idea_, +
+the _greater_ is the risk of the *distortion*.
+--
+
+[.splash.background]
+[.center]
+== Don't Get Lost In Translation
+
+[.at-top-right]
+image::https://media.giphy.com/media/1WWh4ixLrxxTy/giphy.gif[]
+
+[.center]
+--
+Try to ever answer to these questions :
+--
+
+[.center]
+--
+"How I came to write this piece of code ?" +
+"How I connect it to my original idea ?" +
+"What I'm writing indeed ?"
 --
 
 [.fragment]
+[.center]
 --
-Ever try to connect
+_You could be surprised by your answers..._
 --
-
-
 
 [.subsection.background]
 [%notitle]
@@ -109,46 +132,39 @@ Ever try to connect
 
 
 [.huge]#Freeze +
-The Brownian Motion Of +
-Ideas#
+The Brownian Motion +
+Of Ideas#
 
 
 == The Brownian Motion Of Ideas
 
-* When turning ideas into code, we get
-** Uncertainties about
-*** How to proceed,
-*** The choices to be made,
-*** The tools to be used,
-*** ...
-** A lot of _moving_ and _unfixed_ ideas,
+// The more [.huge]_complex_ and [.huge]_ambitious_ our ideas are, +
+// the more [.huge]_elements_ and  [.huge]_steps_ are to think about.
 
-[.fragment]
-The more [.huge]_complex_ and [.huge]_ambitious_ our ideas are, +
-the more [.huge]_elements_ and  [.huge]_steps_ are to think about.
+[.center]
+When translating +
+ideas into code, +
+there's a lot of _moving_ and _unfixed_ ideas +
+spinning in our heads.
 
+
+[.center]
+Many of them are _just_ *useless*...
 
 [.at-top-right]
 [.behind]
 image::images/marc/brownian_ideas.gif[]
 
 [%notitle]
-
-== Freeze The Brownian Motion Of Ideas
-
-[.big]
---
-Firstly, We Need To Freeze The Brownian Motion Of Ideas !
---
+== Speak out
 
 [.big]
-[.fragment]
+[.center]
 --
-By [.huge]#expressing# +
-about +
-what we *want* +
-and *how* we want to do !
+You will *eliminate* them +
+just by *speaking them out*.
 --
+
 
 [.at-top-right]
 [.behind]
@@ -193,20 +209,17 @@ you may suddenly gain [.huge]#new insight# into the problem."
 _"The Pragmatic Programmer"_
 --
 
-
-== Verbalize What Is Spinning In Your Head
+== Speak Out What Is Spinning In Your Head
 
 
 [.at-top-right]
 image::https://media.giphy.com/media/cRNE6NAfEmLNwfpUlq/giphy.gif[width=300]
 
 [.ppt]
-* Verbalize, describe your insights
-** to a good fellow worker
-*** _the poor_
+* Verbalize your insights
+** to somebody,
 ** to an object, your computer, your pencil
-** or a Rubber Duck
-*** aka _Rubber duck debugging_ -> [.smaller]#https://en.wikipedia.org/wiki/Rubber_duck_debugging#
+** to a Rubber Duck -> [.smaller]#https://en.wikipedia.org/wiki/Rubber_duck_debugging#
 
 [.fragment]
 [.center]

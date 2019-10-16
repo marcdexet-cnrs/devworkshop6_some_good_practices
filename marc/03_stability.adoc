@@ -168,16 +168,6 @@ This is a illustration of the +
 --
 
 
-== Open closed.
-
-The *Open/Closed* principle ensure that a component could be *extended* safely without being *modified*.
-
-
-* It's very useful when the component
-** is *_shared_* over several project,
-** is validated and well tested,
-** is sealed and modification is impossible.
-
 [transition=fade]
 == Open Closed 7
 
@@ -265,6 +255,16 @@ It could also not be extended as _waterproof camera_ with _deported commands_.
 [.fragment]
 This camera doesn't respect the *open/closed* principle.
 --
+
+== Open closed.
+
+The *Open/Closed* principle ensure that a component could be *extended* safely without being *modified*.
+
+
+* It's very useful when the component
+** is *_shared_* over several projects,
+** is  well tested and validated,
+** is sealed and modification is impossible.
 
 
 // [transition=fade]

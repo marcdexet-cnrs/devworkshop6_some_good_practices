@@ -13,7 +13,6 @@ Let's make a movie
 
 image::https://media.giphy.com/media/7J1llSYGJhKQJpVS9V/giphy.gif[]
 
-[.fragment]
 [.big]
 --
 A illustration of _design principles_ with +
@@ -114,12 +113,11 @@ image::https://media.giphy.com/media/fjxe2wl3trzjs1i9NE/giphy.gif[]
 --
 [.fragment]
 [.ppt]
-* Concerns ?
-[.fragment]
+* Concerns
 ** Scientific background
 ** Camera
-** Actor
-** Set
+** Actors
+** Sets
 ** ..
 --
 
@@ -129,7 +127,6 @@ image::https://media.giphy.com/media/fjxe2wl3trzjs1i9NE/giphy.gif[]
 [.fragment.center]
 --
 May be it's time to get [.big]#a little bit organized# +
-and to [.huge]#*separate concerns*# +
 before being _overwhelmed_.
 --
 
@@ -163,7 +160,7 @@ Too long, Didn't Read
 image::https://nofilmschool.com/sites/default/files/styles/article_wide/public/film-crew-positions3.png[background,size=contain]
 
 
-[transition=none]
+[transition=fade]
 [%notitle]
 == Film SoC
 
@@ -172,7 +169,7 @@ A Separation of Concerns of "shooting a movie" could be
 [.center]
 image::images/marc/good_practices-MovieByConcern.svg[]
 
-[transition=none]
+[transition=fade]
 [%notitle]
 == Film SoC
 
@@ -182,7 +179,7 @@ image::images/marc/good_practices-ArtConcern_1.svg[]
 
 [.right-column]
 --
-If we look at _"Art"_ concern, next level is compound of sub-concerns +
+'Let's focus on _"Art"_ concern : +
 - Sets +
 - Costumes +
 - Make-Up +
@@ -190,7 +187,7 @@ If we look at _"Art"_ concern, next level is compound of sub-concerns +
 --
 
 
-[transition=none]
+[transition=fade]
 [%notitle]
 == Film SoC
 
@@ -199,7 +196,7 @@ Each of theses sub-concerns could be broken down into.
 [.center]
 image::images/marc/good_practices-ArtConcern_1.5.svg[]
 
-[transition=none]
+[transition=fade]
 [%notitle]
 == Film SoC
 
@@ -208,7 +205,7 @@ Each of theses sub-concerns could be broken down into.
 [.center]
 image::images/marc/good_practices-ArtConcern_2.svg[]
 
-[transition=none]
+[transition=fade]
 [%notitle]
 == Film SoC
 
@@ -225,7 +222,7 @@ image::images/marc/good_practices-ArtConcern_3.svg[]
 [.fragment]
 --
 A very _complex_ situation is possible +
-by _breaking it down_.
+by _breaking it down_:
 
 By _concerns_ and _levels of abstraction_
 --

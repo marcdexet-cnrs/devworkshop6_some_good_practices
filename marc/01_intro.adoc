@@ -14,26 +14,21 @@ Basically ?
 
 
 [.fragment]
-We turn _human_ [.huge]#ideas#  into _computer_ [.huge]#code#
-
-
-[.fragment]
-[.smaller]
-\...for the sake of simplicity
+We just turn _human_ [.huge]#ideas#  into _computer_ [.huge]#code#
 
 
 == Why A Talk About Good Practices ?
 
-
-[.fragment]
+[.at-top-right]
+image::images/marc/tricky.gif[width=400]
 
 --
 [.ppt]
-* There’s several ways of developing
-** A lot of them have been tried by a lot of people,
+* A lot of ways of developing have been tried,
 ** Some of them lead to *disaster*,
 ** Others to a *consensus* about how to _avoid_ disaster.
 --
+
 [.fragment]
 --
 [.ppt]
@@ -41,24 +36,10 @@ We turn _human_ [.huge]#ideas#  into _computer_ [.huge]#code#
 ** and it's preferable to follow some of them
 --
 
-[.center]
-== Because Developement Could Be Tricky ?
-
-image::images/marc/tricky.gif[width=300]
-
+== Mainly Because Of Our Human Limitations
 
 [.ppt]
-* Several possible reasons
-** Difficult technologies,
-** Rapid evolution of software concepts,
-** Difficult problem to solve,
-
-But the main cause is our human nature...
-
-== Mainly Because Of Our Human Nature
-
-[.ppt]
-* Human Brain
+* Don't Forget The Human Brain
 ** First processor to turn human ideas into computer code
 
 [.fragment]
@@ -70,14 +51,10 @@ But the main cause is our human nature...
 [.fragment]
 [.ppt]
 * Not So Good Points
-** Short-memory buffer limited to _"The Magical Number Seven, Plus or Minus Two"_,
+** Short-memory buffer,
 ** Reinterprets everything we say to it,
-** => Cognitive and cultural biases we have to deal with.
+** => Cognitive and cultural.
 
-[.fragment]
---
-And we get a lot of them...
---
 
 [.center]
 [%notitle]
@@ -88,25 +65,26 @@ image::images/marc/biases_index.png[width=1000]
 
 [NOTES.notes]
 --
-So if we ignore our capacities, we empty the ocean with a small spoon.
+And we get a lot of them
 --
 
 
 == What Are The Challenges Of Development ?
 
+*A REFAIRE*
+
 * To successfully *translate* human ideas into computer code
 ** and vice versa
 * To handle **complexity**,
 * To allow changement and evolution
-** To not be *afraid to break everything*
+* To not be *afraid to break everything*
 * To ensure that software is doing what it is expected to do,
 
 
 
 == How To Handle This ?
 
-* By following some good practices among a lot of them.
-* By applying them into these fields
+* By following some good practices into
 ** Attitude
 ** Design
 ** Coding

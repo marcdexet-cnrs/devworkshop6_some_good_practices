@@ -61,14 +61,11 @@ On the contrary, a simple idea could be complicated to implement as software, co
 
 == Complexity, Complication And Abstraction
 
-*A REFAIRE*
-
 [.center]
 --
 The more *_abstract_* and *_high-level_* are ideas, +
 the more *_complex_* is implementation. +
 
-[.fragment]
 _the less *direct* to implement._
 
 
@@ -77,22 +74,10 @@ _the less *direct* to implement._
 The more *_complex_* is implementation, +
 the more *_complicated_* *may be* the code. +
 
-[.fragment]
 _the less *easy* to understand the code..._
 --
 
 
-[.fragment]
-[.center]
---
-if you are not careful about complexity...
---
-
-[.fragment]
-[.center]
---
-So be careful...
---
 
 [NOTE.notes]
 --
@@ -137,7 +122,7 @@ If there's a few elements, it doesn't really matter.
 
 --
 
-[transition=none]
+[transition=fade]
 [%notitle]
 == Reduce The Number Of Elements To Take Into Account
 
@@ -146,7 +131,7 @@ But with some more...
 [.center]
 image::images/marc/good_practices-reduce_complexity_1.svg[]
 
-[transition=none]
+[transition=fade]
 [%notitle]
 == Reduce The Number Of Elements To Take Into Account
 
@@ -183,19 +168,13 @@ A concern is a subject of interest, a goal
 ** ..
 --
 
-[.reset-column]
---
-Try to connect each element to a concern !
---
-
-[transition=none]
 [%notitle]
 == Reduce The Number Of Elements To Take Into Account
 
 [.center]
 image::images/marc/good_practices-reduce_complexity_2.svg[]
 
-[transition=none]
+[transition=fade]
 [%notitle]
 == Reduce The Number Of Elements To Take Into Account
 
@@ -204,7 +183,7 @@ Group them by _concern_
 [.center]
 image::images/marc/good_practices-reduce_complexity_3.svg[]
 
-[transition=none]
+[transition=fade]
 [%notitle]
 == Reduce The Number Of Elements To Take Into Account
 
@@ -213,7 +192,7 @@ Group them by _concern_
 [.center]
 image::images/marc/good_practices-reduce_complexity_4.svg[]
 
-[transition=none]
+[transition=fade]
 [%notitle]
 == Reduce The Number Of Elements To Take Into Account
 
@@ -251,7 +230,7 @@ But, you have reduced _cognitively_ the number of elements ...
 
 Grouping element by concern could be *a question of point of view*.
 
-
+[.fragment]
 * Choose concerns such as
 ** They have *limited _intersection_*,
 *** _but intersection will occur._

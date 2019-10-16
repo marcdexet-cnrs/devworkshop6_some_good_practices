@@ -89,7 +89,7 @@ from +
 
 == Separate WHAT you want from HOW you get it
 
-* Often you start getting a idea to _how to make thing_
+* Often you start getting _how to make thing_
 * But quickly, you could
 ** be *trapped* by the details of implementation,
 ** battle with your tool,
@@ -97,7 +97,7 @@ from +
 
 [.fragment]
 --
-* And sometimes you still don't know exactly _what you really want_.
+* And sometimes you still don't define exactly _what you really want_.
 --
 
 
@@ -108,9 +108,11 @@ from +
 
 [.center]
 --
-Think about *WHAT* you want to achieve +
+Think about +
+*WHAT* you want to achieve +
 [.huge]#_before_# +
-you consider *HOW* to get it.
+you consider +
+*HOW* to get it.
 --
 
 [.fragment]
@@ -125,7 +127,7 @@ And write or draw it !!
 
 
 
-[transition=none]
+[transition=fade]
 == Think about WHAT before HOW
 
 A _WHAT_ defines the *_goal_*
@@ -139,7 +141,7 @@ image::images/marc/good_practices-whatbeforehow_0.svg[]
 The goal to achieve, in human terms.
 --
 
-[transition=none]
+[transition=fade]
 == Think about WHAT before HOW
 
 It identifies a block of instruction, the *_HOW_*.
@@ -148,7 +150,7 @@ It identifies a block of instruction, the *_HOW_*.
 image::images/marc/good_practices-whatbeforehow_1.svg[]
 
 
-[transition=none]
+[transition=fade]
 == Think about WHAT before HOW
 
 This *_HOW_* block is composed of identified goals.
@@ -157,7 +159,7 @@ This *_HOW_* block is composed of identified goals.
 image::images/marc/good_practices-whatbeforehow_2.svg[]
 
 
-[transition=none]
+[transition=fade]
 == Think about WHAT before HOW
 
 Illustration with a burger...
@@ -166,7 +168,7 @@ Illustration with a burger...
 image::images/marc/good_practices-whatbeforehowrecipe_0.svg[]
 
 
-[transition=none]
+[transition=fade]
 == Think about WHAT before HOW
 
 
@@ -174,7 +176,7 @@ image::images/marc/good_practices-whatbeforehowrecipe_0.svg[]
 image::images/marc/good_practices-whatbeforehowrecipe_1.svg[]
 
 
-[transition=none]
+[transition=fade]
 == Think about WHAT before HOW
 
 We get all the major steps without be drowned by details.
@@ -186,18 +188,7 @@ image::images/marc/good_practices-whatbeforehowrecipe_2.svg[]
 But we have to get deeper. +
 _To get from the idea to the solution._
 
-[transition=none]
-[%notitle]
-[.center]
-== From The Idea To The Solution
-
-Dealing With Complexity
-
-[.big]#The WHAT and the HOW#
-
-[.huge]#From The Idea To The Solution#
-
-[transition=none]
+[transition=fade]
 [%notitle]
 [.center]
 == From The Idea To The Solution
@@ -206,7 +197,7 @@ You get the idea of *WHAT* you want, in a very abstract way
 
 image::images/marc/good_practices-what_how_call_hierarchie_0.svg[]
 
-[transition=none]
+[transition=fade]
 [%notitle]
 [.center]
 == From The Idea To The Solution
@@ -217,7 +208,7 @@ image::images/marc/good_practices-what_how_call_hierarchie_1.svg[]
 
 but no so far away
 
-[transition=none]
+[transition=fade]
 [%notitle]
 [.center]
 == From The Idea To The Solution
@@ -226,7 +217,7 @@ The *HOW* is flow of control of _instructions_
 
 image::images/marc/good_practices-what_how_call_hierarchie_2.svg[]
 
-[transition=none]
+[transition=fade]
 [%notitle]
 [.center]
 == From The Idea To The Solution
@@ -237,16 +228,16 @@ image::images/marc/good_practices-what_how_call_hierarchie_3.svg[]
 
 \... they're a *WHAT* in a _less_ abstract way.
 
-[transition=none]
+[transition=fade]
 [%notitle]
 [.center]
 == From The Idea To The Solution
 
-If they don't exist, you have to think about *HOW* getting them working
+Think about *HOW* getting them working...
 
 image::images/marc/good_practices-what_how_call_hierarchie_4.svg[]
 
-[transition=none]
+[transition=fade]
 [%notitle]
 [.center]
 == From The Idea To The Solution
@@ -255,7 +246,7 @@ And so on...
 
 image::images/marc/good_practices-what_how_call_hierarchie_5.svg[]
 
-[transition=none]
+[transition=fade]
 [%notitle]
 [.center]
 == From The Idea To The Solution
@@ -264,28 +255,28 @@ And so on...
 
 image::images/marc/good_practices-what_how_call_hierarchie_6.svg[]
 
-[transition=none]
+[transition=fade]
 [%notitle]
 [.center]
 == From The Idea To The Solution
 
-\...To the provided development ecosystem
+\...Until you find solution into the provided development ecosystem.
 
 image::images/marc/good_practices-what_how_call_hierarchie_7.svg[]
 
-Langage, Librairies, other projects...
+As langage, librairies, other projects...
 
-[transition=none]
+[transition=fade]
 [%notitle]
 == Think about WHAT before HOW
 
 [.center]
-There's a WHAT -> HOW chaining.
+The "WHAT then HOW" chaining.
 
 [.center]
 image::images/marc/good_practices-scale_0.svg[]
 
-[transition=none]
+[transition=fade]
 [%notitle]
 == Think about WHAT before HOW
 
@@ -295,7 +286,7 @@ Going from higher level to lower level.
 [.center]
 image::images/marc/good_practices-scale_1.svg[]
 
-[transition=none]
+[transition=fade]
 [%notitle]
 == Think about WHAT before HOW
 
@@ -305,7 +296,7 @@ Coding is turning human ideas into code.
 [.center]
 image::images/marc/good_practices-scale_2.svg[]
 
-[transition=none]
+[transition=fade]
 [%notitle]
 == Think about WHAT before HOW
 
@@ -331,7 +322,7 @@ Separate the WHAT from the HOW
 
 Think about WHAT before HOW
 
-Go from the idea to the solution
+Follow the WHAT then HOW chaining
 
 // Do not get into optimize prematurely
 //end::include[]

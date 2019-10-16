@@ -22,6 +22,7 @@ Limit required knowledge of external by keeping focused on what a component has 
 * Single Responsability
 
 
+[transition=fade]
 == Single Responsability 0
 
 
@@ -36,6 +37,7 @@ image::images/marc/flexibility-SingleResponsability_0.svg[width=600]
 Imagine *A REFAIRE*
 --
 
+[transition=fade]
 == Single Responsability 1
 
 
@@ -50,6 +52,7 @@ image::images/marc/flexibility-SingleResponsability_1.svg[width=600]
 Imagine *A REFAIRE*
 --
 
+[transition=fade]
 == Single Responsability 2
 
 
@@ -64,6 +67,7 @@ image::images/marc/flexibility-SingleResponsability_2.svg[width=600]
 Imagine *A REFAIRE*
 --
 
+[transition=fade]
 == Single Responsability 3
 
 
@@ -78,6 +82,7 @@ image::images/marc/flexibility-SingleResponsability_3.svg[width=600]
 Imagine *A REFAIRE*
 --
 
+[transition=fade]
 == Single Responsability 4
 
 
@@ -92,6 +97,7 @@ image::images/marc/flexibility-SingleResponsability_4.svg[width=600]
 Imagine *A REFAIRE*
 --
 
+[transition=fade]
 == Single Responsability 5
 
 
@@ -107,6 +113,7 @@ Imagine *A REFAIRE*
 --
 
 
+[transition=fade]
 == Single Responsability 6
 
 
@@ -121,6 +128,7 @@ image::images/marc/flexibility-SingleResponsability_6.svg[width=600]
 Imagine *A REFAIRE*
 --
 
+[transition=fade]
 == Single Responsability 7
 
 
@@ -135,6 +143,7 @@ image::images/marc/flexibility-SingleResponsability_7.svg[width=600]
 Imagine *A REFAIRE*
 --
 
+[transition=fade]
 == Single Responsability conclusion
 
 *A REFAIRE* conclusion

@@ -27,6 +27,7 @@ image::images/marc/writing-god.svg[]
 
 image::https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Sky_August_2010-1a.jpg/1024px-Sky_August_2010-1a.jpg[background]
 
+[transition=fade]
 == God Class-Module-Function
 
 [.at-top-right]
@@ -39,6 +40,7 @@ God Class-Module-Function
 * influence every aspect of the software
 
 
+[transition=fade]
 == God Class-Module-Function
 
 [.at-top-right]
@@ -171,8 +173,7 @@ image::images/marc/writing-think-modular_4.svg[]
 --
 And put it under test.
 
-We can test it +
-[.huge]#independantly# +
+We can test it **independantly** +
 of others.
 --
 
@@ -200,7 +201,7 @@ image::images/marc/writing-think-modular_5.svg[]
 --
 We can put under test to test it and only it.
 
-[.huge]#independantly# of other ones.
+*independantly* of other ones.
 
 --
 
@@ -323,6 +324,7 @@ Bad :(
 image::images/marc/writing-think-modular_6.svg[]
 --
 
+[transition=fade]
 == tsam 14.a
 
 [.center]

@@ -11,19 +11,6 @@
 
 [.huge]#Flexibility#
 
-== Flexibility
-
-*A REFAIRE*
-
-* Why do you need flexibility ?
-** flexibility for change
-** flexibility for evolution without breaking anything
-** Don't break everything
-
-* How to get flexibility
-** Reduce Coupling
-** Use contract
-
 [NOTE.notes]
 --
 * Delimit the perimeter
@@ -64,36 +51,31 @@ But with a lot of components, it would turn into a nightmare !
 [.center]
 image::images/marc/OpenBCoupling.gif[]
 
+[.center]
+== So how to decouple ?
 
-== How to decouple ?
 
 [background-color="black", background-video="images/marc/isolated_base.mp4",background-video-loop=true,background-video-muted=true,background-size="contain"]
 [%notitle]
-== Foo
+== How to decouple ?
+
+[NOTE.notes]
+--
+By putting a flexible layer !
+--
 
 == How to decouple ?
 
-*A REFAIRE*
+* In software engineering, coupling means
+bound by too much knowledge.
+** => Limit required knoledge
 
-In software, coupling means you're bound by too much knowledge.
-
-* Limit required knowledge
-** To be linked to the *WHAT* and not to the *HOW*.
-** Use indirection
-** Fire and Forget
-
-The WHAT if the promise, the HOW is the implementation.
+* Two strategies
+** Only take into account contracts
+** Have the necessary and sufficient appearance
 
 
-
-
-
-== Limit required knowledge
-
-* Only take into account contracts
-* Have the necessary and sufficient appearance
-
-
+[transition=fade]
 == Only take into account contract 0
 
 
@@ -105,13 +87,14 @@ image::images/marc/flexibility-bound2interface_0.svg[width=200]
 
 [.right-column]
 --
-Imagine a context where +
-a component of type *A* +
-_uses_ a component of type *B*.
+A component of type *A* +
+_uses_ +
+a component of type *B*.
 
-This is a dependency between *A* and *B*.
+This is a *_dependency_* between *A* and *B*.
 --
 
+[transition=fade]
 == Only take into account contract 1
 
 
@@ -127,6 +110,7 @@ If *B* changes, *A* is certainly forced to _adapt_.
 --
 
 
+[transition=fade]
 == Only take into account contract 1b
 
 
@@ -143,6 +127,7 @@ image::images/marc/flexibility-bound2interface_propagation_0.svg[]
 image::images/marc/flexibility-bound2interface_propagation_1.svg[]
 --
 
+[transition=fade]
 == Only take into account contract 2
 
 
@@ -155,25 +140,30 @@ image::images/marc/flexibility-bound2interface_2.svg[width=200]
 [.right-column]
 --
 
-The best solution is
-that *A* is not related +
-*to* what dependency [.huge]#is#, +
-but *to* what it [.huge]#offers#.
+Do not _bound_ *A*  +
+*to* what dependency [.big]#*is*#, +
+but *to* what it [.big]#*offers*#.
 
 [.fragment]
-To use a kind of [.huge]#contract#.
-
-[.fragment]
-It describes [.huge]#WHAT# dependency does +
-and doesn't care *HOW*.
+A kind of [.big]#*contract*# describing only +
+*WHAT* dependency does +
+(and not *HOW* it does).
 --
 
 
+[transition=fade]
 == Only take into account contract 2
 
 
 
 [.left-column]
+--
+image::images/marc/browser_contract.gif[]
+--
+
+
+[.right-column]
+[.center]
 --
 * "Browser" contract
 ** _Fetch a content on internet given a valid URL_
@@ -183,15 +173,7 @@ and doesn't care *HOW*.
 ** ...
 --
 
-
-
-[.fragment]
-[.right-column]
-[.center]
---
-image::images/marc/browser_contract.gif[]
---
-
+[transition=fade]
 == Only take into account contract 3
 
 
@@ -203,12 +185,14 @@ image::images/marc/flexibility-bound2interface_3.svg[width=200]
 
 [.right-column]
 --
-So as long as component _respect_ the contract, +
-it could be anything.
+So as long as component +
+*_respect_* the contract, +
+it could be _anything_.
 
-We say dependency *implements* the contract.
+Dependency *implements* the contract.
 --
 
+[transition=fade]
 == Only take into account contract 4
 
 
@@ -220,11 +204,14 @@ image::images/marc/flexibility-bound2interface_4.svg[width=200]
 
 [.right-column]
 --
-A dependency can be modified, +
-as long as it respects the contract, +
-we don't care...
+So as long as component +
+*_respect_* the contract, +
+it could be modified.
+
+We don't care...
 --
 
+[transition=fade]
 == Only take into account contract 5
 
 
@@ -241,6 +228,7 @@ both of them have to change.
 --
 
 
+[transition=fade]
 == Only take into account contract 5
 
 
@@ -257,6 +245,7 @@ From the *A* point of view, +
 --
 
 
+[transition=fade]
 == Only take into account contract 6
 
 
@@ -271,6 +260,7 @@ image::images/marc/flexibility-bound2interface_6.svg[width=400]
 Illustration with a Camera Operator _using_ a camera of Fony Inc.
 --
 
+[transition=fade]
 == Only take into account contract 7
 
 
@@ -282,13 +272,11 @@ image::images/marc/flexibility-bound2interface_7.svg[width=400]
 
 [.right-column]
 --
-If the camera is changed to a _very_ different model, +
-Camera Operator has certainly to _be adapted_.
-
-[.fragment]
-And we know there's a lot of camera models on the market...
+If camera changes to a _very_ different model, +
+_Camera Operator_ has certainly to _be adapted_.
 --
 
+[transition=fade]
 == Only take into account contract 8
 
 
@@ -300,14 +288,16 @@ image::images/marc/flexibility-bound2interface_8.svg[width=400]
 
 [.right-column]
 --
-The better is to relate to a _camera contract_,
-instead of a _camera model_.
+As there's a lot of camera models, +
+the better is to relate to a +
+_camera contract_ instead of a _camera model_.
 
 Contrat => [.huge]#interface#.
 
 
 --
 
+[transition=fade]
 == Only take into account contract 9
 
 
@@ -319,13 +309,16 @@ image::images/marc/flexibility-bound2interface_9.svg[width=400]
 
 [.right-column]
 --
-So camera model could be changed, +
-as long as it _implements_ the required *interface* +
-we don't care.
+So camera model could change, +
+as long as it _implements_ the required *interface*...
+
+
+We don't care.
 --
 
 
 
+[transition=fade]
 == Only take into account contract 10
 
 
@@ -337,22 +330,22 @@ image::images/marc/flexibility-bound2interface_10.svg[width=400]
 
 [.right-column]
 --
-And we could make easy our tests +
-of Camera Operator +
+We could make tests
+of _Camera Operator_ +
 without *hacking* a real camera.
 
 [.fragment]
-We just have to use a Mock Camera implementing _Camera Interface_.
+Just use a _mock_ Camera implementing _Camera Interface_.
 --
 
 
+[%notitle]
+[.center]
+== Conclusion Of Abstraction
 
-== Conclusion of abstraction
-
-*A REFAIRE*
-
-* To gain flexibility
-** Be linked to the contract, the interface, not the implementation.
+To get flexibility +
+be bound to contract (interface), +
+not implementation.
 
 
 
@@ -367,6 +360,7 @@ We just have to use a Mock Camera implementing _Camera Interface_.
 --
 
 
+[transition=fade]
 == Have The Necessary And Sufficient Appearance 0
 
 
@@ -381,9 +375,8 @@ image::images/marc/flexibility-segregation_0.svg[width=600]
 --
 
 
-Image you have now +
-a TV _Reporting Camera Operator_ +
-using a +
+A TV _Reporting Camera Operator_ +
+use a +
 _Reporting Camera_ +
 described by a +
 _Reporting Camera Interface_.
@@ -394,13 +387,14 @@ for _reporting_ in the streets +
 
 
 [.fragment]
-It records +
-_video_ +
-and +
+It records
+_video_
+and
 _sound_.
 --
 
 
+[transition=fade]
 == Have The Necessary And Sufficient Appearance 0.1
 
 
@@ -418,6 +412,17 @@ responsabilities +
 in two parts.
 --
 
+[transition=fade]
+== Have The Necessary And Sufficient Appearance 0copie
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_0.svg[width=600]
+--
+
+[transition=fade]
 == Have The Necessary And Sufficient Appearance 2
 
 
@@ -432,6 +437,7 @@ image::images/marc/flexibility-segregation_2.svg[width=600]
 They use the same interface.
 --
 
+[transition=fade]
 == Have The Necessary And Sufficient Appearance 3
 
 
@@ -450,6 +456,7 @@ We get a nonsense.
 A microphone that has to handle the video aspects is *stupid*.
 --
 
+[transition=fade]
 == Have The Necessary And Sufficient Appearance 4
 
 
@@ -471,6 +478,7 @@ and *only* what they do.
 
 
 
+[transition=fade]
 == Have The Necessary And Sufficient Appearance 5
 
 
@@ -483,11 +491,12 @@ image::images/marc/flexibility-segregation_5.svg[width=600]
 [.right-column]
 [.center]
 --
-This way, any depency +
-satisfying the interface +
+This way, any dependency +
+satisfying the interfaces +
 could be used.
 --
 
+[transition=fade]
 == Have The Necessary And Sufficient Appearance 6
 
 
@@ -500,12 +509,13 @@ image::images/marc/flexibility-segregation_6.svg[width=600]
 [.right-column]
 [.center]
 --
-This way, any depency +
-satisfying the interface +
+This way, any dependency +
+satisfying the interfaces +
 could be used.
 --
 
 
+[transition=fade]
 == Have The Necessary And Sufficient Appearance 6.1
 
 
@@ -525,6 +535,7 @@ Whether it's implemented by _two_ components...
 --
 
 
+[transition=fade]
 == Have The Necessary And Sufficient Appearance 6.2
 
 
@@ -545,6 +556,7 @@ We don't care.
 
 
 
+[transition=fade]
 == Have The Necessary And Sufficient Appearance 7
 
 
@@ -555,20 +567,49 @@ image::images/marc/flexibility-segregation_7.svg[width=600]
 --
 
 [.right-column]
-[.center]
 --
 But if you're in a field +
 limited to TV Reporting only, +
 you would prefer talking about _Reporting camera_.
+--
 
+
+[transition=fade]
+== Have The Necessary And Sufficient Appearance 7
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_7.svg[width=600]
+--
+
+[.right-column]
+--
 How to reconcile the two universes ?
+--
 
+
+[transition=fade]
+== Have The Necessary And Sufficient Appearance 7
+
+
+[.left-column]
+[.center]
+--
+image::images/marc/flexibility-segregation_7.svg[width=600]
+--
+
+[.right-column]
+--
 By making _Reporting camera_ +
 be a _Camera interface_ +
 *and* +
 a _Microphone interface_ too.
 --
 
+
+[transition=fade]
 == Have The Necessary And Sufficient Appearance 8
 
 
@@ -583,6 +624,7 @@ image::images/marc/flexibility-segregation_8.svg[width=600]
 So you have a very flexible architecture like this...
 --
 
+[transition=fade]
 == Have The Necessary And Sufficient Appearance 9
 
 
@@ -598,6 +640,7 @@ image::images/marc/flexibility-segregation_9.svg[width=600]
 --
 
 
+[transition=fade]
 == Have The Necessary And Sufficient Appearance 6.before.2
 
 
@@ -618,6 +661,7 @@ It called +
 [.huge]#Segregation of Interfaces#.
 --
 
+[transition=fade]
 == Have The Necessary And Sufficient Appearance 6.3
 
 
@@ -631,7 +675,8 @@ _video interface_ for video interested users.
 --
 
 
-[transition=fade]
+
+[transition=fade][transition=fade]
 == Have The Necessary And Sufficient Appearance 6.4
 
 
@@ -645,6 +690,7 @@ _Microphone interface_ for sound interested users.
 --
 
 
+[transition=fade]
 == Have The Necessary And Sufficient Appearance 10
 
 

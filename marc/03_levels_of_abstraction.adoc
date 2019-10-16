@@ -19,7 +19,7 @@ Let us take two areas of concern.
 image::images/marc/good_practices-level_complexity_2_0.svg[width=600]
 
 
-[transition=none]
+[transition=fade]
 == Separate Levels Of Abstraction
 
 [.left-column]
@@ -28,11 +28,12 @@ image::images/marc/good_practices-level_complexity_2_1.svg[width=600]
 
 [.right-column]
 --
-* Several layers of abstraction,
-** From the general concepts to the specialized components.
+Several layers of abstraction, +
+from the general concepts +
+to the specialized components.
 --
 
-[transition=none]
+[transition=fade]
 == Separate Levels Of Abstraction
 
 [.left-column]
@@ -41,11 +42,12 @@ image::images/marc/good_practices-level_complexity_2_1_bis.svg[width=600]
 
 
 --
-* On each layer we found the elements
-** by level  of abstraction.
+On each layer +
+there's elements +
+per level of abstraction.
 --
 
-[transition=none]
+[transition=fade]
 == Separate Levels Of Abstraction
 
 [.left-column]
@@ -55,10 +57,10 @@ image::images/marc/good_practices-level_complexity_2_2.svg[width=600]
 
 [.right-column]
 --
-* Each level could be separated by sub-concern
+Each element could be grouped by sub-concern.
 --
 
-[transition=none]
+[transition=fade]
 == Separate Levels Of Abstraction
 
 [.left-column]
@@ -68,14 +70,14 @@ image::images/marc/good_practices-level_complexity_2_3.svg[width=600]
 
 [.right-column]
 --
-* Element could interact
+* Elements interact
 ** Inside a concern
 *** At the same level
 *** From level to another one
 ** Between concerns
 --
 
-[transition=none]
+[transition=fade]
 == Separate Levels Of Abstraction
 
 [.left-column]
@@ -84,12 +86,13 @@ image::images/marc/good_practices-level_complexity_2_4.svg[width=600]
 
 [.right-column]
 --
-* But one of the best way of doing
-** is to interact through the top levels
+But one of the best way of doing +
+is to interact +
+through the top levels...
 --
 
 
-[transition=none]
+[transition=fade]
 == Separate Levels Of Abstraction
 
 [.left-column]
@@ -98,9 +101,11 @@ image::images/marc/good_practices-level_complexity_blackboxes.svg[width=600]
 
 [.right-column]
 --
-* Such as black boxes
-** whose contents can be more freely modified.
-* It provides more *isolation*
+\... Such as black boxes +
+whose contents +
+can be more freely modified.
+
+It provides more *isolation*.
 --
 
 //end::include[]

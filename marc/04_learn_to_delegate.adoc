@@ -22,11 +22,11 @@ Learn To Delegate problems
 
 == Learn to delegate to a futur you
 
-* Don't try to fix everything *NOW*
-** Identify *WHAT* you want
-** _Postpone_ the resolution of the *HOW* to later
-* Don't get _trapped_ into implementation details from the beginning.
+Don't try to fix everything *NOW*
 
+Identify *WHAT* you want and _postpone_ the resolution of the *HOW* to later
+
+[%notitle]
 == Learn to delegate to a futur you
 
 [.big]
@@ -38,6 +38,7 @@ class ApplePieRecipe(Recipe):
         pass
 ----
 
+[transition=fade]
 [%notitle]
 == Exemple Of Delegation
 
@@ -52,8 +53,10 @@ class ApplePieRecipe(Recipe):
 
 _collect_ingredients_ doesn't exist.
 
-[.fragment]
---
+[transition=fade]
+[%notitle]
+== Exemple Of Delegation
+
 I created _collect_ingredients_, ...
 [.big]
 [source,python]
@@ -69,12 +72,9 @@ class ApplePieRecipe(Recipe):
         pass
 ----
 
-\..., but I don't know *HOW* it will work.
---
+\..., but I don't know *HOW* it will work and *I don't care*... now.
 
-[.fragment]
-And *I don't care*... now.
-
+[transition=fade]
 [%notitle]
 == Exemple Of Delegation
 
@@ -110,10 +110,18 @@ class ApplePieRecipe(Recipe):
         pass
 ----
 
+[%notitle]
+[.center]
 == Learn to delegate to a futur you
 
-*A REFAIRE*
 
-This way you could quickly define what you really need.
+By delegating to a future you, +
+you *quickly* define what you really need +
+without getting _trapped_ into implementation details +
+from the beginning.
+
+[.fragment]
+Have confidence in your future you.
+
 
 //end::include[]
