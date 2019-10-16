@@ -3,6 +3,9 @@
 //tag::include[]
 
 
+
+
+
 == Make Code Readable
 
 [.ppt]
@@ -33,6 +36,7 @@ You read 10 more than you write
 [.ppt]
 * Size Doesn't Matter
 ** You're coding, not compressing.
+** => let names be of use, not only required symbols by language...
 --
 
 [.fragment]

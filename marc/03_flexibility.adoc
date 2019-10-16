@@ -67,16 +67,16 @@ By putting a flexible layer !
 == How to decouple ?
 
 * In software engineering, coupling means
-bound by too much knowledge.
-** => Limit required knoledge
+bound by *too much* knowledge.
+* Decoupling => Limit required knowledge
 
 * Two strategies
-** Only take into account contracts
-** Have the necessary and sufficient appearance
+** Only take into account contract FIND A NEW NAME s
+** Have the necessary and sufficient appearance FIND A NEW NAME
 
 
 [transition=fade]
-== Only take into account contract 0
+== Only take into account contract  FIND A NEW NAME 0
 
 
 [.left-column]
@@ -95,7 +95,7 @@ This is a *_dependency_* between *A* and *B*.
 --
 
 [transition=fade]
-== Only take into account contract 1
+== Only take into account contract  FIND A NEW NAME 1
 
 
 [.left-column]
@@ -111,7 +111,7 @@ If *B* changes, *A* is certainly forced to _adapt_.
 
 
 [transition=fade]
-== Only take into account contract 1b
+== Only take into account contract 1 FIND A NEW NAME b
 
 
 [.left-column]
@@ -128,7 +128,7 @@ image::images/marc/flexibility-bound2interface_propagation_1.svg[]
 --
 
 [transition=fade]
-== Only take into account contract 2
+== Only take into account contract  FIND A NEW NAME 2
 
 
 [.left-column]
@@ -152,7 +152,7 @@ A kind of [.big]#*contract*# describing only +
 
 
 [transition=fade]
-== Only take into account contract 2
+== Only take into account contract  FIND A NEW NAME 2
 
 
 
@@ -174,7 +174,7 @@ image::images/marc/browser_contract.gif[]
 --
 
 [transition=fade]
-== Only take into account contract 3
+== Only take into account contract  FIND A NEW NAME 3
 
 
 [.left-column]
@@ -193,7 +193,7 @@ Dependency *implements* the contract.
 --
 
 [transition=fade]
-== Only take into account contract 4
+== Only take into account contract  FIND A NEW NAME 4
 
 
 [.left-column]
@@ -212,7 +212,7 @@ We don't care...
 --
 
 [transition=fade]
-== Only take into account contract 5
+== Only take into account contract  FIND A NEW NAME 5
 
 
 [.left-column]
@@ -229,7 +229,7 @@ both of them have to change.
 
 
 [transition=fade]
-== Only take into account contract 5
+== Only take into account contract  FIND A NEW NAME 5
 
 
 [.left-column]
@@ -246,7 +246,7 @@ From the *A* point of view, +
 
 
 [transition=fade]
-== Only take into account contract 6
+== Only take into account contract  FIND A NEW NAME 6
 
 
 [.left-column]
@@ -261,7 +261,7 @@ Illustration with a Camera Operator _using_ a camera of Fony Inc.
 --
 
 [transition=fade]
-== Only take into account contract 7
+== Only take into account contract  FIND A NEW NAME 7
 
 
 [.left-column]
@@ -277,7 +277,7 @@ _Camera Operator_ has certainly to _be adapted_.
 --
 
 [transition=fade]
-== Only take into account contract 8
+== Only take into account contract  FIND A NEW NAME 8
 
 
 [.left-column]
@@ -298,7 +298,7 @@ Contrat => [.huge]#interface#.
 --
 
 [transition=fade]
-== Only take into account contract 9
+== Only take into account contract  FIND A NEW NAME 9
 
 
 [.left-column]
@@ -319,7 +319,7 @@ We don't care.
 
 
 [transition=fade]
-== Only take into account contract 10
+== Only take into account contract 1 FIND A NEW NAME 0
 
 
 [.left-column]
@@ -361,7 +361,7 @@ not implementation.
 
 
 [transition=fade]
-== Have The Necessary And Sufficient Appearance 0
+== Have the necessary and sufficient appearance FIND A NEW NAME 0
 
 
 [.left-column]
@@ -395,7 +395,7 @@ _sound_.
 
 
 [transition=fade]
-== Have The Necessary And Sufficient Appearance 0.1
+== Have the necessary and sufficient appearance FIND A NEW NAME 0.1
 
 
 [.left-column]
@@ -413,7 +413,7 @@ in two parts.
 --
 
 [transition=fade]
-== Have The Necessary And Sufficient Appearance 0copie
+== Have the necessary and sufficient appearance FIND A NEW NAME 0copie
 
 
 [.left-column]
@@ -423,7 +423,7 @@ image::images/marc/flexibility-segregation_0.svg[width=600]
 --
 
 [transition=fade]
-== Have The Necessary And Sufficient Appearance 2
+== Have the necessary and sufficient appearance FIND A NEW NAME 2
 
 
 [.left-column]
@@ -438,7 +438,7 @@ They use the same interface.
 --
 
 [transition=fade]
-== Have The Necessary And Sufficient Appearance 3
+== Have the necessary and sufficient appearance FIND A NEW NAME 3
 
 
 [.left-column]
@@ -457,7 +457,7 @@ A microphone that has to handle the video aspects is *stupid*.
 --
 
 [transition=fade]
-== Have The Necessary And Sufficient Appearance 4
+== Have the necessary and sufficient appearance FIND A NEW NAME 4
 
 
 [.left-column]
@@ -479,7 +479,7 @@ and *only* what they do.
 
 
 [transition=fade]
-== Have The Necessary And Sufficient Appearance 5
+== Have the necessary and sufficient appearance FIND A NEW NAME 5
 
 
 [.left-column]
@@ -497,7 +497,7 @@ could be used.
 --
 
 [transition=fade]
-== Have The Necessary And Sufficient Appearance 6
+== Have the necessary and sufficient appearance FIND A NEW NAME 6
 
 
 [.left-column]
@@ -516,7 +516,7 @@ could be used.
 
 
 [transition=fade]
-== Have The Necessary And Sufficient Appearance 6.1
+== Have the necessary and sufficient appearance FIND A NEW NAME 6.1
 
 
 [.left-column]
@@ -536,7 +536,7 @@ Whether it's implemented by _two_ components...
 
 
 [transition=fade]
-== Have The Necessary And Sufficient Appearance 6.2
+== Have the necessary and sufficient appearance FIND A NEW NAME 6.2
 
 
 [.left-column]
@@ -557,7 +557,7 @@ We don't care.
 
 
 [transition=fade]
-== Have The Necessary And Sufficient Appearance 7
+== Have the necessary and sufficient appearance FIND A NEW NAME 7
 
 
 [.left-column]
@@ -575,7 +575,7 @@ you would prefer talking about _Reporting camera_.
 
 
 [transition=fade]
-== Have The Necessary And Sufficient Appearance 7
+== Have the necessary and sufficient appearance FIND A NEW NAME 7
 
 
 [.left-column]
@@ -591,7 +591,7 @@ How to reconcile the two universes ?
 
 
 [transition=fade]
-== Have The Necessary And Sufficient Appearance 7
+== Have the necessary and sufficient appearance FIND A NEW NAME 7
 
 
 [.left-column]
@@ -610,7 +610,7 @@ a _Microphone interface_ too.
 
 
 [transition=fade]
-== Have The Necessary And Sufficient Appearance 8
+== Have the necessary and sufficient appearance FIND A NEW NAME 8
 
 
 [.left-column]
@@ -625,7 +625,7 @@ So you have a very flexible architecture like this...
 --
 
 [transition=fade]
-== Have The Necessary And Sufficient Appearance 9
+== Have the necessary and sufficient appearance FIND A NEW NAME 9
 
 
 [.left-column]
@@ -641,7 +641,7 @@ image::images/marc/flexibility-segregation_9.svg[width=600]
 
 
 [transition=fade]
-== Have The Necessary And Sufficient Appearance 6.before.2
+== Have the necessary and sufficient appearance FIND A NEW NAME 6.before.2
 
 
 [.left-column]
@@ -662,7 +662,7 @@ It called +
 --
 
 [transition=fade]
-== Have The Necessary And Sufficient Appearance 6.3
+== Have the necessary and sufficient appearance FIND A NEW NAME 6.3
 
 
 [.center]
@@ -677,7 +677,7 @@ _video interface_ for video interested users.
 
 
 [transition=fade][transition=fade]
-== Have The Necessary And Sufficient Appearance 6.4
+== Have the necessary and sufficient appearance FIND A NEW NAME 6.4
 
 
 [.center]
@@ -691,7 +691,7 @@ _Microphone interface_ for sound interested users.
 
 
 [transition=fade]
-== Have The Necessary And Sufficient Appearance 10
+== Have the necessary and sufficient appearance FIND A NEW NAME 10
 
 
 [.left-column]
