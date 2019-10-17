@@ -1,0 +1,37 @@
+= God Class
+
+
+//tag::include[]
+
+[.dark.background]
+[.center]
+== God Class-Module-Function
+
+image::images/marc/writing-god.svg[]
+
+image::https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Sky_August_2010-1a.jpg/1024px-Sky_August_2010-1a.jpg[background]
+
+[transition=fade]
+== God Class-Module-Function
+
+[.at-top-right]
+image::images/marc/writing-god.svg[]
+
+God Class-Module-Function
+
+* knows everything,
+* does everything,
+* influence every aspect of the software
+
+
+[transition=fade]
+== God Class-Module-Function
+
+[.at-top-right]
+image::images/marc/writing-god_2.svg[]
+
+God Class-Module-Function
+
+* but if it failed...
+
+//end::include[]

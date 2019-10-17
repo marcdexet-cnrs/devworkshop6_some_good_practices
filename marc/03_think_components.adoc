@@ -284,4 +284,38 @@ reusable +
 *components*.
 --
 
+
+[.center]
+== Very Bad
+
+include::_god_class.adoc[tag=include]
+
+[transition=fade]
+== Ok, how to do ?
+
+Going from...
+
+[.left-column.center]
+--
+Bad legacy
+
+image::images/marc/writing-think-modular_6.svg[]
+--
+
+
+[transition=fade]
+== Ok, how to do ?
+
+To
+[.right-column.center]
+--
+Good refactoring
+
+image::images/marc/writing-think-modular_2.svg[]
+--
+
+
+
+include::_refactor_big_block_as_small_components.adoc[tag=include]
+
 //end::include[]

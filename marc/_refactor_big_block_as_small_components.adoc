@@ -1,0 +1,182 @@
+= Refactor
+
+//tag::include[]
+
+
+
+[transition=fade]
+[%notitle]
+== tsam 14.a
+
+[.center]
+--
+In fact, we need to extract block as function in order to handle them.
+--
+
+[.center]
+--
+image::images/marc/writing-think-modular_14.a.svg[]
+--
+
+
+
+[transition=fade]
+[%notitle]
+== tsam 14
+[.left-column.center]
+--
+image::images/marc/writing-think-modular_14.svg[]
+--
+
+[.right-column]
+--
+How do we break a plain old bunch of code lines down into external functions ?
+--
+
+[transition=fade]
+[%notitle]
+== tsam 15
+[.left-column.center]
+--
+image::images/marc/writing-think-modular_15.svg[]
+--
+
+[.right-column]
+--
+The comments my friend ! +
+The comments...
+
+They tell to your brain what the stack of code lines is doing.
+
+They _translate_ code to human world.
+--
+
+[transition=fade]
+[%notitle]
+== tsam 16
+[.left-column.center]
+--
+image::images/marc/writing-think-modular_16.svg[]
+--
+
+[.right-column]
+--
+They often separate _de facto_ blocks.
+--
+
+
+[transition=fade]
+[%notitle]
+== tsam 16
+
+[.center]
+--
+With a few modification, from a block you get a function easily.
+--
+
+[.center]
+--
+image::images/marc/writing-think-modular_16.1.svg[]
+--
+
+[transition=fade]
+[%notitle]
+== tsam 17
+[.left-column.center]
+--
+image::images/marc/writing-think-modular_17.svg[]
+--
+
+[.right-column]
+--
+Illustration with the burger recipe !
+--
+
+
+[transition=fade]
+[%notitle]
+== tsam 18
+[.left-column.center]
+--
+image::images/marc/writing-think-modular_18.svg[]
+--
+
+[.right-column]
+--
+
+--
+
+
+[transition=fade]
+[%notitle]
+== tsam 19
+[.left-column.center]
+--
+image::images/marc/writing-think-modular_19.svg[]
+--
+
+[.right-column]
+--
+Your recipe must have comments to remember what are we doing.
+--
+
+
+[transition=fade]
+[%notitle]
+== tsam 20
+[.left-column.center]
+--
+image::images/marc/writing-think-modular_20.svg[]
+--
+
+[.right-column]
+--
+From each comment, build a _meaningful_ function name !
+--
+
+[transition=fade]
+[%notitle]
+== tsam 20.1
+[center]
+--
+image::images/marc/writing-think-modular_20.1.svg[]
+--
+
+[.center]
+--
+Move code block to a new definition named from _meaningful_ function name you found.
+
+Modify a little bit the code to isolate it.
+
+(i.e no external dependencies, only parameters)
+--
+
+
+[transition=fade]
+[%notitle]
+== tsam 20.2
+[.center]
+--
+image::images/marc/writing-think-modular_20.2.svg[]
+--
+
+[.center]
+--
+The same with the next block.
+--
+
+[transition=fade]
+[%notitle]
+== tsam 21
+
+
+[.center]
+--
+At the end you have a well defined architecture.
+--
+
+[.center]
+image::images/marc/writing-think-modular_21.svg[]
+
+
+//end::include[]

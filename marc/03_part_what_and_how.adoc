@@ -322,6 +322,8 @@ image::images/marc/good_practices-scale_3.svg[]
 
 // Wait to constat you get really a problem of performance
 
+include::04_learn_to_delegate.adoc[tag=include]
+
 
 include::03_think_components.adoc[tag=include]
 

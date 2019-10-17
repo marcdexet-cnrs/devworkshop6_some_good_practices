@@ -6,7 +6,7 @@
 [.dark.background]
 [%notitle]
 [.center]
-== Learn to delegate to a futur you
+== Learn To Delegate To A Future You
 
 [.fragment]
 [.huge]
@@ -20,16 +20,15 @@ Learn To Delegate problems
 \... to a future you
 --
 
-== Learn to delegate to a futur you
+== Learn To Delegate To A Future You
 
 Don't try to fix everything *NOW*
 
 Identify *WHAT* you want and _postpone_ the resolution of the *HOW* to later
 
 [%notitle]
-== Learn to delegate to a futur you
+== Learn To Delegate To A Future You
 
-[.big]
 [source,python]
 ----
 class ApplePieRecipe(Recipe):
@@ -42,7 +41,6 @@ class ApplePieRecipe(Recipe):
 [%notitle]
 == Exemple Of Delegation
 
-[.big]
 [source,python]
 ----
 class ApplePieRecipe(Recipe):
@@ -58,7 +56,6 @@ _collect_ingredients_ doesn't exist.
 == Exemple Of Delegation
 
 I created _collect_ingredients_, ...
-[.big]
 [source,python]
 ----
 class ApplePieRecipe(Recipe):
@@ -68,7 +65,7 @@ class ApplePieRecipe(Recipe):
 
 
     def collect_ingredients(self, nb_person: int):
-        # Thank you futur me to code this
+        # Thank you future me to code this
         pass
 ----
 
@@ -80,7 +77,6 @@ class ApplePieRecipe(Recipe):
 
 And so on ...
 
-[.big]
 [source,python]
 ----
 class ApplePieRecipe(Recipe):
@@ -94,25 +90,25 @@ class ApplePieRecipe(Recipe):
         self.put_to_oven()
 
     def collect_ingredients(self, nb_person: int):
-        # Thank you futur me to code this
+        # Thank you future me to code this
         pass
 
     def collect_kitchen_ustensils(self):
-        # Thank you futur me to code this
+        # Thank you future me to code this
         pass
 
     def prepare_mixture(self):
-        # Thank you futur me to code this
+        # Thank you future me to code this
         pass
 
     def prepare_the_cake_dough(self):
-        # Thank you futur me to code this
+        # Thank you future me to code this
         pass
 ----
 
 [%notitle]
 [.center]
-== Learn to delegate to a futur you
+== Learn To Delegate To A Future You
 
 
 By delegating to a future you, +
