@@ -301,10 +301,10 @@ Among them, I hope someone have recognized
 * Read good books
 ** https://en.wikipedia.org/wiki/The_Pragmatic_Programmer[Pragmatic Programer]
 ** https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882[Clean Code]
+* Euclid Good Practices
+** https://euclid.roe.ac.uk/projects/optim/wiki/Good_practices[]
 
+And of course
 
-== Conclusion
-
-There's too much to say, I regret to not have asked for 2h to maurice, sorry.
-
+https://euclid.roe.ac.uk/projects/coding-standards/wiki[]
 //end::include[]
