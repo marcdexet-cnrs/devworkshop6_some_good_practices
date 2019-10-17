@@ -13,15 +13,6 @@
 [.huge]#Small Is Beautiful#
 
 
-== Small Is Beautiful
-
-Limit the required scope to take into account.
-
-Good practices disapprove :
-
-include::_god_class.adoc[]
-
-
 == Make Small Code Units
 
 Try to make
@@ -69,7 +60,5 @@ time = Time(7,6,32)
 what_is_this = identify(position, time, 'plane')
 ----
 --
-
-include::_refactor_big_block_as_small_components.adoc[tag=include]
 
 //end::include[]
